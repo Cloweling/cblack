@@ -1,4 +1,4 @@
-# THEME CBLACK - CINNAMON
+# THEME CBLACK-DARK - CINNAMON
 
 ![ScreenShot Cinnamon Theme](/screenshot/screenshot1.png)
 
@@ -10,6 +10,15 @@
 ## Extra
 
 * Includes the theme Linux-Mint for gtk / gtk + with personal modifications.
+
+## Problem GTK Dark
+
+In firefox you have the problem with the dark theme and to solve this type of problem you have to enter in **about:config**:
+```
+1. Add new string
+2. Name: widget.content.gtk-theme-override
+3. Value: Adwaita:light    
+```
 
 ### Change the transparency of the panels, for this you must look for the following code
 ```
