@@ -2344,7 +2344,7 @@ row.activatable:disabled {
 row.activatable:selected:active {
   color: #ffffff; }
 row.activatable:selected.has-open-popup, row.activatable:selected:hover {
-  background-color: #81976a; }
+  background-color: #215d9c; }
 
 .app-notification {
   padding: 10px;
