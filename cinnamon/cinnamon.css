@@ -337,7 +337,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .panel-right {
-  background-color: rgba(47, 47, 47, 0.8);
+  background-color: rgba(47, 47, 47, 1);
   box-shadow: -1px 0 rgba(70, 70, 70, 1);
 }
 
