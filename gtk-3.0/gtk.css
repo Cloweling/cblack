@@ -1757,9 +1757,9 @@ scrollbar {
 
 switch {
   font-size: 1px;
-  min-width: 52px;
-  min-height: 24px;
-  background-size: 52px 24px;
+  min-width: 46px;
+  min-height: 25px;
+  background-size: 46px 25px;
   background-repeat: no-repeat;
   background-position: center center; }
   switch slider {
@@ -1772,7 +1772,7 @@ switch {
     box-shadow: none; }
 
 switch {
-  background-image: -gtk-scaled(url("assets/switch-dark.png"), url("assets/switch-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-off.svg"), url("assets/switch-dark@2.png")); }
 
 menuitem:hover switch,
 row:selected switch,
@@ -2842,40 +2842,40 @@ headerbar button.titlebutton,
       opacity: 1; }
   headerbar button.titlebutton.close,
   .titlebar button.titlebutton.close {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-dark.png"), url("assets/titlebutton-close-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-close.svg"), url("assets/titlebutton-close@2.svg")); }
   headerbar button.titlebutton.close:backdrop,
   .titlebar button.titlebutton.close:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-backdrop-dark.png"), url("assets/titlebutton-close-backdrop-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-close-backdrop.svg"), url("assets/titlebutton-close-backdrop@2.svg")); }
   headerbar button.titlebutton.close:hover,
   .titlebar button.titlebutton.close:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-hover-dark.png"), url("assets/titlebutton-close-hover-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-close-hover.svg"), url("assets/titlebutton-close-hover@2.svg")); }
   headerbar button.titlebutton.close:active,
   .titlebar button.titlebutton.close:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-active-dark.png"), url("assets/titlebutton-close-active-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-close-active.svg"), url("assets/titlebutton-close-active@2.svg")); }
   headerbar button.titlebutton.maximize,
   .titlebar button.titlebutton.maximize {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-dark.png"), url("assets/titlebutton-max-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-maximize.svg"), url("assets/titlebutton-maximize@2.svg")); }
   headerbar button.titlebutton.maximize:backdrop,
   .titlebar button.titlebutton.maximize:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-backdrop-dark.png"), url("assets/titlebutton-max-backdrop-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-maximize-backdrop.svg"), url("assets/titlebutton-maximize-backdrop@2.svg")); }
   headerbar button.titlebutton.maximize:hover,
   .titlebar button.titlebutton.maximize:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-hover-dark.png"), url("assets/titlebutton-max-hover-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover.svg"), url("assets/titlebutton-maximize-hover@2.svg")); }
   headerbar button.titlebutton.maximize:active,
   .titlebar button.titlebutton.maximize:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-active-dark.png"), url("assets/titlebutton-max-active-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-maximize-active.svg"), url("assets/titlebutton-maximize-active@2.svg")); }
   headerbar button.titlebutton.minimize,
   .titlebar button.titlebutton.minimize {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-dark.png"), url("assets/titlebutton-min-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-minimize.svg"), url("assets/titlebutton-minimize@2.svg")); }
   headerbar button.titlebutton.minimize:backdrop,
   .titlebar button.titlebutton.minimize:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-backdrop-dark.png"), url("assets/titlebutton-min-backdrop-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-minimize-backdrop.svg"), url("assets/titlebutton-minimize-backdrop@2.svg")); }
   headerbar button.titlebutton.minimize:hover,
   .titlebar button.titlebutton.minimize:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-hover-dark.png"), url("assets/titlebutton-min-hover-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover.svg"), url("assets/titlebutton-minimize-hover@2.svg")); }
   headerbar button.titlebutton.minimize:active,
   .titlebar button.titlebutton.minimize:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-active-dark.png"), url("assets/titlebutton-min-active-dark@2.png")); }
+    background-image: -gtk-scaled(url("assets/titlebutton-minimize-active.svg"), url("assets/titlebutton-minimize-active@2.svg")); }
 
 .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
 .view text:selected,
@@ -3886,6 +3886,10 @@ window.background.lightdm .lightdm-combo {
 @define-color bg_color #383838;
 @define-color base_color #404040;
 @define-color selected_bg_color #215d9c;
+@define-color bg_color_close #ffa5a5;
+@define-color bg_color_maximize #e0f9b5;
+@define-color bg_color_minimize #ffffc2;
+@define-color bg_color_backdrop #525457;
 @define-color selected_fg_color #ffffff;
 @define-color insensitive_bg_color #3d3d3d;
 @define-color insensitive_fg_color alpha(#dadada, 0.5);
