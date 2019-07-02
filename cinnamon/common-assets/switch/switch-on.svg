@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="46"
-   height="25"
+   width="50"
+   height="20"
    id="svg7539"
    version="1.1"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="switch-on.svg">
   <defs
      id="defs7541">
@@ -100,9 +100,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.666667"
-     inkscape:cx="46.473385"
-     inkscape:cy="5.6653922"
-     inkscape:current-layer="g3900-12-8"
+     inkscape:cx="13.245082"
+     inkscape:cy="16.13001"
+     inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
@@ -110,9 +110,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1600"
-     inkscape:window-height="842"
-     inkscape:window-x="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1030"
+     inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
@@ -140,7 +140,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -148,49 +148,72 @@
      id="layer1"
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     transform="translate(-120,92.999997)">
+     transform="translate(-120,87.999997)">
     <g
-       transform="translate(-886,-418)"
+       transform="translate(-886,-448)"
        style="display:inline;opacity:1"
-       id="switch-dark"
-       inkscape:label="#g4820">
+       id="switch-active-dark"
+       inkscape:label="#g4829">
       <g
-         id="layer1-9-13"
+         id="layer1-9-0-51"
          inkscape:label="Layer 1"
-         transform="matrix(-0.82692308,0,0,1.2083334,1147.2308,434.16667)">
+         transform="translate(885,450)"
+         style="display:inline;opacity:1">
         <g
            style="display:inline"
            transform="translate(120,-116.99998)"
            inkscape:label="Layer 1"
-           id="switch-active-2-2">
+           id="switch-active-8-8">
           <g
-             id="g3900-12-8"
+             id="g3900-1-87-0"
              transform="translate(0,-1004.3622)">
             <rect
                style="display:inline;opacity:0;fill:#434343;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-               id="rect5465-3-32-7"
+               id="rect5465-3-3-3"
                width="52"
                height="24"
                x="0"
                y="1029.3622" />
             <rect
-               style="fill:#215d99;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.0547787"
-               id="rect2987-07-4"
-               width="55.627907"
+               style="fill:#8fa876;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="rect2987-0-8-7"
+               width="50"
                height="20"
-               x="-4.8371725"
+               x="1"
                y="1031.3622"
                ry="11"
-               rx="14.665723" />
-            <ellipse
-               style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.10810876"
-               id="path3759-7-4"
-               cx="9.6744556"
+               rx="11" />
+            <circle
+               style="fill:#353535;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3759-0-75"
+               cx="41"
                cy="1041.3622"
-               rx="13.906977"
-               ry="9.5172644" />
+               r="9" />
           </g>
         </g>
+      </g>
+      <g
+         transform="translate(-1.0003162,0)"
+         id="g4816-8">
+        <rect
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"
+           ry="0.66666085"
+           rx="0.66666085"
+           y="-456.09485"
+           x="977.54999"
+           height="1.9999826"
+           width="5"
+           id="rect3977-39-2-13"
+           style="display:inline;opacity:1;fill:#353535;fill-opacity:1;stroke:none" />
+        <rect
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"
+           ry="0"
+           y="-462.09485"
+           x="980.54999"
+           height="7.9999828"
+           width="2"
+           id="rect3979-7-0-65"
+           style="display:inline;opacity:1;fill:#353535;fill-opacity:1;stroke:none" />
       </g>
     </g>
   </g>

@@ -51,8 +51,8 @@ StScrollBar StButton#hhandle {
 }
 
 StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
-  background-color: rgba(34, 113, 179, 1);
-  border: 0px solid rgba(34, 113, 179, 1);
+  background-color: rgba(21, 101, 193, 1);
+  border: 0px solid rgba(21, 101, 193, 1);
 }
 
 .separator {
@@ -225,12 +225,12 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .popup-menu-item:active {
-  background-color: rgba(34, 113, 179, 1);
+  background-color: rgba(21, 101, 193, 1);
   color: white;
 }
 
 .popup-menu-item:insensitive {
-  background-color: rgba(34, 113, 179, 1);
+  background-color: rgba(21, 101, 193, 1);
   color: white;
 }
 
@@ -258,7 +258,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   -slider-height: 0.1em;
   -slider-background-color: #444;
   -slider-border-color: rgba(0,0,0,.02);
-  -slider-active-background-color: rgba(34, 113, 179, 1);
+  -slider-active-background-color: rgba(21, 101, 193, 1);
   -slider-active-border-color: rgba(0,0,0,.02);
   -slider-border-width: 1px;
   -slider-handle-radius: 0.5em;
@@ -290,13 +290,13 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .popup-menu-icon {
-  icon-size: 1.14em;
+  icon-size: 1.3em;
 }
 
 /* Switches (to be used in menus) */
 
 .toggle-switch {
-  width: 46px;
+  width: 40px;
   height: 25px;
 }
 
@@ -525,9 +525,8 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   visible-height: 32px; /* Amount visible before hovering */
 }
 
-
 .workspace-thumbnails-background {
-  border: 0px solid rgba(34, 113, 179, 1);
+  border: 0px solid rgba(21, 101, 193, 1);
   border-right: 0px;
   border-radius: 9px 9px 0px 0px;
   background-color: #202020;
@@ -570,9 +569,9 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .window-caption {
-  background-color: rgba(255, 255, 255, 1);
-  border: 2px solid rgba(34, 113, 179, 1);
-  color: rgba(47, 47, 47, 1);
+  background-color: rgba(47, 47, 47, 1);
+  border: 1px solid rgba(21, 101, 193, 1);
+  color: white;
   padding: .5em;
   spacing: .5em;
   font-size: 10pt;
@@ -584,14 +583,14 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 .window-caption:focus {
   color: white;
   font-weight: bold;
-  background-color: rgba(34, 113, 179, 1);
+  background-color: rgba(21, 101, 193, 1);
 }
 
 .window-border {
-  border: 2px rgba(34, 113, 179, 1);
+  border: 2px rgba(21, 101, 193, 1);
   background-color: rgba(255, 255, 255, 0.05);
   /* Cover rounded corners and some bad adjustment gaps */
-  box-shadow: 0 0 0 1px rgba(34, 113, 179, 1) inset;
+  box-shadow: 0 0 0 1px rgba(21, 101, 193, 1) inset;
 }
 
 .window-close {
@@ -608,7 +607,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 .window-close-area {
   background-image: url("common-assets/misc/trash-icon.png");
   background-size: 100px;
-  background-color: rgba(34, 113, 179, 1);
+  background-color: rgba(21, 101, 193, 1);
   border: 0px solid white;
   border-bottom-width: 0px;
   border-radius: 20px 20px 0px 0px;
@@ -648,8 +647,8 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .expo-workspace-thumbnail-frame#active {
-  border: 1px solid rgba(34, 113, 179, 1);
-  background-color: rgba(34, 113, 179, 1);
+  border: 1px solid rgba(21, 101, 193, 1);
+  background-color: rgba(21, 101, 193, 1);
 }
 
 
@@ -665,7 +664,6 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
     border-radius: 4px;
     color: #CCCCCC;
 }
-
 
 /* ===================================================================
  * Date applet
@@ -791,7 +789,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 
 .calendar-today {
   font-weight: bold;
-  background-color: rgba(34, 113, 179, 1);
+  background-color: rgba(21, 101, 193, 1);
 }
 
 .calendar-other-month-day {
@@ -886,16 +884,16 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   padding: 0 5px;
   font-size: 10pt;
   color: rgba(47, 47, 47, 1);
-  border: 0px solid rgba(34, 113, 179, 1);
+  border: 0px solid rgba(21, 101, 193, 1);
   transition-duration: 300;
   background-color: rgba(255, 255, 255, 1);
-  selection-background-color: rgba(34, 113, 179, 1);
+  selection-background-color: rgba(21, 101, 193, 1);
   selected-color: white;
   caret-size: 1px;
 }
 
 #notification StEntry:focus {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -909,7 +907,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 #altTabPopup .switcher-list .item-box:selected  {
-    background-color: rgba(34, 113, 179, 1);
+    background-color: rgba(21, 101, 193, 1);
 }
 
 .switcher-list {
@@ -1073,13 +1071,13 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   min-height: 25px;
   border: solid 0px;
   color: rgba(47, 47, 47, 1);
-  selection-background-color: rgba(34, 113, 179, 1);
+  selection-background-color: rgba(21, 101, 193, 1);
   selected-color: white;
   caret-size: 1px;
 }
 
 .run-dialog-entry {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -1218,16 +1216,16 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 
 .keyboard-key:grayed {
     color: #808080;
-    border-color:rgba(34, 113, 179, 1)
+    border-color:rgba(21, 101, 193, 1)
 }
 
 .keyboard-key:checked, .keyboard-key:hover {
-    background: rgba(34, 113, 179, 1);
+    background: rgba(21, 101, 193, 1);
     border: 0px solid white;
 }
 
 .keyboard-key:active {
-    background: rgba(34, 113, 179, 1);
+    background: rgba(21, 101, 193, 1);
 }
 
 .keyboard-subkeys {
@@ -1274,7 +1272,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .menu-favorites-button:hover {
-  color:rgba(34, 113, 179, 1);
+  color:rgba(21, 101, 193, 1);
   background-color: rgba(100, 100, 100, 0.40);
 }
 
@@ -1308,7 +1306,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 .menu-application-button-selected {
   padding: 7px;
   color: white;
-  background-color: rgba(34, 113, 179, 1);
+  background-color: rgba(21, 101, 193, 1);
 }
 
 .menu-application-button-selected:highlighted {
@@ -1348,7 +1346,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 .menu-category-button-selected {
   padding: 7px;
   color: white;
-  border: 0px solid rgba(34, 113, 179, 1);
+  border: 0px solid rgba(21, 101, 193, 1);
   border-left: 2px;
 }
 
@@ -1402,23 +1400,21 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   font-size: 10pt;
   min-width: 250px;
   min-height: 25px;
-  border: 0px solid;
-  color: rgba(47, 47, 47, 1);
+  color: black;
   transition-duration: 300;
-  selection-background-color: rgba(34, 113, 179, 1);
+  selection-background-color: rgba(21, 101, 193, 1);
   selected-color: white;
   caret-size: 1px;
 }
 
 #menu-search-entry:focus,
 #menu-search-entry:hover {
-  border-color: rgba(34, 113, 179, 1);
-  background-color: rgba(255, 255, 255, 1);
+    background-color: white;
 }
 
 .menu-search-entry-icon {
   icon-size: 1.2em;
-  color:rgba(47, 47, 47, 1);
+  color: white;
 }
 
 /* Context menu (at the moment only for favorites) */
@@ -1472,17 +1468,17 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .window-list-item-box.bottom:hover {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 .window-list-item-box.bottom:checked,
 .window-list-item-box.bottom:focus {
   background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 .window-list-item-box.bottom:outlined {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 /* List top */
@@ -1491,17 +1487,17 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .window-list-item-box.top:hover {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 .window-list-item-box.top:checked,
 .window-list-item-box.top:focus {
   background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 .window-list-item-box.top:outlined {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 /*List left*/
@@ -1510,17 +1506,17 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .window-list-item-box.left:hover {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 .window-list-item-box.left:checked,
 .window-list-item-box.left:focus {
   background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 .window-list-item-box.left:outlined {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 /*List right*/
@@ -1529,17 +1525,17 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .window-list-item-box.right:hover {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 .window-list-item-box.right:checked,
 .window-list-item-box.right:focus {
   background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 .window-list-item-box.right:outlined {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
 }
 
 .window-list-item-demands-attention {
@@ -1631,11 +1627,11 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 .grouped-window-list-item-box.bottom:checked,
 .grouped-window-list-item-box.bottom:active:focus {
   background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
  }
 
  .grouped-window-list-item-box.bottom:active {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
  }
 
 /* List top */
@@ -1648,11 +1644,11 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 .grouped-window-list-item-box.top:checked,
 .grouped-window-list-item-box.top:active:focus {
   background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
  }
 
  .grouped-window-list-item-box.top:active {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
  }
 
 /* List left */
@@ -1665,11 +1661,11 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 .grouped-window-list-item-box.left:checked,
 .grouped-window-list-item-box.left:active:focus {
   background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
  }
 
  .grouped-window-list-item-box.left:active {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
  }
 
 /* List right */
@@ -1682,11 +1678,11 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 .grouped-window-list-item-box.right:checked,
 .grouped-window-list-item-box.right:active:focus {
   background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
  }
 
  .grouped-window-list-item-box.right:active {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
  }
 
 .grouped-window-list-item-demands-attention {
@@ -1731,7 +1727,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 
 .grouped-window-list-thumbnail-menu .item-box:outlined {
   padding: 6px;
-  border: 1px solid rgba(34, 113, 179, 1);
+  border: 1px solid rgba(21, 101, 193, 1);
 }
 
 .grouped-window-list-thumbnail-menu .item-box:selected {
@@ -1779,8 +1775,8 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 
 .sound-player StButton:hover, .sound-player StButton:active {
   color: white;
-  background-color: rgba(34, 113, 179, 1);
-  border: 1px rgba(34, 113, 179, 1);
+  background-color: rgba(21, 101, 193, 1);
+  border: 1px rgba(21, 101, 193, 1);
 }
 
 .sound-player .slider {
@@ -1788,7 +1784,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   -slider-height: 0.5em;
   -slider-background-color: #3c3c3c;
   -slider-border-color: #202020;
-  -slider-active-background-color: rgba(34, 113, 179, 1);
+  -slider-active-background-color: rgba(21, 101, 193, 1);
   -slider-active-border-color: #202020;
   -slider-border-width: 0px;
   -slider-handle-radius: 0px;
@@ -1850,8 +1846,8 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .workspace-button:outlined {
-  border-color: rgba(34, 113, 179, 1);
-  background-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
+  background-color: rgba(21, 101, 193, 1);
   color: white;
 }
 
@@ -1917,7 +1913,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .panel-launchers .launcher:hover {
-  background-color: rgba(34, 113, 179, 1);
+  background-color: rgba(21, 101, 193, 1);
 }
 
 .panel-launcher-add-dialog-content-box-left {
@@ -1938,14 +1934,14 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   color: rgba(47, 47, 47, 1);
   border: 0px solid #202020;
   transition-duration: 300;
-  selection-background-color: rgba(34, 113, 179, 1);
+  selection-background-color: rgba(21, 101, 193, 1);
   selected-color: white;
   caret-size: 1px;
 }
 
 .panel-launcher-add-dialog-entry:focus,
 .panel-launcher-add-dialog-entry:hover {
-  border-color: rgba(34, 113, 179, 1);
+  border-color: rgba(21, 101, 193, 1);
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -2168,15 +2164,15 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   width: 250px;
   height: 15px;
   background-color: rgba(255, 255, 255, 1);
-  border: 0px solid rgba(34, 113, 179, 1);
-  selection-background-color: rgba(34, 113, 179, 1);
+  border: 0px solid rgba(21, 101, 193, 1);
+  selection-background-color: rgba(21, 101, 193, 1);
   selected-color: white;
   caret-size: 1px;
 
 }
 
 .expo-workspaces-name-entry#selected {
-  background-color: rgba(34, 113, 179, 1);
+  background-color: rgba(21, 101, 193, 1);
   color: white;
 }
 
