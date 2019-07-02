@@ -119,8 +119,6 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 /* ===================================================================
  * PopupMenu (popupMenu.js)
  * ===================================================================*/
-
-
 /* .popup-menu-boxpointer and .popup-menu are kept for compatibility
     with cinnamon version under 3.2. Use .menu in version 3.2 and above */
 
@@ -516,7 +514,6 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 /* ===================================================================
  * Overview
  * ===================================================================*/
-
 #overview {
   spacing: 12px;
 }
@@ -604,17 +601,6 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   background-image: url("common-assets/misc/close-hover.svg");
 }
 
-.window-close-area {
-  background-image: url("common-assets/misc/trash-icon.png");
-  background-size: 100px;
-  background-color: rgba(21, 101, 193, 1);
-  border: 0px solid white;
-  border-bottom-width: 0px;
-  border-radius: 20px 20px 0px 0px;
-  height: 120px;
-  width: 400px;
-}
-
 .overview-icon {
   border-radius: 4px;
   padding: 3px;
@@ -633,24 +619,63 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.6);
 }
 
-.expo-background {
-  background-color: rgba(47, 47, 47, 1);
-}
+/* ===================================================================
+ * Expo
+ * ===================================================================*/
+ .expo-background {
+   background-color: rgba(60, 60, 60, 1);
+ }
 
-.workspace-overview-background-shade {
-  background-color: rgba(45, 45, 45, 0.4);
-}
+ .workspace-overview-background-shade {
+   background-color: rgba(45, 45, 45, 0.4);
+ }
 
-.expo-workspace-thumbnail-frame {
+ .expo-workspace-thumbnail-frame {
+   border: 1px solid #202020;
+   background-color:  rgba(45, 45, 45, 1);
+ }
+
+ .expo-workspace-thumbnail-frame#active {
+   border: 1px solid rgba(21, 101, 193, 1);
+   background-color: rgba(21, 101, 193, 1);
+ }
+
+.expo-workspaces-name-entry {
+  padding: 10px 5px;
+  font-size: 10pt;
+  font-weight: bold;
+  width: 250px;
+  height: 15px;
+  background-color: white;
   border: 1px solid #202020;
-  background-color:  rgba(45, 45, 45, 1);
+  color: black;
+  selection-background-color: rgba(21, 101, 193, 1);
+  selected-color: white;
+  caret-size: 1px;
+
 }
 
-.expo-workspace-thumbnail-frame#active {
-  border: 1px solid rgba(21, 101, 193, 1);
+.expo-workspaces-name-entry#selected {
   background-color: rgba(21, 101, 193, 1);
+  border: 1px solid #202020;
+  color: white;
 }
 
+.expo-workspaces-name-entry:focus {
+  color: rgba(47, 47, 47, 1);
+  transition-duration: 300;
+}
+
+.window-close-area {
+  background-image: url("common-assets/misc/trash-icon.png");
+  background-size: 100px;
+  background-color: rgba(47, 47, 47, 1);
+  border: 1px solid #202020;
+  border-bottom-width: 0px;
+  border-radius: 20px 20px 0px 0px;
+  height: 120px;
+  width: 400px;
+}
 
 /* ===================================================================
  * Looking Glass
@@ -1830,25 +1855,35 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 /* Controls the styling when using the "Simple buttons" option */
 .panel-top .workspace-switcher,
 .panel-bottom .workspace-switcher {
-  padding: 4px;
+  padding: 0.3em 0;
 }
 
 .panel-left .workspace-switcher
 .panel-right .workspace-switcher {
-  padding: 4px;
+  padding: 0;
 }
 
 .workspace-button {
   border: 1px solid #202020;
   color: white;
-  padding: 0 8px;
   transition-duration: 300;
 }
 
+.panel-top .workspace-button,
+.panel-bottom .workspace-button {
+  margin: 0 0.3em;
+  padding:  0 0.8em;
+}
+
+.panel-left .workspace-button,
+.panel-right .workspace-button {
+  margin: 0.3em 0;
+  padding: 0.4em 0;
+}
+
 .workspace-button:outlined {
-  border-color: rgba(21, 101, 193, 1);
+  border-color: #202020;
   background-color: rgba(21, 101, 193, 1);
-  color: white;
 }
 
 /* Controls the style when using the "Visual representation" option */
@@ -1863,23 +1898,10 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .workspace-graph .workspace:active {
+  background-color: rgba(21, 101, 193, 1);
   border: 1px solid #202020;
-  background-color: rgba(47, 47, 47, 1);
 }
 
-.workspace-graph .workspace .windows {
-  -active-window-background: rgba(140, 140, 140, 1.0);
-  -active-window-border: rgba(0, 0, 0, 0.7);
-  -inactive-window-background: rgba(140, 140, 140, 1.0);
-  -inactive-window-border: rgba(0, 0, 0, 0.7);
-}
-
-.workspace-graph .workspace:active .windows {
-  -active-window-background: rgba(255, 255, 255, 1.0);
-  -active-window-border: rgba(0, 0, 0, 0.9);
-  -inactive-window-background: rgba(140, 140, 140, 1.0);
-  -inactive-window-border: rgba(0, 0, 0, 0.7);
-}
 
 /* ===================================================================
  * Panel Launchers Applet (panelLaunchers.js)
@@ -2155,30 +2177,6 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   font-weight: bold;
   font-size: 48pt;
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.6);
-}
-
-.expo-workspaces-name-entry {
-  padding: 10px 5px;
-  font-size: 10pt;
-  font-weight: bold;
-  width: 250px;
-  height: 15px;
-  background-color: rgba(255, 255, 255, 1);
-  border: 0px solid rgba(21, 101, 193, 1);
-  selection-background-color: rgba(21, 101, 193, 1);
-  selected-color: white;
-  caret-size: 1px;
-
-}
-
-.expo-workspaces-name-entry#selected {
-  background-color: rgba(21, 101, 193, 1);
-  color: white;
-}
-
-.expo-workspaces-name-entry:focus {
-  color: rgba(47, 47, 47, 1);
-  transition-duration: 300;
 }
 
 /* ===================================================================
