@@ -1397,25 +1397,25 @@ menu, .menu {
   margin: 4px;
   padding: 0;
   border-radius: 0;
-  background-color: #383838;
-  border: 1px solid #292929; }
+  background-color: #2f2f2f;
+  border: 1px solid #202020; }
   .csd menu,
   .csd .menu {
-    padding: 4px 0px;
-    border-radius: 2px;
+    padding: 6px 0px;
+    border-radius: 0;
     border: none; }
   menu separator, .csd menu separator, .menu separator, .csd .menu separator {
-    margin: 2px 0;
-    background-color: #292929; }
+    margin: 4px 10px;
+    background-color: rgba(100, 100, 100, 0.40); }
   menu .separator:not(label), .csd menu .separator:not(label), .menu .separator:not(label), .csd .menu .separator:not(label) {
     color: #383838; }
   menu menuitem, .menu menuitem {
     min-height: 16px;
-    min-width: 40px;
-    padding: 5px; }
+    min-width: 60px;
+    padding: 4px 15px; }
     menu menuitem:hover, .menu menuitem:hover {
       color: #ffffff;
-      background-color: #1565c0; }
+      background-color: rgba(100, 100, 100, 0.40); }
     menu menuitem:disabled, .menu menuitem:disabled {
       color: rgba(218, 218, 218, 0.55); }
     menu menuitem arrow, .menu menuitem arrow {
@@ -2572,12 +2572,12 @@ row:selected button:disabled, infobar.info button:disabled, infobar.question but
 
 tooltip,
 .tooltip {
-  color: #4a4a4a;
-  border-radius: 2px;
-  border: 1px solid #d0d0d0; }
+  color: white;
+  border-radius: 0px;
+  border: 1px solid #202020; }
   tooltip.background,
   .tooltip.background {
-    background-color: #fbeaa0;
+    background-color: rgba(45, 45, 45, 1);
     background-clip: padding-box; }
     tooltip.background label,
     .tooltip.background label {
@@ -2588,7 +2588,7 @@ tooltip,
   tooltip *,
   .tooltip * {
     background-color: transparent;
-    color: #4a4a4a; }
+    color: white; }
 
 colorswatch, colorswatch:drop(active) {
   border-style: none; }
@@ -2732,7 +2732,7 @@ decoration {
     border-radius: 2px;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.55); }
   message-dialog.csd decoration {
-    border-radius: 3px; }
+    border-radius: 0px; }
   .solid-csd decoration {
     border-radius: 0;
     margin: 1px;

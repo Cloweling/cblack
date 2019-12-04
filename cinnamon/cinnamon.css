@@ -4,7 +4,7 @@
  * ###################################################################*/
 
  stage {
-    font-family: Ubuntu,sans-serif;
+    font-family:  Ubuntu,Roboto,Cantarell,sans-serif;
     font-size: 9pt;
 }
 
@@ -80,6 +80,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   background-color: rgba(47, 47, 47, 1);
   border: 1px solid #202020;
   padding: 4px 12px;
+  margin: 0.5em;
   font-weight: normal;
   text-align: center;
 }
@@ -223,12 +224,12 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .popup-menu-item:active {
-  background-color: rgba(21, 101, 193, 1);
+  background-color: rgba(100, 100, 100, 0.40);
   color: white;
 }
 
 .popup-menu-item:insensitive {
-  background-color: rgba(21, 101, 193, 1);
+  background-color: rgba(100, 100, 100, 0.40);
   color: white;
 }
 
@@ -239,10 +240,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .popup-separator-menu-item {
-  -gradient-height: 1px;
-  -gradient-start: rgba(70, 70, 70, 1);
-  -gradient-end: rgba(70, 70, 70, 1);
-  -margin-horizontal: 0em;
+  background-color: rgba(100, 100, 100, 0.40);
   height: 0.1em;
 }
 
@@ -288,14 +286,14 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .popup-menu-icon {
-  icon-size: 1.3em;
+  icon-size: 1.1em;
 }
 
 /* Switches (to be used in menus) */
 
 .toggle-switch {
-  width: 40px;
-  height: 25px;
+  width: 64px;
+  height: 18px;
 }
 
 .toggle-switch-us {
@@ -328,25 +326,27 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   height: 32px;
   width: 32px;
   padding: 0px;
+  background-color: rgba(47, 47, 47, 1);
 }
 
 .panel-left {
-  background-color: rgba(47, 47, 47, 1);
   box-shadow: 1px 0 #202020;
 }
 
 .panel-right {
-  background-color: rgba(47, 47, 47, 1);
   box-shadow: -1px 0 #202020;
 }
 
 .panel-top {
-  background-color: rgba(47, 47, 47, 1);
   box-shadow: 0 1px #202020;
 }
 
+.panelRight {
+  background-color : rgba(100, 100, 100, 0.2);
+  padding: 0 5px;
+}
+
 .panel-bottom {
-  background-color: rgba(47, 47, 47, 1);
   box-shadow: 0 -1px #202020;
 }
 
@@ -646,9 +646,9 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   font-weight: bold;
   width: 250px;
   height: 15px;
-  background-color: white;
-  border: 1px solid #202020;
-  color: black;
+  background-color: rgba(60, 60, 60, 1);
+  border: 0.1em solid rgba(21, 101, 193, 1);
+  color: white;
   selection-background-color: rgba(21, 101, 193, 1);
   selected-color: white;
   caret-size: 1px;
@@ -658,11 +658,10 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 .expo-workspaces-name-entry#selected {
   background-color: rgba(21, 101, 193, 1);
   border: 1px solid #202020;
-  color: white;
 }
 
 .expo-workspaces-name-entry:focus {
-  color: rgba(47, 47, 47, 1);
+  color: white;
   transition-duration: 300;
 }
 
@@ -907,19 +906,18 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 
 #notification StEntry {
   padding: 0 5px;
-  font-size: 10pt;
-  color: rgba(47, 47, 47, 1);
-  border: 0px solid rgba(21, 101, 193, 1);
+  background-color: rgba(60, 60, 60, 1);
+  border: 0.1em solid rgba(21, 101, 193, 1);
+  color: white;
   transition-duration: 300;
-  background-color: rgba(255, 255, 255, 1);
   selection-background-color: rgba(21, 101, 193, 1);
   selected-color: white;
   caret-size: 1px;
 }
 
 #notification StEntry:focus {
-  border-color: rgba(21, 101, 193, 1);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(21, 101, 193, 1);
+  border: 0.1em solid rgba(60, 60, 60, 1);
 }
 
 /* ===================================================================
@@ -939,7 +937,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
     background: rgba(47, 47, 47, 1);
     border: 1px solid #202020;
 	border-radius: 4px;
-	font-size: 9pt;
+	font-size: 10pt;
     color: white;
     text-shadow: #202020 0px 0px 2px;
 }
@@ -1068,8 +1066,8 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
  * ===================================================================*/
 
 .run-dialog-label {
-  font-size: 0pt;
-  color: #ccc;
+  font-size: 10pt;
+  color: white;
   font-weight: bold;
   padding-bottom: 5px;
 }
@@ -1086,7 +1084,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 
 .run-dialog-completion-box {
   padding-left: 15px;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .run-dialog-entry {
@@ -1095,15 +1093,15 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   min-width: 250px;
   min-height: 25px;
   border: solid 0px;
-  color: rgba(47, 47, 47, 1);
+  color: white;
   selection-background-color: rgba(21, 101, 193, 1);
   selected-color: white;
   caret-size: 1px;
 }
 
 .run-dialog-entry {
-  border-color: rgba(21, 101, 193, 1);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(60, 60, 60, 1);
+  border: 0.1em solid rgba(21, 101, 193, 1);
 }
 
 .run-dialog {
@@ -1117,7 +1115,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .lightbox {
-  background-color: rgba(47, 47, 47, 0.6);
+  background-color: rgba(60, 60, 60, 0.6);
 }
 
 /* CinnamonMountOperation Dialogs */
@@ -1134,7 +1132,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .show-processes-dialog-subject, .mount-question-dialog-subject {
-  font-size: 12pt;
+  font-size: 10pt;
   font-weight: bold;
   color: #666666;
   padding-top: 10px;
@@ -1159,7 +1157,6 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .show-processes-dialog-app-list {
-  font-size: 10pt;
   max-height: 200px;
   padding-top: 24px;
   padding-left: 49px;
@@ -1196,7 +1193,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .show-processes-dialog-app-list-item-name {
-  font-size: 10pt;
+  font-size: 12pt;
 }
 
 /* ===================================================================
@@ -1425,7 +1422,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   font-size: 10pt;
   min-width: 250px;
   min-height: 25px;
-  color: black;
+  color: white;
   transition-duration: 300;
   selection-background-color: rgba(21, 101, 193, 1);
   selected-color: white;
@@ -1434,7 +1431,8 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 
 #menu-search-entry:focus,
 #menu-search-entry:hover {
-    background-color: white;
+    background-color: rgba(60, 60, 60, 1);
+    border: 0.1em solid rgba(21, 101, 193, 1);
 }
 
 .menu-search-entry-icon {
@@ -1526,7 +1524,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 /*List left*/
-.window-list-item-left.left {
+.window-list-item-box.left {
   border-left-width: 2px;
 }
 
@@ -1535,7 +1533,8 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .window-list-item-box.left:checked,
-.window-list-item-box.left:focus {
+.window-list-item-box.left:focus,
+.window-list-item-box.left:active {
   background-color: rgba(200, 200, 200, 0.1);
   border-color: rgba(21, 101, 193, 1);
 }
@@ -1569,7 +1568,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .window-list-item-box .progress {
-  background-color: rgba(49, 111, 255,.4);
+  background-color: rgba(49, 111, 255, 0.1);
 }
 
 .window-list-preview {
@@ -1613,28 +1612,18 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 
 .grouped-window-list-item-box {
   color: white;
-  padding: 1px;
-  padding-left: 5px;
-  padding-right: 5px;
   transition-duration: 100;
   spacing: 0.5em;
-}
-
-.grouped-window-list-item-box.top {
-  border-radius: 0px 0px 2px 2px;
-}
-
-.grouped-window-list-item-box.left {
-  border-radius: 0px 2px 2px 0px;
-}
-
-.grouped-window-list-item-box.right {
-  border-radius: 2px 0px 0px 2px;
 }
 
 .grouped-window-list-item-box.top,
 .grouped-window-list-item-box.bottom {
   padding: 0 0.5em;
+}
+
+.grouped-window-list-item-box.right,
+.grouped-window-list-item-box.left {
+  padding: 0.5em 0;
 }
 
 .grouped-window-list-item-box.top StLabel,
@@ -1644,19 +1633,25 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 
 /* List bottom */
 .grouped-window-list-item-box.bottom {
-  border-bottom-width: 2px;
+  /* border-top-width: 2px; */
 }
 
 .grouped-window-list-item-box.bottom:hover,
 .grouped-window-list-item-box.bottom:focus:hover,
+.grouped-window-list-item-box.bottom:active:hover {
+  border-image: url("common-assets/panel/list-bottom-hover.svg");
+}
+
 .grouped-window-list-item-box.bottom:checked,
 .grouped-window-list-item-box.bottom:active:focus {
-  background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(21, 101, 193, 1);
+  /* background-color: rgba(200, 200, 200, 0.1); */
+  /* border-color: rgba(21, 101, 193, 1); */
+  border-image: url("common-assets/panel/list-bottom.svg");
  }
 
  .grouped-window-list-item-box.bottom:active {
-  border-color: rgba(21, 101, 193, 1);
+  /* border-color: rgba(21, 101, 193, 1); */
+  border-image: url("common-assets/panel/list-bottom-active.svg");
  }
 
 /* List top */
@@ -1717,7 +1712,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .grouped-window-list-item-box .progress {
-  background-color: rgba(49, 111, 255, .4);
+  background-color: rgba(100, 100, 100, 0.5);
 }
 
 .panel-top .grouped-window-list-item-box .progress {
@@ -1953,8 +1948,7 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   font-size: 10pt;
   min-width: 250px;
   min-height: 25px;
-  color: rgba(47, 47, 47, 1);
-  border: 0px solid #202020;
+  color: white;
   transition-duration: 300;
   selection-background-color: rgba(21, 101, 193, 1);
   selected-color: white;
@@ -1963,8 +1957,8 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 
 .panel-launcher-add-dialog-entry:focus,
 .panel-launcher-add-dialog-entry:hover {
-  border-color: rgba(21, 101, 193, 1);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(60, 60, 60, 1);
+  border: 0.1em solid rgba(21, 101, 193, 1);
 }
 
 .panel-launcher-add-dialog-entry:hover {
@@ -2335,4 +2329,5 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 * ===================================================================*/
 .systray {
   spacing: 5px;
+  padding: 0 5px;
 }

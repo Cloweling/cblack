@@ -16,7 +16,7 @@
 <constant name="C_wm_bg_focused" value="rgba(47,47,47,1.0)" />
 <constant name="C_wm_bg_unfocused" value="rgba(47,47,47,1.0)" />
 
-<constant name="C_wm_border" value="rgba(47,47,47,1.0)" />
+<constant name="C_wm_border" value="rgba(20,20,20,0.3)" />
 
 <constant name="C_wm_highlight" value="rgba(55,55,55,1.0)" />
 
@@ -183,6 +183,16 @@
 
 <draw_ops name="border_unfocused">
 	<rectangle color="C_wm_bg_unfocused" x="0" y="0" width="width" height="height" filled="false" />
+</draw_ops>
+
+<draw_ops name="border_tiled_right">
+	<line x1="0" y1="0" x2="0" y2="height" color="C_wm_border" />
+	<line x1="1" y1="height-1" x2="width" y2="height-1" color="C_wm_border" />
+</draw_ops>
+
+<draw_ops name="border_tiled_left">
+	<line x1="width-1" y1="0" x2="width-1" y2="height" color="C_wm_border" />
+	<line x1="1" y1="height-1" x2="width" y2="height-1" color="C_wm_border" />
 </draw_ops>
 
 <draw_ops name="border_max">
@@ -978,6 +988,7 @@
 
 <frame_style name="tiled_left_focused" geometry="tiled_left">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
+	<piece position="overlay" draw_ops="border_tiled_left" />
 	<piece position="titlebar" draw_ops="titlebar_focused" />
 	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal" draw_ops="close_focused" />
@@ -1012,6 +1023,7 @@
 
 <frame_style name="tiled_left_unfocused" geometry="tiled_left">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
+	<piece position="overlay" draw_ops="border_tiled_left" />
 	<piece position="titlebar" draw_ops="titlebar_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
@@ -1046,6 +1058,7 @@
 
 <frame_style name="tiled_right_focused" geometry="tiled_right">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
+	<piece position="overlay" draw_ops="border_tiled_right" />
 	<piece position="titlebar" draw_ops="titlebar_focused" />
 	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal" draw_ops="close_focused" />
@@ -1080,6 +1093,7 @@
 
 <frame_style name="tiled_right_unfocused" geometry="tiled_right">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
+	<piece position="overlay" draw_ops="border_tiled_right" />
 	<piece position="titlebar" draw_ops="titlebar_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
