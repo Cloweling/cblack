@@ -2,17 +2,17 @@
  * Section common with Gnome Shell
  * ... contains a few cinnamon specific styles (rare occurrences)
  * ###################################################################*/
- stage {
-    font-family:  Ubuntu,Roboto,Cantarell,sans-serif;
-    font-size: 1em;
+stage {
+  font-family: Ubuntu, Roboto, Cantarell, sans-serif;
+  font-size: 1em;
 }
 
 .cinnamon-link {
-    color: #0000ff;
+  color: #0000ff;
 }
 
 .cinnamon-link:hover {
-    color: #0000e0;
+  color: #0000e0;
 }
 
 StScrollBar {
@@ -45,7 +45,8 @@ StScrollBar StButton#hhandle {
   border-radius: 8px;
 }
 
-StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
+StScrollBar StButton#hhandle:hover,
+StScrollBar StButton#vhandle:hover {
   background-color: rgba(21, 101, 193, 1);
 }
 
@@ -58,7 +59,6 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   font-weight: normal;
   text-align: center;
 }
-
 
 /* ===================================================================
  * Shared button properties
@@ -74,22 +74,22 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 .notification-button:hover,
 .notification-icon-button:hover,
 .modal-dialog-button:hover {
-    background-color: rgba(80, 80, 80, 1);
-    border: 1px solid #202020;
+  background-color: rgba(80, 80, 80, 1);
+  border: 1px solid #202020;
 }
 
 .notificatio-button:focus,
 .notification-icon-button:focus,
 .modal-dialog-button:focus {
-    border: 1px solid #202020;
+  border: 1px solid #202020;
 }
 
 .notification-button:active,
 .notification-icon-button:active,
 .modal-dialog-button:active,
 .modal-dialog-button:pressed {
-    background-color: rgba(80, 80, 80, 1);
-    border: 1px solid #202020;
+  background-color: rgba(80, 80, 80, 1);
+  border: 1px solid #202020;
 }
 
 /* ===================================================================
@@ -192,17 +192,17 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .popup-menu-item {
-  padding: .4em 1.75em;
-  spacing: .5em;
+  padding: 0.4em 1.75em;
+  spacing: 0.5em;
 }
 
 .popup-menu-item:active {
-  background-color: rgba(100, 100, 100, 0.40);
+  background-color: rgba(100, 100, 100, 0.4);
   color: white;
 }
 
 .popup-menu-item:insensitive {
-  background-color: rgba(100, 100, 100, 0.40);
+  background-color: rgba(100, 100, 100, 0.4);
   color: white;
 }
 
@@ -211,7 +211,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .popup-separator-menu-item {
-  background-color: rgba(100, 100, 100, 0.40);
+  background-color: rgba(100, 100, 100, 0.4);
   height: 0.1em;
 }
 
@@ -224,15 +224,15 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   min-width: 15em;
   -slider-height: 0.1em;
   -slider-background-color: #444;
-  -slider-border-color: rgba(0,0,0,.02);
+  -slider-border-color: rgba(0, 0, 0, 0.02);
   -slider-active-background-color: rgba(21, 101, 193, 1);
-  -slider-active-border-color: rgba(0,0,0,.02);
+  -slider-active-border-color: rgba(0, 0, 0, 0.02);
   -slider-border-width: 1px;
   -slider-handle-radius: 0.5em;
 }
 
 .popup-device-menu-item {
-  spacing: .5em;
+  spacing: 0.5em;
 }
 
 .popup-inactive-menu-item {
@@ -272,7 +272,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .nm-menu-item-icons {
-  spacing: .5em;
+  spacing: 0.5em;
 }
 
 /* ===================================================================
@@ -410,7 +410,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .system-status-icon {
-   icon-size: 1.45em;
+  icon-size: 1.45em;
 }
 
 /* ===================================================================
@@ -447,8 +447,8 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   background-color: rgba(47, 47, 47, 1);
   border: 1px solid rgba(21, 101, 193, 1);
   color: white;
-  padding: .5em;
-  spacing: .5em;
+  padding: 0.5em;
+  spacing: 0.5em;
   -cinnamon-caption-spacing: 8px;
 }
 
@@ -497,7 +497,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 
 .expo-workspace-thumbnail-frame {
   border: 1px solid #202020;
-  background-color:  rgba(45, 45, 45, 1);
+  background-color: rgba(45, 45, 45, 1);
 }
 
 .expo-workspace-thumbnail-frame#active {
@@ -517,7 +517,6 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   selection-background-color: rgba(21, 101, 193, 1);
   selected-color: white;
   caret-size: 1px;
-
 }
 
 .expo-workspaces-name-entry#selected {
@@ -589,7 +588,8 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 /* ===================================================================
  * Clock Desklet (desklet.js)
  * ===================================================================*/
-.clock-desklet-label {}
+.clock-desklet-label {
+}
 
 /* ===================================================================
  * Looking Glass
@@ -600,17 +600,18 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   padding: 4px;
   border: 2px solid #202020;
   border-radius: 4px;
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 /* ===================================================================
  * Date applet
  * ===================================================================*/
 /*calendar-background allows the date applet calendar to be themed separately from other applet menus*/
-.calendar-background {}
+.calendar-background {
+}
 
 .calendar {
-  padding: .4em 1.75em;
+  padding: 0.4em 1.75em;
   spacing-rows: 0px;
   spacing-columns: 5px;
 }
@@ -661,7 +662,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .datemenu-date-label {
-  padding: .4em 1.75em;
+  padding: 0.4em 1.75em;
   font-size: 12pt;
   font-weight: bold;
 }
@@ -699,14 +700,15 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .calendar-day-top {
-    border-top-width: 0px;
+  border-top-width: 0px;
 }
 
 .calendar-day-left {
-    border-left-width: 0px;
+  border-left-width: 0px;
 }
 
-.calendar-work-day {}
+.calendar-work-day {
+}
 
 .calendar-nonwork-day {
   background-color: rgba(47, 47, 47, 1);
@@ -805,7 +807,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   padding: 4px;
 }
 
-.notification-icon-button>StIcon {
+.notification-icon-button > StIcon {
   icon-size: 20px;
 }
 
@@ -977,7 +979,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 /* Media keys OSD popup */
 .osd-window {
   background: rgba(47, 47, 47, 1);
-  box-shadow: 0px 0px 4px 2px rgba(20, 20, 20, 0.60);
+  box-shadow: 0px 0px 4px 2px rgba(20, 20, 20, 0.6);
   border: 1px solid #202020;
   border-radius: 0px;
   padding: 20px;
@@ -1132,72 +1134,72 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .network-dialog-secret-table {
-    spacing-rows: 15px;
+  spacing-rows: 15px;
 }
 
 /* ===================================================================
  * Magnifier (magnifier.js)
  * ===================================================================*/
 .magnifier-zoom-region {
-    border: 2px solid #202020;
+  border: 2px solid #202020;
 }
 
 .magnifier-zoom-region.full-screen {
-    border-width: 0px;
+  border-width: 0px;
 }
 
 /* ===================================================================
  * On screen keyboard
  * ===================================================================*/
 #keyboard {
-    background-color: rgba(47, 47, 47, 1);
+  background-color: rgba(47, 47, 47, 1);
 }
 
 .keyboard-layout {
-    spacing: 10px;
-    padding: 10px;
+  spacing: 10px;
+  padding: 10px;
 }
 
 .keyboard-row {
-    spacing: 20px;
+  spacing: 20px;
 }
 
 .keyboard-key {
-    min-height: 30px;
-    min-width: 30px;
-    background-color: rgb(251, 9, 53);
-    font-size: 14pt;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid #202020;
-    color: white;
+  min-height: 30px;
+  min-width: 30px;
+  background-color: rgb(251, 9, 53);
+  font-size: 14pt;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #202020;
+  color: white;
 }
 
 .keyboard-key:grayed {
-    color: #808080;
-    border-color:rgba(21, 101, 193, 1)
+  color: #808080;
+  border-color: rgba(21, 101, 193, 1);
 }
 
 .keyboard-key:checked,
 .keyboard-key:hover {
-    background: rgba(21, 101, 193, 1);
-    border: 0px solid white;
+  background: rgba(21, 101, 193, 1);
+  border: 0px solid white;
 }
 
 .keyboard-key:active {
-    background: rgba(21, 101, 193, 1);
+  background: rgba(21, 101, 193, 1);
 }
 
 .keyboard-subkeys {
-    color: white;
-    padding: 5px;
-    -arrow-border-radius: 10px;
-    -arrow-background-color: #090909;
-    -arrow-border-width: 2px;
-    -arrow-border-color: white;
-    -arrow-base: 20px;
-    -arrow-rise: 10px;
-    -boxpointer-gap: 5px;
+  color: white;
+  padding: 5px;
+  -arrow-border-radius: 10px;
+  -arrow-background-color: #090909;
+  -arrow-border-width: 2px;
+  -arrow-border-color: white;
+  -arrow-base: 20px;
+  -arrow-rise: 10px;
+  -boxpointer-gap: 5px;
 }
 
 /* ###################################################################
@@ -1225,17 +1227,16 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .menu-favorites-button:hover {
-  color:rgba(21, 101, 193, 1);
+  color: rgba(21, 101, 193, 1);
   border-radius: 4px;
-  background-color: rgba(100, 100, 100, 0.50);
+  background-color: rgba(100, 100, 100, 0.5);
 }
 
 .menu-categories-box {
   padding: 10px 15px;
 }
 
-.menu-applications-inner-box
-.menu-applications-outer-box {
+.menu-applications-inner-box .menu-applications-outer-box {
   padding: 5px 5px 0 10px;
 }
 
@@ -1348,7 +1349,8 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 /* Context menu (at the moment only for favorites) */
-.menu-context-menu {}
+.menu-context-menu {
+}
 
 /* ===================================================================
  * Window list (windowList.js)
@@ -1366,7 +1368,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .window-list-box .window-list-item-box {
-  padding: 0 .5em;
+  padding: 0 0.5em;
 }
 
 .window-list-box.vertical #appMenuIcon {
@@ -1374,7 +1376,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .window-list-box.vertical .window-list-item-box {
-  padding: .1em 0;
+  padding: 0.1em 0;
 }
 .window-list-item-label {
   width: 15em;
@@ -1479,7 +1481,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 
 .window-list-preview {
   background: rgba(47, 47, 47, 1);
-  box-shadow: 0px 0px 4px 2px rgba(20, 20, 20, 0.60);
+  box-shadow: 0px 0px 4px 2px rgba(20, 20, 20, 0.6);
   border: 1px solid #202020;
   border-radius: 0px;
   font-size: 9pt;
@@ -1513,7 +1515,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-thumbnail-alert {
-  background: rgba(255,52,52,0.3);
+  background: rgba(255, 52, 52, 0.3);
 }
 
 .grouped-window-list-item-box {
@@ -1553,12 +1555,12 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   /* background-color: rgba(200, 200, 200, 0.1); */
   /* border-color: rgba(21, 101, 193, 1); */
   border-image: url("common-assets/panel/list-bottom.svg");
- }
+}
 
- .grouped-window-list-item-box.bottom:active {
+.grouped-window-list-item-box.bottom:active {
   /* border-color: rgba(21, 101, 193, 1); */
   border-image: url("common-assets/panel/list-bottom-active.svg");
- }
+}
 
 /* List top */
 .grouped-window-list-item-box.top {
@@ -1571,11 +1573,11 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 .grouped-window-list-item-box.top:active:focus {
   background-color: rgba(200, 200, 200, 0.1);
   border-color: rgba(21, 101, 193, 1);
- }
+}
 
- .grouped-window-list-item-box.top:active {
+.grouped-window-list-item-box.top:active {
   border-color: rgba(21, 101, 193, 1);
- }
+}
 
 /* List left */
 .grouped-window-list-item-box.left {
@@ -1588,11 +1590,11 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 .grouped-window-list-item-box.left:active:focus {
   background-color: rgba(200, 200, 200, 0.1);
   border-color: rgba(21, 101, 193, 1);
- }
+}
 
- .grouped-window-list-item-box.left:active {
+.grouped-window-list-item-box.left:active {
   border-color: rgba(21, 101, 193, 1);
- }
+}
 
 /* List right */
 .grouped-window-list-item-box.right {
@@ -1605,16 +1607,16 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 .grouped-window-list-item-box.right:active:focus {
   background-color: rgba(200, 200, 200, 0.1);
   border-color: rgba(21, 101, 193, 1);
- }
+}
 
- .grouped-window-list-item-box.right:active {
+.grouped-window-list-item-box.right:active {
   border-color: rgba(21, 101, 193, 1);
- }
+}
 
 .grouped-window-list-item-demands-attention {
   background-gradient-direction: vertical;
-  background-gradient-start: #F04A50;
-  background-gradient-end: #F04A50;
+  background-gradient-start: #f04a50;
+  background-gradient-end: #f04a50;
 }
 
 .grouped-window-list-item-box .progress {
@@ -1666,7 +1668,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 
 .grouped-window-list-thumbnail-menu .separator {
   width: 1px;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* ===================================================================
@@ -1692,14 +1694,14 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 
 .sound-player StButton:small StIcon {
   icon-size: 1.5em;
-
 }
 
 .sound-player StButton StIcon {
   icon-size: 1.5em;
 }
 
-.sound-player StButton:hover, .sound-player StButton:active {
+.sound-player StButton:hover,
+.sound-player StButton:active {
   color: white;
   background-color: rgba(21, 101, 193, 1);
   border: 1px rgba(21, 101, 193, 1);
@@ -1720,7 +1722,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   spacing: 0.5em;
 }
 
-.sound-player>StBoxLayout {
+.sound-player > StBoxLayout {
   padding: 5px;
 }
 
@@ -1737,7 +1739,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   padding: 8px;
 }
 
-.sound-player-overlay StButton>StIcon {
+.sound-player-overlay StButton > StIcon {
   icon-size: 16px;
 }
 
@@ -1759,8 +1761,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   padding: 0.3em 0;
 }
 
-.panel-left .workspace-switcher
-.panel-right .workspace-switcher {
+.panel-left .workspace-switcher .panel-right .workspace-switcher {
   padding: 0;
 }
 
@@ -1773,7 +1774,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 .panel-top .workspace-button,
 .panel-bottom .workspace-button {
   margin: 0 0.3em;
-  padding:  0 0.8em;
+  padding: 0 0.8em;
 }
 
 .panel-left .workspace-button,
@@ -1803,13 +1804,12 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   border: 1px solid #202020;
 }
 
-
 /* ===================================================================
  * Panel Launchers Applet (panelLaunchers.js)
  * ===================================================================*/
 
 .panel-launchers {
-  spacing: .5em;
+  spacing: 0.5em;
 }
 
 .panel-launchers.vertical {
@@ -1828,11 +1828,11 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .panel-launchers .launcher .icon-box {
-  padding: 0 .1em;
+  padding: 0 0.1em;
 }
 
 .panel-launchers.vertical .launcher .icon-box {
-  padding: .1em 0;
+  padding: 0.1em 0;
 }
 
 .panel-launchers .launcher:hover {
@@ -1881,11 +1881,11 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 #overview-corner {
-    background-image: url("common-assets/misc/overview.png");
+  background-image: url("common-assets/misc/overview.png");
 }
 
 #overview-corner:hover {
-    background-image: url("common-assets/misc/overview-hover.png");
+  background-image: url("common-assets/misc/overview-hover.png");
 }
 
 /* ===================================================================
@@ -1911,8 +1911,8 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .applet-box {
-  padding-left: .3em;
-  padding-right: .3em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
   color: #ccc;
   text-shadow: black 0px 0px 2px;
   transition-duration: 300;
@@ -1920,7 +1920,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 
 .panel-top .applet-box,
 .panel-bottom .applet-box {
-  spacing: .2em;
+  spacing: 0.2em;
 }
 
 .applet-box:checked,
@@ -1932,7 +1932,8 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   padding: 3px 0;
 }
 
-.applet-box.vertical:hover {}
+.applet-box.vertical:hover {
+}
 
 .applet-box:highlight {
   background-color: #aa5555;
@@ -1953,7 +1954,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   color: #fff;
 }
 
-.applet-box.vertical:hover  .applet-label {
+.applet-box.vertical:hover .applet-label {
   color: #fff;
 }
 
@@ -1989,7 +1990,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 .notification-applet-padding {
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 
 .notification-applet-container {
@@ -1998,16 +1999,18 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 
 /* Check Boxes */
 .check-box CinnamonGenericContainer {
-  spacing: .2em;
+  spacing: 0.2em;
 }
 
-.check-box StBin, .check-box:focus StBin {
+.check-box StBin,
+.check-box:focus StBin {
   width: 16px;
   height: 16px;
   background-image: url("common-assets/checkbox/checkbox-off.svg");
 }
 
-.check-box:checked StBin, .check-box:focus:checked StBin {
+.check-box:checked StBin,
+.check-box:focus:checked StBin {
   background-image: url("common-assets/checkbox/checkbox.svg");
 }
 
@@ -2016,19 +2019,21 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .radiobutton CinnamonGenericContainer {
-  spacing: .2em;
+  spacing: 0.2em;
   height: 18px;
   padding-top: 2px;
 }
 
-.radiobutton StBin, .radiobutton:focus StBin {
+.radiobutton StBin,
+.radiobutton:focus StBin {
   width: 16px;
   height: 16px;
   background-image: url("common-assets/checkbox/radiobutton-off.svg");
   border-radius: 15px;
 }
 
-.radiobutton:checked StBin, .radiobutton:focus:checked StBin {
+.radiobutton:checked StBin,
+.radiobutton:focus:checked StBin {
   background-image: url("common-assets/checkbox/radiobutton.svg");
 }
 
@@ -2045,7 +2050,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 /* Notifs look inside the notification applet & other popups. */
 .popup-menu-content #notification {
   border-image: url("common-assets/misc/message.svg") 7;
-  padding: .8em .8em .6em 1em;
+  padding: 0.8em 0.8em 0.6em 1em;
 }
 
 .tile-preview,
@@ -2054,12 +2059,14 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   border: 2px solid rgba(134, 134, 134, 0.8);
 }
 
-.tile-preview, .tile-hud {
+.tile-preview,
+.tile-hud {
   background-color: rgba(41, 41, 41, 0.5);
   border: 2px solid rgba(134, 134, 134, 0.8);
 }
 
-.tile-preview.snap, .tile-hud.snap {
+.tile-preview.snap,
+.tile-hud.snap {
   background-color: rgba(134, 134, 170, 0.5);
   border: 2px solid rgba(41, 41, 41, 0.8);
 }
