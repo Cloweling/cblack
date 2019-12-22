@@ -1,0 +1,7 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "[css]" : {
+        "editor.tabSize": 4
+    }
+}

@@ -2,10 +2,9 @@
  * Section common with Gnome Shell
  * ... contains a few cinnamon specific styles (rare occurrences)
  * ###################################################################*/
-
  stage {
     font-family:  Ubuntu,Roboto,Cantarell,sans-serif;
-    font-size: 9pt;
+    font-size: 1em;
 }
 
 .cinnamon-link {
@@ -14,10 +13,6 @@
 
 .cinnamon-link:hover {
     color: #0000e0;
-}
-
-.label-shadow {
-    color: rgba(0, 0, 0, 0.5);
 }
 
 StScrollBar {
@@ -52,27 +47,6 @@ StScrollBar StButton#hhandle {
 
 StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   background-color: rgba(21, 101, 193, 1);
-  border: 0px solid rgba(21, 101, 193, 1);
-}
-
-.separator {
-  -gradient-height: 2px;
-  -gradient-start: rgba(41, 41, 41, 1);
-  -gradient-end: rgba(41, 41, 41, 1);
-  -margin-horizontal: 1.5em;
-  height: 1em;
-}
-
-.slider {
-  height: 1em;
-  min-width: 15em;
-  -slider-height: 0.3em;
-  -slider-background-color: #666666;
-  -slider-border-color: #555555;
-  -slider-active-background-color: #CCCCCC;
-  -slider-active-border-color: #DDDDDD;
-  -slider-border-width: 1px;
-  -slider-handle-radius: 0.5em;
 }
 
 #Tooltip {
@@ -89,30 +63,31 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 /* ===================================================================
  * Shared button properties
  * ===================================================================*/
-
-.notifcation-button, .notification-icon-button{
+.notifcation-button,
+.notification-icon-button,
+.modal-dialog-button {
   color: white;
   border: 1px solid #202020;
   background-color: rgba(45, 45, 45, 1);
 }
 
-.modal-dialog-button, .sound-player-overlay StButton {
-    color: #ccc;
-    border: 1px solid #202020;
-    background-color: rgba(45, 45, 45, 1);
-    border-radius: 0px;
-}
-
-.notification-button:hover, .notification-icon-button:hover, .modal-dialog-button:hover, .sound-player-overlay StButton:hover {
+.notification-button:hover,
+.notification-icon-button:hover,
+.modal-dialog-button:hover {
     background-color: rgba(80, 80, 80, 1);
     border: 1px solid #202020;
 }
 
-.notificatio-button:focus, .notification-icon-button:focus, .modal-dialog-button:focus, .sound-player-overlay StButton:focus {
-    border: 0px solid #202020;
+.notificatio-button:focus,
+.notification-icon-button:focus,
+.modal-dialog-button:focus {
+    border: 1px solid #202020;
 }
 
-.notification-button:active, .notification-icon-button:active, .modal-dialog-button:active, .modal-dialog-button:pressed, .sound-player-overlay StButton:active {
+.notification-button:active,
+.notification-icon-button:active,
+.modal-dialog-button:active,
+.modal-dialog-button:pressed {
     background-color: rgba(80, 80, 80, 1);
     border: 1px solid #202020;
 }
@@ -122,7 +97,6 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 /* .popup-menu-boxpointer and .popup-menu are kept for compatibility
     with cinnamon version under 3.2. Use .menu in version 3.2 and above */
-
 .popup-menu-boxpointer {
   -arrow-border-color: transparent;
   -arrow-background-color: transparent;
@@ -140,10 +114,10 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 
 .menu {
   color: white;
-  border-radius: 0px;
+  border-radius: 4px;
   background-color: rgba(47, 47, 47, 1);
   border: solid 1px #202020;
-  min-width: 150px;
+  min-width: 100px;
 }
 
 .menu.bottom {
@@ -213,7 +187,6 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 /* The remaining popup-menu sizing is all done in ems, so that if you
  * override .popup-menu.font-size, everything else will scale with it.
  */
-
 .popup-menu-content {
   padding: 1em 0em;
 }
@@ -232,8 +205,6 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   background-color: rgba(100, 100, 100, 0.40);
   color: white;
 }
-
-.popup-image-menu-item {}
 
 .popup-combobox-item {
   spacing: 1em;
@@ -255,18 +226,6 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   -slider-background-color: #444;
   -slider-border-color: rgba(0,0,0,.02);
   -slider-active-background-color: rgba(21, 101, 193, 1);
-  -slider-active-border-color: rgba(0,0,0,.02);
-  -slider-border-width: 1px;
-  -slider-handle-radius: 0.5em;
-}
-
-.popup-menu-item:active .popup-slider-menu-item {
-  height: 1em;
-  min-width: 15em;
-  -slider-height: 0.1em;
-  -slider-background-color: #444;
-  -slider-border-color: rgba(0,0,0,.02);
-  -slider-active-background-color: white;
   -slider-active-border-color: rgba(0,0,0,.02);
   -slider-border-width: 1px;
   -slider-handle-radius: 0.5em;
@@ -319,7 +278,6 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 /* ===================================================================
  * Panel (panel.js)
  * ===================================================================*/
-
 #panel {
   color: #ccc;
   font-weight: normal;
@@ -329,25 +287,14 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   background-color: rgba(47, 47, 47, 1);
 }
 
-.panel-left {
-  box-shadow: 1px 0 #202020;
-}
-
+.panel-left,
 .panel-right {
-  box-shadow: -1px 0 #202020;
+  box-shadow: 0px 0px 2px 2px rgba(20, 20, 20, 0.5);
 }
 
-.panel-top {
-  box-shadow: 0 1px #202020;
-}
-
-.panelRight {
-  background-color : rgba(100, 100, 100, 0.2);
-  padding: 0 5px;
-}
-
+.panel-top,
 .panel-bottom {
-  box-shadow: 0 -1px #202020;
+  box-shadow: 0px 0px 2px 2px rgba(20, 20, 20, 0.6);
 }
 
 #panel:highlight {
@@ -362,83 +309,71 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   background-color: rgba(255, 35, 35, 0.4);
 }
 
-.panelLeft {
+#panelLeft,
+#panelCenter {
   spacing: 4px;
 }
 
-.panelCenter {
-  spacing: 4px;
-}
-
-.panelRight {
-  spacing: 4px;
-}
-
-.panelLeft:dnd {
+#panelLeft:dnd {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(255, 0, 0, 0.05);
   background-gradient-end: rgba(255, 0, 0, 0.2);
 }
 
-.panelCenter:dnd {
+#panelLeft.vertical:dnd {
+  background-gradient-direction: horizontal;
+  background-gradient-start: rgba(255, 0, 0, 0.05);
+  background-gradient-end: rgba(255, 0, 0, 0.2);
+}
+
+#panelCenter:dnd {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(0, 255, 0, 0.05);
   background-gradient-end: rgba(0, 255, 0, 0.2);
 }
 
-.panelRight:dnd {
+#panelCenter.vertical:dnd {
+  background-gradient-direction: horizontal;
+  background-gradient-start: rgba(0, 255, 0, 0.05);
+  background-gradient-end: rgba(0, 255, 0, 0.2);
+}
+
+#panelRight:dnd {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(0, 0, 255, 0.05);
   background-gradient-end: rgba(0, 0, 255, 0.2);
 }
 
-.panelLeft:ltr {
+#panelRight.vertical:dnd {
+  background-gradient-direction: horizontal;
+  background-gradient-start: rgba(0, 0, 255, 0.05);
+  background-gradient-end: rgba(0, 0, 255, 0.2);
+}
+
+#panelLeft:ltr {
   padding-right: 4px;
 }
 
-.panelLeft:rtl {
+#panelLeft:rtl {
   padding-left: 4px;
 }
 
-.panelRight:ltr {
+#panelRight:ltr {
   padding-left: 0px;
   spacing: 0px;
 }
 
-.panelRight:rtl {
+#panelRight:rtl {
   padding-right: 0px;
   spacing: 0px;
 }
 
-.panelLeft.vertical {
-  padding: 0px;
-}
-
-.panelRight.vertical {
-  padding: 0px;
-}
-
-.panelCenter.vertical {
-  padding-left: 0px;
+#panelLeft.vertical:ltr {
   padding-right: 0px;
 }
 
-.panelLeft.vertical:dnd {}
-
-.panelCenter.vertical:dnd {}
-
-.panelRight.vertical:dnd {}
-
-.panel-status-button {
-  color: #ccc;
-  -natural-hpadding: 3px;
-  -minimum-hpadding: 3px;
-  font-weight: bold;
-  height: 22px;
-}
-
-.panel-status-button:hover {
-  color: white;
+#panelLeft.vertical:rtl {
+  padding-left: 0px;
 }
 
 .system-status-icon {
@@ -465,43 +400,10 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   -panel-corner-outer-border-color: #202020;
 }
 
-.panel-corner:active, .panel-corner:overview, .panel-corner:focus {
+.panel-corner:active,
+.panel-corner:overview,
+.panel-corner:focus {
   -panel-corner-inner-border-color: rgba(255, 255, 255, 0);
-}
-
-.panel-button #appMenuIcon {
-  app-icon-bottom-clip: 1px;
-}
-
-.panel-button #appMenuIcon {
-  app-icon-bottom-clip: 1px;
-}
-
-.panel-button:active #appMenuIcon, .panel-button:checked #appMenuIcon, .panel-button:focus #appMenuIcon {
-  app-icon-bottom-clip: 2px;
-}
-
-.panel-button {
-  color: #ccc;
-  -natural-hpadding: 6px;
-  -minimum-hpadding: 3px;
-  font-weight: normal;
-  transition-duration: 100;
-}
-
-.panel-button:hover {
-  color: white;
-  text-shadow: #202020 0px 2px 2px;
-}
-
-.panel-button:active, .panel-button:overview, .panel-button:focus {}
-
-.panel-button:active>.system-status-icon, .panel-button:checked>.system-status-icon, .panel-button:focus>.system-status-icon {
-  icon-shadow: #202020 0px 2px 2px;
-}
-
-.panel-menu {
-  -boxpointer-gap: 4px;
 }
 
 .popup-menu-item-dot {
@@ -512,33 +414,14 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Overview
+ * Overview (workspace.js)
  * ===================================================================*/
 #overview {
   spacing: 12px;
 }
 
-.workspace-controls {
-  visible-height: 32px; /* Amount visible before hovering */
-}
-
-.workspace-thumbnails-background {
-  border: 0px solid rgba(21, 101, 193, 1);
-  border-right: 0px;
-  border-radius: 9px 9px 0px 0px;
-  background-color: #202020;
-  padding: 8px;
-}
-
-.workspace-thumbnails-background:rtl {
-  border-right: 1px;
-  border-left: 0px;
-  border-radius: 9px 9px 0px 0px;
-}
-
 .workspace-thumbnails {
-  spacing: 24px;
-  box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.60);
+  spacing: 14px;
 }
 
 .workspace-add-button {
@@ -560,20 +443,12 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   -cinnamon-close-overlap: 20px;
 }
 
-.workspace-thumbnail-indicator {
-  outline: 2px solid white;
-  border: 1px solid #888;
-}
-
 .window-caption {
   background-color: rgba(47, 47, 47, 1);
   border: 1px solid rgba(21, 101, 193, 1);
   color: white;
   padding: .5em;
   spacing: .5em;
-  font-size: 10pt;
-  min-width: 10em;
-  max-width: 20em;
   -cinnamon-caption-spacing: 8px;
 }
 
@@ -601,44 +476,34 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   background-image: url("common-assets/misc/close-hover.svg");
 }
 
-.overview-icon {
-  border-radius: 4px;
-  padding: 3px;
+.window-close-area {
+  background-image: url("common-assets/misc/trash-icon.png");
+  background-size: 100px;
+  background-color: rgba(47, 47, 47, 1);
   border: 1px solid #202020;
-  font-size: 7.5pt;
-  color: white;
-  transition-duration: 100;
-  text-align: center;
+  border-bottom-width: 0px;
+  border-radius: 20px 20px 0px 0px;
+  height: 120px;
+  width: 400px;
 }
 
-.overview-empty-placeholder {
-  color: white;
-  text-shadow: black 5px 5px 5px;
-  font-weight: bold;
-  font-size: 48pt;
-  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.6);
+.expo-background {
+  background-color: rgba(60, 60, 60, 1);
 }
 
-/* ===================================================================
- * Expo
- * ===================================================================*/
- .expo-background {
-   background-color: rgba(60, 60, 60, 1);
- }
+.workspace-overview-background-shade {
+  background-color: rgba(45, 45, 45, 0.4);
+}
 
- .workspace-overview-background-shade {
-   background-color: rgba(45, 45, 45, 0.4);
- }
+.expo-workspace-thumbnail-frame {
+  border: 1px solid #202020;
+  background-color:  rgba(45, 45, 45, 1);
+}
 
- .expo-workspace-thumbnail-frame {
-   border: 1px solid #202020;
-   background-color:  rgba(45, 45, 45, 1);
- }
-
- .expo-workspace-thumbnail-frame#active {
-   border: 1px solid rgba(21, 101, 193, 1);
-   background-color: rgba(21, 101, 193, 1);
- }
+.expo-workspace-thumbnail-frame#active {
+  border: 1px solid rgba(21, 101, 193, 1);
+  background-color: rgba(21, 101, 193, 1);
+}
 
 .expo-workspaces-name-entry {
   padding: 10px 5px;
@@ -665,35 +530,84 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
   transition-duration: 300;
 }
 
-.window-close-area {
-  background-image: url("common-assets/misc/trash-icon.png");
-  background-size: 100px;
-  background-color: rgba(47, 47, 47, 1);
-  border: 1px solid #202020;
-  border-bottom-width: 0px;
-  border-radius: 20px 20px 0px 0px;
-  height: 120px;
-  width: 400px;
+.overview-empty-placeholder {
+  color: white;
+  text-shadow: black 5px 5px 5px;
+  font-weight: bold;
+  font-size: 48pt;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.6);
 }
+
+/* ===================================================================
+ * Desklets (desklet.js)
+ * ===================================================================*/
+.desklet {
+  color: #fff;
+}
+
+.desklet:highlight,
+.desklet:highlight-with-borders,
+.desklet:highlight-with-borders-and-header {
+  background-color: #aa5555;
+}
+
+.desklet-with-borders {
+  border: 0px solid #a5a5a5;
+  background-color: rgba(47, 47, 47, 0.8);
+  color: #fff;
+  border-radius-bottomleft: 12px;
+  border-radius-bottomright: 12px;
+  border-radius-topleft: 12px;
+  border-radius-topright: 12px;
+}
+
+.desklet-with-borders-and-header {
+  border: 0px solid #a5a5a5;
+  background-color: rgba(47, 47, 47, 0.8);
+  color: #fff;
+  border-top: 1px;
+  border-radius-bottomleft: 12px;
+  border-radius-bottomright: 12px;
+}
+
+.desklet-header {
+  border-radius-topleft: 12px;
+  border-radius-topright: 12px;
+  font-size: 10.5pt;
+  border: 0px solid #a5a5a5;
+  border-bottom: 0px;
+  background-color: rgba(47, 47, 47, 0.8);
+  color: #fff;
+  padding: 6px;
+}
+
+.desklet-drag-placeholder {
+  border: 2px solid #6daa00;
+  background-color: rgba(109, 170, 0, 0.3);
+}
+
+/* ===================================================================
+ * Clock Desklet (desklet.js)
+ * ===================================================================*/
+.clock-desklet-label {}
 
 /* ===================================================================
  * Looking Glass
  * ===================================================================*/
-
 #LookingGlassDialog {
-    background-color: rgba(47, 47, 47, 0.85);
-    spacing: 4px;
-    padding: 4px;
-    border: 2px solid #202020;
-    border-radius: 4px;
-    color: #CCCCCC;
+  background-color: rgba(47, 47, 47, 0.85);
+  spacing: 4px;
+  padding: 4px;
+  border: 2px solid #202020;
+  border-radius: 4px;
+  color: #CCCCCC;
 }
 
 /* ===================================================================
  * Date applet
  * ===================================================================*/
- /*calendar-background allows the date applet calendar to be themed separately from other applet menus*/
- .calendar-background {}
+/*calendar-background allows the date applet calendar to be themed separately from other applet menus*/
+.calendar-background {}
 
 .calendar {
   padding: .4em 1.75em;
@@ -735,7 +649,7 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#vhandle:hover {
 }
 
 .calendar-change-month-forward:rtl {
-background-image: url("common-assets/misc/calendar-arrow-left.svg");
+  background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .calendar-change-month-forward:hover {
@@ -753,10 +667,10 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .calendar-day-base {
-  font-size: 9pt;
+  font-size: 1em;
   text-align: center;
-  width: 3em;
-  height: 2em;
+  width: 2.2em;
+  height: 2.2em;
 }
 
 .calendar-day-base:hover {
@@ -772,40 +686,27 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 .calendar-week-number {
-  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 0.8em;
 }
 
 /* Hack used in lieu of border-collapse - see calendar.js */
-.calendar-day:ltr {
-  border: 0px solid #333333;
+.calendar-day {
+  border: 0px solid rgba(90, 90, 90, 1);
+  color: white;
   border-top-width: 0;
   border-left-width: 0;
 }
 
-.calendar-day-top:ltr {
-  border-top-width: 0px;
+.calendar-day-top {
+    border-top-width: 0px;
 }
 
-.calendar-day-left:ltr {
-  border-left-width: 0px;
+.calendar-day-left {
+    border-left-width: 0px;
 }
 
-.calendar-day:rtl {
-  border: 0px solid #333333;
-  border-top-width: 0px;
-  border-right-width: 0px;
-}
-
-.calendar-day-top:rtl {
-  border-top-width: 1px;
-}
-
-.calendar-day-left:rtl {
-  border-right-width: 1px;
-}
-
-.calendar-work-day {
-}
+.calendar-work-day {}
 
 .calendar-nonwork-day {
   background-color: rgba(47, 47, 47, 1);
@@ -825,17 +726,15 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   color: #f7f7f7;
 }
 
-
 /* ===================================================================
  * Notifications
  * ===================================================================*/
-
 #notification {
   font-size: 9pt;
   border: 1px solid #202020;
   background-color: rgba(47, 47, 47, 1);
-  border-radius: 0px;
-  padding: 8px 8px 8px 8px;
+  border-radius: 4px;
+  padding: 8px;
   spacing-rows: 10px;
   spacing-columns: 10px;
   margin-from-right-edge-of-screen: 20px;
@@ -843,7 +742,12 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   color: white;
 }
 
-#notification .multi-line-notification {
+/* For the links inside notifications. These URLs are already underlined with Pango markup. */
+#notification .url-highlighter {
+  link-color: #0000ff;
+}
+
+#notification.multi-line-notification {
   padding-bottom: 8px;
   color: white;
 }
@@ -862,15 +766,16 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   max-height: 10em;
 }
 
-#notification-scrollview>.top-shadow, #notification-scrollview>.bottom-shadow {
+#notification-scrollview > .top-shadow,
+#notification-scrollview > .bottom-shadow {
   height: 1em;
 }
 
-#notification-scrollview:ltr>StScrollBar {
+#notification-scrollview:ltr > StScrollBar {
   padding-left: 6px;
 }
 
-#notification-scrollview:rtl>StScrollBar {
+#notification-scrollview:rtl > StScrollBar {
   padding-right: 6px;
 }
 
@@ -921,159 +826,188 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 /* ===================================================================
- * Alt Tab
+ * Alt Tab (appSwitcher/classicSwitcher.js)
  * ===================================================================*/
-
 #altTabPopup {
-    padding: 0px;
-    spacing: 16px;
-}
-
-#altTabPopup .switcher-list .item-box:selected  {
-    background-color: rgba(21, 101, 193, 1);
+  padding: 8px;
+  spacing: 16px;
 }
 
 .switcher-list {
-    background: rgba(47, 47, 47, 1);
-    border: 1px solid #202020;
-	border-radius: 4px;
-	font-size: 10pt;
-    color: white;
-    text-shadow: #202020 0px 0px 2px;
+  background: rgba(47, 47, 47, 1);
+  border: 1px solid #202020;
+  border-radius: 8px;
+  font-size: 9pt;
+  color: white;
+  text-shadow: 0px 0px 12px 6px #202020;
 }
 
 .switcher-list-item-container {
-    spacing: 8px;
+  spacing: 8px;
 }
 
 .thumbnail-scroll-gradient-left {
-    background-gradient-direction: horizontal;
-    background-gradient-start: rgba(51, 51, 51, 1);
-    background-gradient-end: rgba(51, 51, 51, 0);
-    border-radius: 24px;
-    border-radius-topright: 0px;
-    border-radius-bottomright: 0px;
-    width: 60px;
+  background-gradient-direction: horizontal;
+  background-gradient-start: rgba(51, 51, 51, 1);
+  background-gradient-end: rgba(51, 51, 51, 0);
+  border-radius: 24px;
+  border-radius-topright: 0px;
+  border-radius-bottomright: 0px;
+  width: 60px;
 }
 
 .thumbnail-scroll-gradient-right {
-    background-gradient-direction: horizontal;
-    background-gradient-start: rgba(51, 51, 51, 0);
-    background-gradient-end: rgba(51, 51, 51, 1);
-    border-radius: 24px;
-    border-radius-topleft: 0px;
-    border-radius-bottomleft: 0px;
-    width: 60px;
+  background-gradient-direction: horizontal;
+  background-gradient-start: rgba(51, 51, 51, 0);
+  background-gradient-end: rgba(51, 51, 51, 1);
+  border-radius: 24px;
+  border-radius-topleft: 0px;
+  border-radius-bottomleft: 0px;
+  width: 60px;
 }
 
 .switcher-list .item-box {
-    padding: 8px;
-    border-radius: 0px;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 .switcher-list .item-box:outlined {
-    padding: 6px;
-    border: 1px solid #202020;
+  padding: 6px;
+  border: 1px solid #202020;
 }
 
 .switcher-list .item-box:selected {
-    background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(21, 101, 193, 1);
 }
 
-.switcher-list {
-    padding: 2px;
-    spacing: 4px;
+.switcher-list .thumbnail-box {
+  padding: 2px;
+  spacing: 4px;
 }
 
 .switcher-list .thumbnail {
-    width: 256px;
+  width: 256px;
 }
 
 .switcher-list .separator {
-    width: 1px;
-    background: rgba(255, 255, 255, 0.33);
+  width: 1px;
+  background: rgba(255, 255, 255, 0.33);
 }
 
 .ripple-box {
-    width: 104px;
-    height: 104px;
-    background-image: url("common-assets/misc/corner-ripple.svg");
+  width: 104px;
+  height: 104px;
+  background-image: url("common-assets/misc/corner-ripple.svg");
 }
 
 .ripple-box:rtl {
-    background-image: url("common-assets/misc/corner-ripple.svg");
+  background-image: url("common-assets/misc/corner-ripple.svg");
 }
 
 .switcher-arrow {
-    border-color: rgba(0, 0, 0, 0);
-    color: white;
+  border-color: rgba(0, 0, 0, 0);
+  color: white;
 }
 
 .switcher-arrow:highlighted {
-    border-color: rgba(0, 0, 0, 0);
-    color: white;
+  border-color: rgba(0, 0, 0, 0);
+  color: white;
 }
 
 .switcher-preview-backdrop {
-    background-color: rgba(255, 255, 255, 0.33);
+  background-color: rgba(255, 255, 255, 0.33);
 }
-
 
 /* ===================================================================
  * Modal dialogs
  * ===================================================================*/
-
 .modal-dialog {
-    font-size: 12pt;
-    background-color: rgba(47, 47, 47, 1);
-    border: 1px solid #202020;
-    color: white;
-    padding: 30px 42px;
+  font-size: 12pt;
+  background-color: rgba(47, 47, 47, 1);
+  border: 1px solid #202020;
+  color: white;
+  padding: 30px 42px;
 }
 
 .modal-dialog-button-box {
-    spacing: 21px;
+  padding-top: 20px;
 }
 
 .modal-dialog-button {
-    font-size: 11pt;
-    color: white;
-    margin: 0 10px;
-    padding: 4px 32px 5px;
+  font-size: 11pt;
+  color: white;
+  margin: 0 10px;
+  padding: 4px 32px 5px;
+}
+
+.modal-dialog-button:hover {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(90, 90, 90, 1);
+  background-gradient-end: rgba(70, 70, 70, 1);
+  border: 1px solid rgba(120, 120, 120, 1);
+}
+
+.modal-dialog-button:active,
+.modal-dialog-button:checked {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(60, 60, 60, 1);
+  background-gradient-end: rgba(40, 40, 40, 1);
+  box-shadow: inset 0px 1px 0px 0px rgba(35, 35, 35, 1);
 }
 
 .modal-dialog-button:disabled {
-    color: rgba(150, 150, 150);
+  color: rgba(60, 60, 60, 1);
 }
 
 .modal-dialog-button:focus {
-    padding: 3px 31px 4px;
+  padding: 3px 31px 4px;
 }
 
 /* Info OSD popup */
 .info-osd {
-    font-size: 18pt;
-    border-radius: 0px;
-    background-color: rgba(47, 47, 47, 1);
-    border: 1px solid #202020;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  font-size: 18pt;
+  border-radius: 0px;
+  background-color: rgba(47, 47, 47, 1);
+  border: 1px solid #202020;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media keys OSD popup */
+.osd-window {
+  background: rgba(47, 47, 47, 1);
+  box-shadow: 0px 0px 4px 2px rgba(20, 20, 20, 0.60);
+  border: 1px solid #202020;
+  border-radius: 0px;
+  padding: 20px;
+  color: white;
+  spacing: 1em;
+}
+
+.osd-window .level {
+  height: 0.4em;
+  border-radius: 0.1em;
+  background-color: rgba(47, 47, 47, 1);
+}
+
+.osd-window .level-bar {
+  border-radius: 0.3em;
+  background-color: white;
 }
 
 /* ===================================================================
  * Run dialog
  * ===================================================================*/
-
 .run-dialog-label {
-  font-size: 10pt;
+  font-size: 9pt;
   color: white;
   font-weight: bold;
-  padding-bottom: 5px;
+  padding: 5px 0px;
 }
 
 .run-dialog-error-label {
-  font-size: 10pt;
+  font-size: 9pt;
   color: white;
 }
 
@@ -1082,43 +1016,38 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   spacing: 5px;
 }
 
+.run-dialog-entry {
+  padding: 5px;
+  width: 23em;
+  color: rgba(40, 40, 40, 1);
+  background-color: white;
+  border: 0.1em solid rgba(20, 20, 20, 1);
+  selection-background-color: rgba(21, 101, 193, 1);
+  selected-color: white;
+}
+
 .run-dialog-completion-box {
-  padding-left: 15px;
+  padding: 10px 5px;
   font-size: 10px;
 }
 
-.run-dialog-entry {
-  padding-left: 5px;
-  font-size: 10pt;
-  min-width: 250px;
-  min-height: 25px;
-  border: solid 0px;
-  color: white;
-  selection-background-color: rgba(21, 101, 193, 1);
-  selected-color: white;
-  caret-size: 1px;
-}
-
-.run-dialog-entry {
-  background-color: rgba(60, 60, 60, 1);
-  border: 0.1em solid rgba(21, 101, 193, 1);
-}
-
 .run-dialog {
-  border-radius: 0px;
+  border-radius: 4px;
   padding-right: 21px;
   padding-left: 21px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   padding-top: 15px;
   background-color: #383838;
   border: 1px solid #202020;
 }
 
 .lightbox {
-  background-color: rgba(60, 60, 60, 0.6);
+  background-color: rgba(20, 20, 20, 0.4);
 }
 
-/* CinnamonMountOperation Dialogs */
+/* =============================================================================
+ * CinnamonMountOperation Dialogs (cinnamonMountOperation.js)
+ * ============================================================================= */
 .cinnamon-mount-operation-icon {
   icon-size: 1.2em;
 }
@@ -1127,11 +1056,13 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   color: red;
 }
 
-.show-processes-dialog, .mount-question-dialog {
+.show-processes-dialog,
+.mount-question-dialog {
   spacing: 24px;
 }
 
-.show-processes-dialog-subject, .mount-question-dialog-subject {
+.show-processes-dialog-subject,
+.mount-question-dialog-subject {
   font-size: 10pt;
   font-weight: bold;
   color: #666666;
@@ -1140,23 +1071,27 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   padding-bottom: 6px;
 }
 
-.show-processes-dialog-subject:rtl, .mount-question-dialog-subject:rtl {
+.show-processes-dialog-subject:rtl,
+.mount-question-dialog-subject:rtl {
   padding-left: 0px;
   padding-right: 17px;
 }
 
-.show-processes-dialog-description, .mount-question-dialog-description {
+.show-processes-dialog-description,
+.mount-question-dialog-description {
   font-size: 10pt;
   color: white;
   padding-left: 17px;
   width: 28em;
 }
 
-.show-processes-dialog-description:rtl, .mount-question-dialog-description:rtl {
+.show-processes-dialog-description:rtl,
+.mount-question-dialog-description:rtl {
   padding-right: 17px;
 }
 
 .show-processes-dialog-app-list {
+  font-size: 10pt;
   max-height: 200px;
   padding-top: 24px;
   padding-left: 49px;
@@ -1196,10 +1131,13 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   font-size: 12pt;
 }
 
-/* ===================================================================
- * Magnifier
- * ===================================================================*/
+.network-dialog-secret-table {
+    spacing-rows: 15px;
+}
 
+/* ===================================================================
+ * Magnifier (magnifier.js)
+ * ===================================================================*/
 .magnifier-zoom-region {
     border: 2px solid #202020;
 }
@@ -1211,7 +1149,6 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 /* ===================================================================
  * On screen keyboard
  * ===================================================================*/
-
 #keyboard {
     background-color: rgba(47, 47, 47, 1);
 }
@@ -1241,7 +1178,8 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
     border-color:rgba(21, 101, 193, 1)
 }
 
-.keyboard-key:checked, .keyboard-key:hover {
+.keyboard-key:checked,
+.keyboard-key:hover {
     background: rgba(21, 101, 193, 1);
     border: 0px solid white;
 }
@@ -1265,28 +1203,21 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 /* ###################################################################
  * Cinnamon Specific Section
  * ###################################################################*/
+
 /* ===================================================================
- * Menu (menu.js)
+ * Menu applet (menu@cinnamon.org/applet.js)
  * ===================================================================*/
- /* Main menu title */
- /* menu-background allows the menu applet to be themed separately from other applet menus */
 .menu-background {
   background-color: rgba(47, 47, 47, 1);
   border: 1px solid #202020;
 }
 
-.menu-top-box {
-  spacing: 10px;
-}
-
-.menu-systembuttons-box {}
-
 /* Main menu title */
 .menu-favorites-box {
   padding: 5px;
   border: 1px solid #202020;
-  background-color: rgba(60, 60, 60, 1);
-  transition-duration: 300;
+  border-radius: 4px;
+  background-color: rgba(65, 65, 65, 1);
 }
 
 .menu-favorites-button {
@@ -1295,29 +1226,22 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 
 .menu-favorites-button:hover {
   color:rgba(21, 101, 193, 1);
-  background-color: rgba(100, 100, 100, 0.40);
-}
-
-.menu-places-box {
-  padding: 10px;
-  border: 0px solid #666;
-}
-
-.menu-places-button {
-  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(100, 100, 100, 0.50);
 }
 
 .menu-categories-box {
-  padding: 10px 10px 10px 15px;
+  padding: 10px 15px;
 }
 
-.menu-applications-inner-box,
+.menu-applications-inner-box
 .menu-applications-outer-box {
   padding: 5px 5px 0 10px;
 }
 
 .menu-application-button {
   padding: 7px;
+  max-width: 10px;
 }
 
 .menu-application-button:highlighted {
@@ -1329,10 +1253,6 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   padding: 7px;
   color: white;
   background-color: rgba(21, 101, 193, 1);
-}
-
-.menu-application-button-selected:highlighted {
-  font-weight: bold;
 }
 
 .menu-application-button-selected:highlighted {
@@ -1361,10 +1281,6 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   border-left: 2px;
 }
 
-.menu-category-button-greyed StIcon {
-	opacity: 0.5;
-}
-
 .menu-category-button-selected {
   padding: 7px;
   color: white;
@@ -1380,25 +1296,13 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   padding-right: 5px;
 }
 
-.menu-category-button-button:hover {
-  background-color: #969696;
-  border-radius: 8px;
-}
-
 /* Name and description of the currently hovered item in the menu
 * This appears on the bottom right hand corner of the menu*/
-
 .menu-selected-app-box {
   padding-right: 30px;
   padding-left: 28px;
   text-align: right;
-  height: 30px;
   color: white;
-}
-
-.menu-selected-app-box:rtl {
-  padding-top: 10px;
-  height: 30px;
 }
 
 .menu-selected-app-title {
@@ -1409,40 +1313,42 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
   max-width: 150px;
 }
 
-.menu-search-box:ltr {
+.menu-search-box {
   padding-left: 15px;
-}
-
-.menu-search-box:rtl {
-  padding-right: 15px;
+  padding-right: 5px;
 }
 
 #menu-search-entry {
   padding: 0 5px;
-  font-size: 10pt;
   min-width: 250px;
   min-height: 25px;
-  color: white;
+  color: rgba(40, 40, 40, 1);
   transition-duration: 300;
   selection-background-color: rgba(21, 101, 193, 1);
-  selected-color: white;
-  caret-size: 1px;
+  selected-color: rgba(40, 40, 40, 1);
 }
 
 #menu-search-entry:focus,
 #menu-search-entry:hover {
-    background-color: rgba(60, 60, 60, 1);
-    border: 0.1em solid rgba(21, 101, 193, 1);
+  background-color: white;
+  border: 0.1em solid rgba(20, 20, 20, 1);
+}
+
+#menu-search-entry:hover {
+  transition-duration: 300;
+}
+
+#menu-search-entry:focus {
+  transition-duration: 0;
 }
 
 .menu-search-entry-icon {
   icon-size: 1.2em;
-  color: white;
+  color: rgba(40, 40, 40, 1);
 }
 
 /* Context menu (at the moment only for favorites) */
 .menu-context-menu {}
-
 
 /* ===================================================================
  * Window list (windowList.js)
@@ -2067,101 +1973,6 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 }
 
 /* ===================================================================
- * Desklets (desklet.js)
- * ===================================================================*/
-
-.desklet {
-  color: #fff;
-}
-
-.desklet:highlight, .desklet:highlight-with-borders, .desklet:highlight-with-borders-and-header {
-  background-color: #aa5555;
-}
-
-.desklet-with-borders {
-  border: 0px solid #a5a5a5;
-  background-color: rgba(47, 47, 47, 0.8);
-  color: #fff;
-  border-radius-bottomleft: 12px;
-  border-radius-bottomright: 12px;
-  border-radius-topleft: 12px;
-  border-radius-topright: 12px;
-}
-
-.desklet-with-borders-and-header {
-  border: 0px solid #a5a5a5;
-  background-color: rgba(47, 47, 47, 0.8);
-  color: #fff;
-  border-top: 1px;
-  border-radius-bottomleft: 12px;
-  border-radius-bottomright: 12px;
-}
-
-.desklet-header {
-  border-radius-topleft: 12px;
-  border-radius-topright: 12px;
-  font-size: 10.5pt;
-  border: 0px solid #a5a5a5;
-  border-bottom: 0px;
-  background-color: rgba(47, 47, 47, 0.8);
-  color: #fff;
-  padding: 6px;
-}
-
-.desklet-drag-placeholder {
-  border: 2px solid #6daa00;
-  background-color: rgba(109, 170, 0, 0.3);
-}
-
-/* ===================================================================
- * About Dialog (applet.js and desklet.js)
- * ===================================================================*/
-
-.about-content {
-  width: 550px;
-  height: 250px;
-  spacing: 8px;
-  padding-bottom: 16px;
-}
-
-.about-title {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.about-uuid {
-  font-size: .8em;
-}
-
-.about-icon {
-  padding-right: 20px;
-}
-
-.about-scrollBox {
-  border: solid 1px grey;
-  border-radius: 4px;
-}
-
-.about-scrollBox-innerBox {
-  padding: 1.2em;
-  spacing: 1.2em;
-}
-
-.about-description {
-  padding-top: 4px;
-}
-
-.about-version {
-  padding-left: 7px;
-}
-
-/* ===================================================================
- * Clock Desklet (desklet.js)
- * ===================================================================*/
-
-.clock-desklet-label {}
-
-/* ===================================================================
  * Workspace OSD
  * ===================================================================*/
 
@@ -2235,29 +2046,6 @@ background-image: url("common-assets/misc/calendar-arrow-left.svg");
 .popup-menu-content #notification {
   border-image: url("common-assets/misc/message.svg") 7;
   padding: .8em .8em .6em 1em;
-}
-
-/* Media keys OSD popup */
-
-.osd-window {
-  background: rgba(47, 47, 47, 1);
-  box-shadow: 0px 0px 4px 2px rgba(20, 20, 20, 0.60);
-  border: 1px solid #202020;
-  border-radius: 0px;
-  padding: 20px;
-  color: white;
-  spacing: 1em;
-}
-
-.osd-window .level {
-  height: 0.4em;
-  border-radius: 0.1em;
-  background-color: rgba(45, 45, 45, 1);
-}
-
-.osd-window .level-bar {
-  border-radius: 0.1em;
-  background-color: white;
 }
 
 .tile-preview,

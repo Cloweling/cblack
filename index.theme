@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
 Name=CBlack
-Comment=A dark flat theme
+Comment=A dark flat theme with transparent elements
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Mint-Y-Dark-Blue
-MetacityTheme=Mint-Y-Dark-Blue
-IconTheme=Mint-Y-Dark-Blue
+GtkTheme=CBlack
+MetacityTheme=CBlack
+IconTheme=Mint-Y
 CursorTheme=DMZ-Black
 ButtonLayout=menu:minimize,maximize,close
