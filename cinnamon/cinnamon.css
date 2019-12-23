@@ -1395,79 +1395,58 @@ StScrollBar StButton#vhandle:hover {
 
 /* List bottom */
 .window-list-item-box.bottom {
-  border-bottom-width: 2px;
+  /* TODO: NONE */
 }
 
 .window-list-item-box.bottom:hover {
-  border-color: rgba(21, 101, 193, 1);
+  border-image: url("common-assets/panel/list-bottom-hover.svg");
 }
 
 .window-list-item-box.bottom:checked,
 .window-list-item-box.bottom:focus {
-  background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(21, 101, 193, 1);
-}
-
-.window-list-item-box.bottom:outlined {
-  border-color: rgba(21, 101, 193, 1);
+  border-image: url("common-assets/panel/list-bottom.svg");
 }
 
 /* List top */
 .window-list-item-box.top {
-  border-top-width: 2px;
+  /* TODO: NONE */
 }
 
 .window-list-item-box.top:hover {
-  border-color: rgba(21, 101, 193, 1);
+  border-image: url("common-assets/panel/list-top-hover.svg");
 }
 
 .window-list-item-box.top:checked,
 .window-list-item-box.top:focus {
-  background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(21, 101, 193, 1);
-}
-
-.window-list-item-box.top:outlined {
-  border-color: rgba(21, 101, 193, 1);
+  border-image: url("common-assets/panel/list-top.svg");
 }
 
 /*List left*/
 .window-list-item-box.left {
-  border-left-width: 2px;
+  /* TODO: NONE */
 }
 
 .window-list-item-box.left:hover {
-  border-color: rgba(21, 101, 193, 1);
+  border-image: url("common-assets/panel/list-left-hover.svg");
 }
 
 .window-list-item-box.left:checked,
-.window-list-item-box.left:focus,
-.window-list-item-box.left:active {
-  background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(21, 101, 193, 1);
-}
-
-.window-list-item-box.left:outlined {
-  border-color: rgba(21, 101, 193, 1);
+.window-list-item-box.left:focus {
+  border-image: url("common-assets/panel/list-left.svg");
 }
 
 /*List right*/
 .window-list-item-box.right {
-  border-right-width: 2px;
+  /* TODO: NONE */
 }
 
 .window-list-item-box.right:hover {
-  border-color: rgba(21, 101, 193, 1);
+  border-image: url("common-assets/panel/list-right-hover.svg");
 }
 
 .window-list-item-box.right:checked,
 .window-list-item-box.right:focus {
-  background-color: rgba(200, 200, 200, 0.1);
-  border-color: rgba(21, 101, 193, 1);
-}
-
-.window-list-item-box.right:outlined {
-  border-color: rgba(21, 101, 193, 1);
+  border-image: url("common-assets/panel/list-right.svg");
 }
 
 .window-list-item-demands-attention {
