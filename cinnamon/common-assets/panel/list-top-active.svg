@@ -16,7 +16,7 @@
    id="svg6621"
    version="1.1"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="list-bottom-active.svg">
+   sodipodi:docname="list-top-active.svg">
   <defs
      id="defs6623">
     <linearGradient
@@ -43,9 +43,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="32"
-     inkscape:cx="12.349543"
-     inkscape:cy="27.391288"
+     inkscape:zoom="16"
+     inkscape:cx="-4.0628675"
+     inkscape:cy="16.227728"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -98,6 +98,6 @@
        width="32"
        height="2.0000174"
        x="-2.5e-07"
-       y="1021.3622" />
+       y="1049.3622" />
   </g>
 </svg>

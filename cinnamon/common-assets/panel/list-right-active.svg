@@ -16,7 +16,7 @@
    id="svg6621"
    version="1.1"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="list-bottom-active.svg">
+   sodipodi:docname="list-right-active.svg">
   <defs
      id="defs6623">
     <linearGradient
@@ -43,9 +43,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="32"
-     inkscape:cx="12.349543"
-     inkscape:cy="27.391288"
+     inkscape:zoom="16"
+     inkscape:cx="-4.0628675"
+     inkscape:cy="16.227728"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -54,9 +54,9 @@
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:window-width="1600"
-     inkscape:window-height="844"
-     inkscape:window-x="0"
+     inkscape:window-width="1566"
+     inkscape:window-height="878"
+     inkscape:window-x="34"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="true"
@@ -93,11 +93,11 @@
      id="layer1"
      transform="translate(0,-1020.3622)">
     <rect
-       style="opacity:1;fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:4.00001717;stroke-opacity:1"
+       style="opacity:1;fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:4.00000143;stroke-opacity:1"
        id="rect822"
-       width="32"
-       height="2.0000174"
-       x="-2.5e-07"
-       y="1021.3622" />
+       width="2.0000002"
+       height="32.000019"
+       x="0.99999988"
+       y="1020.3622" />
   </g>
 </svg>

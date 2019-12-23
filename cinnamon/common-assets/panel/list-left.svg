@@ -16,7 +16,7 @@
    id="svg6621"
    version="1.1"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="list-bottom-active.svg">
+   sodipodi:docname="list-left.svg">
   <defs
      id="defs6623">
     <linearGradient
@@ -43,9 +43,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="32"
-     inkscape:cx="12.349543"
-     inkscape:cy="27.391288"
+     inkscape:zoom="22.627416"
+     inkscape:cx="11.082843"
+     inkscape:cy="25.904372"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -54,8 +54,8 @@
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:window-width="1600"
-     inkscape:window-height="844"
+     inkscape:window-width="1566"
+     inkscape:window-height="878"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -65,7 +65,7 @@
        type="xygrid"
        id="grid7177" />
     <sodipodi:guide
-       position="16,35.000001"
+       position="16,31"
        orientation="1,0"
        id="guide818"
        inkscape:locked="false" />
@@ -93,11 +93,20 @@
      id="layer1"
      transform="translate(0,-1020.3622)">
     <rect
-       style="opacity:1;fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:4.00001717;stroke-opacity:1"
+       style="opacity:1;fill:#158ce6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.84565276px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect4157"
+       width="2.0000002"
+       height="32"
+       x="29"
+       y="1020.3622"
+       rx="0"
+       ry="0" />
+    <rect
+       style="opacity:0.4;fill:#646464;fill-opacity:0.39215686;stroke:none;stroke-width:5.05964422;stroke-opacity:1"
        id="rect822"
-       width="32"
-       height="2.0000174"
-       x="-2.5e-07"
-       y="1021.3622" />
+       width="28"
+       height="32.000019"
+       x="1"
+       y="1020.3622" />
   </g>
 </svg>
