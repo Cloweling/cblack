@@ -1448,7 +1448,7 @@ menu,
   border: 1px solid #292929; }
   .csd menu, .csd
   .menu {
-    padding: 4px 0px;
+    padding: 5px 0px;
     border-radius: 2px;
     border: none; }
   menu separator,
@@ -1456,8 +1456,9 @@ menu,
   .menu separator,
   .csd
   .menu separator {
-    margin: 2px 0;
-    background-color: #292929; }
+    margin: 4px 0px;
+    /* NOTE: Color before #292929  */
+    background-color: rgba(0, 0, 0, 0); }
   menu .separator:not(label),
   .csd menu .separator:not(label),
   .menu .separator:not(label),
@@ -2696,7 +2697,7 @@ tooltip,
   border: 1px solid rgb(20, 20, 20); }
   tooltip.background,
   .tooltip.background {
-    background-color: rgb(47, 47, 47);
+    background-color: #383838;
     background-clip: padding-box; }
     tooltip.background label,
     .tooltip.background label {
