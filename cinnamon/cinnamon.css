@@ -1515,84 +1515,90 @@ StScrollBar StButton#vhandle:hover {
 
 /* List bottom */
 .grouped-window-list-item-box.bottom {
-    border-top: 0.25em solid rgba(21, 101, 192, 0);
+    border-top: 3px solid rgba(21, 101, 192, 0);
 }
 
 .grouped-window-list-item-box.bottom:hover,
 .grouped-window-list-item-box.bottom:focus:hover,
 .grouped-window-list-item-box.bottom:active:hover {
-    border-top: rgba(21, 101, 192, 1);
+    border-color: rgba(21, 101, 192, 1);
     background-color: rgba(255, 255, 255, 0.06);
 }
 
 .grouped-window-list-item-box.bottom:checked,
 .grouped-window-list-item-box.bottom:active:focus {
-    border-top: rgba(21, 101, 192, 1);
+    border-color: rgba(21, 101, 192, 1);
     background-color: rgba(255, 255, 255, 0.10);
 }
 
 .grouped-window-list-item-box.bottom:active {
-    border-top: rgba(21, 101, 192, 1);
+    border-color: rgba(21, 101, 192, 0.4);
 }
 
 /* List top */
 .grouped-window-list-item-box.top {
-    /* TODO: NONE */
+    border-bottom: 3px solid rgba(21, 101, 192, 0);
 }
 
 .grouped-window-list-item-box.top:hover,
 .grouped-window-list-item-box.top:focus:hover,
 .grouped-window-list-item-box.top:active:hover {
-    border-image: url("common-assets/panel/list-top-hover.svg");
+    border-color: rgba(21, 101, 192, 1);
+    background-color: rgba(255, 255, 255, 0.06);
 }
 
 .grouped-window-list-item-box.top:checked,
 .grouped-window-list-item-box.top:active:focus {
-    border-image: url("common-assets/panel/list-top.svg");
+    border-color: rgba(21, 101, 192, 1);
+    background-color: rgba(255, 255, 255, 0.10);
 }
 
 .grouped-window-list-item-box.top:active {
-    border-image: url("common-assets/panel/list-top-active.svg");
+    border-color: rgba(21, 101, 192, 0.4);
 }
 
 /* List left */
 .grouped-window-list-item-box.left {
-    /* TODO: NONE */
+    border-right: 3px solid rgba(21, 101, 192, 0);
 }
 
 .grouped-window-list-item-box.left:hover,
 .grouped-window-list-item-box.left:focus:hover,
 .grouped-window-list-item-box.left:active:hover {
-    border-image: url("common-assets/panel/list-left-hover.svg");
+    border-color: rgba(21, 101, 192, 1);
+    background-color: rgba(255, 255, 255, 0.06);
 }
 
 .grouped-window-list-item-box.left:checked,
 .grouped-window-list-item-box.left:active:focus {
-    border-image: url("common-assets/panel/list-left.svg");
+    border-color: rgba(21, 101, 192, 1);
+    background-color: rgba(255, 255, 255, 0.10);
 }
 
 .grouped-window-list-item-box.left:active {
-    border-image: url("common-assets/panel/list-left-active.svg");
+    border-color: rgba(21, 101, 192, 0.4);
 }
 
 /* List right */
 .grouped-window-list-item-box.right {
-    /* TODO: NONE */
+    border-left: 5px solid rgba(21, 101, 192, 0);
 }
 
 .grouped-window-list-item-box.right:hover,
 .grouped-window-list-item-box.right:focus:hover,
 .grouped-window-list-item-box.right:active:hover {
-    border-image: url("common-assets/panel/list-right-hover.svg");
+    border-color: rgba(21, 101, 192, 1);
+    background-color: rgba(255, 255, 255, 0.06);
 }
 
 .grouped-window-list-item-box.right:checked,
 .grouped-window-list-item-box.right:active:focus {
-    border-image: url("common-assets/panel/list-right.svg");
+    border-color: rgba(21, 101, 192, 1);
+    background-color: rgba(255, 255, 255, 0.10);
 }
 
 .grouped-window-list-item-box.right:active {
-    border-image: url("common-assets/panel/list-right-active.svg");
+    border-color: rgba(21, 101, 192, 0.4);
 }
 
 .grouped-window-list-item-demands-attention {
