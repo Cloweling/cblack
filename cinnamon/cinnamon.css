@@ -1484,91 +1484,36 @@ StScrollBar StButton#vhandle:hover {
     padding-left: 2px;
 }
 
-/* List bottom */
 .grouped-window-list-item-box.bottom {
     border-top: 3px solid rgba(21, 101, 192, 0);
 }
 
-.grouped-window-list-item-box.bottom:hover,
-.grouped-window-list-item-box.bottom:focus:hover,
-.grouped-window-list-item-box.bottom:active:hover {
-    border-color: rgba(21, 101, 192, 1);
-    background-color: rgba(255, 255, 255, 0.06);
-}
-
-.grouped-window-list-item-box.bottom:checked,
-.grouped-window-list-item-box.bottom:active:focus {
-    border-color: rgba(21, 101, 192, 1);
-    background-color: rgba(255, 255, 255, 0.10);
-}
-
-.grouped-window-list-item-box.bottom:active {
-    border-color: rgba(21, 101, 192, 0.4);
-}
-
-/* List top */
 .grouped-window-list-item-box.top {
     border-bottom: 3px solid rgba(21, 101, 192, 0);
 }
 
-.grouped-window-list-item-box.top:hover,
-.grouped-window-list-item-box.top:focus:hover,
-.grouped-window-list-item-box.top:active:hover {
-    border-color: rgba(21, 101, 192, 1);
-    background-color: rgba(255, 255, 255, 0.06);
-}
-
-.grouped-window-list-item-box.top:checked,
-.grouped-window-list-item-box.top:active:focus {
-    border-color: rgba(21, 101, 192, 1);
-    background-color: rgba(255, 255, 255, 0.10);
-}
-
-.grouped-window-list-item-box.top:active {
-    border-color: rgba(21, 101, 192, 0.4);
-}
-
-/* List left */
 .grouped-window-list-item-box.left {
     border-right: 3px solid rgba(21, 101, 192, 0);
 }
 
-.grouped-window-list-item-box.left:hover,
-.grouped-window-list-item-box.left:focus:hover,
-.grouped-window-list-item-box.left:active:hover {
-    border-color: rgba(21, 101, 192, 1);
-    background-color: rgba(255, 255, 255, 0.06);
-}
-
-.grouped-window-list-item-box.left:checked,
-.grouped-window-list-item-box.left:active:focus {
-    border-color: rgba(21, 101, 192, 1);
-    background-color: rgba(255, 255, 255, 0.10);
-}
-
-.grouped-window-list-item-box.left:active {
-    border-color: rgba(21, 101, 192, 0.4);
-}
-
-/* List right */
 .grouped-window-list-item-box.right {
     border-left: 5px solid rgba(21, 101, 192, 0);
 }
 
-.grouped-window-list-item-box.right:hover,
-.grouped-window-list-item-box.right:focus:hover,
-.grouped-window-list-item-box.right:active:hover {
+.grouped-window-list-item-box:hover,
+.grouped-window-list-item-box:focus:hover,
+.grouped-window-list-item-box:active:hover {
     border-color: rgba(21, 101, 192, 1);
     background-color: rgba(255, 255, 255, 0.06);
 }
 
-.grouped-window-list-item-box.right:checked,
-.grouped-window-list-item-box.right:active:focus {
+.grouped-window-list-item-box:checked,
+.grouped-window-list-item-box:active:focus {
     border-color: rgba(21, 101, 192, 1);
     background-color: rgba(255, 255, 255, 0.10);
 }
 
-.grouped-window-list-item-box.right:active {
+.grouped-window-list-item-box:active {
     border-color: rgba(21, 101, 192, 0.4);
 }
 
