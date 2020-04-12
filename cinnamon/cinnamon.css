@@ -1389,60 +1389,31 @@ StScrollBar StButton#vhandle:hover {
     padding-left: 2px;
 }
 
-/* List bottom */
 .window-list-item-box.bottom {
-    /* TODO: NONE */
+    border-top: 3px solid rgba(21, 101, 192, 0);
 }
 
-.window-list-item-box.bottom:hover {
-    border-image: url("common-assets/panel/list-bottom-hover.svg");
-}
-
-.window-list-item-box.bottom:checked,
-.window-list-item-box.bottom:focus {
-    border-image: url("common-assets/panel/list-bottom.svg");
-}
-
-/* List top */
 .window-list-item-box.top {
-    /* TODO: NONE */
+    border-bottom: 3px solid rgba(21, 101, 192, 0);
 }
 
-.window-list-item-box.top:hover {
-    border-image: url("common-assets/panel/list-top-hover.svg");
-}
-
-.window-list-item-box.top:checked,
-.window-list-item-box.top:focus {
-    border-image: url("common-assets/panel/list-top.svg");
-}
-
-/*List left*/
 .window-list-item-box.left {
-    /* TODO: NONE */
+    border-right: 3px solid rgba(21, 101, 192, 0);
 }
 
-.window-list-item-box.left:hover {
-    border-image: url("common-assets/panel/list-left-hover.svg");
-}
-
-.window-list-item-box.left:checked,
-.window-list-item-box.left:focus {
-    border-image: url("common-assets/panel/list-left.svg");
-}
-
-/*List right*/
 .window-list-item-box.right {
-    /* TODO: NONE */
+    border-left: 5px solid rgba(21, 101, 192, 0);
 }
 
-.window-list-item-box.right:hover {
-    border-image: url("common-assets/panel/list-right-hover.svg");
+.window-list-item-box:hover {
+    border-color: rgba(21, 101, 192, 1);
+    background-color: rgba(255, 255, 255, 0.06);
 }
 
-.window-list-item-box.right:checked,
-.window-list-item-box.right:focus {
-    border-image: url("common-assets/panel/list-right.svg");
+.window-list-item-box:checked,
+.window-list-item-box:focus {
+    border-color: rgba(21, 101, 192, 1);
+    background-color: rgba(255, 255, 255, 0.10);
 }
 
 .window-list-item-demands-attention {
