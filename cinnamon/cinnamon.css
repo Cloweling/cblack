@@ -1390,19 +1390,19 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .window-list-item-box.bottom {
-    border-top: 3px solid rgba(21, 101, 192, 0);
-}
-
-.window-list-item-box.top {
     border-bottom: 3px solid rgba(21, 101, 192, 0);
 }
 
+.window-list-item-box.top {
+    border-top: 3px solid rgba(21, 101, 192, 0);
+}
+
 .window-list-item-box.left {
-    border-right: 3px solid rgba(21, 101, 192, 0);
+    border-left: 3px solid rgba(21, 101, 192, 0);
 }
 
 .window-list-item-box.right {
-    border-left: 5px solid rgba(21, 101, 192, 0);
+    border-right: 5px solid rgba(21, 101, 192, 0);
 }
 
 .window-list-item-box:hover {
@@ -1485,19 +1485,19 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-item-box.bottom {
-    border-top: 3px solid rgba(21, 101, 192, 0);
-}
-
-.grouped-window-list-item-box.top {
     border-bottom: 3px solid rgba(21, 101, 192, 0);
 }
 
+.grouped-window-list-item-box.top {
+    border-top: 3px solid rgba(21, 101, 192, 0);
+}
+
 .grouped-window-list-item-box.left {
-    border-right: 3px solid rgba(21, 101, 192, 0);
+    border-left: 3px solid rgba(21, 101, 192, 0);
 }
 
 .grouped-window-list-item-box.right {
-    border-left: 5px solid rgba(21, 101, 192, 0);
+    border-right: 5px solid rgba(21, 101, 192, 0);
 }
 
 .grouped-window-list-item-box:hover,
