@@ -17,7 +17,7 @@ stage {
 }
 
 StScrollBar {
-    padding: 8px;
+    padding: 8px 0px;
 }
 
 StScrollView.vfade {
@@ -29,21 +29,18 @@ StScrollView.hfade {
 }
 
 StScrollView StScrollBar {
-    min-width: 5px;
-    min-height: 5px;
+    min-width: 7px;
+    min-height: 7px;
 }
 
 StScrollBar StBin#trough {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px solid #555555;
-    border-radius: 0px;
 }
 
 StScrollBar StButton#vhandle,
 StScrollBar StButton#hhandle {
     background-color: rgba(80, 80, 80, 1);
-    border: 0px solid rgba(80, 80, 80, 1);
-    border-radius: 8px;
+    border-radius: 2px;
 }
 
 StScrollBar StButton#hhandle:hover,
@@ -1311,7 +1308,6 @@ StScrollBar StButton#vhandle:hover {
 
 .menu-search-box {
     padding-left: 15px;
-    padding-right: 5px;
 }
 
 #menu-search-entry {
@@ -1988,9 +1984,5 @@ StScrollBar StButton#vhandle:hover {
 * tray icons are not themed
 * ===================================================================*/
 .systray {
-    spacing: 5px;
-}
-
-.starkmenu {
-    background-color: red;
+    spacing: 4px;
 }
