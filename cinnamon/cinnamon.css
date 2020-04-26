@@ -1984,5 +1984,112 @@ StScrollBar StButton#vhandle:hover {
 * tray icons are not themed
 * ===================================================================*/
 .systray {
-    spacing: 4px;
+    spacing: 5px;
+}
+
+/* ===================================================================
+ * CinnVIIStarkMenu Applet
+ * ===================================================================*/
+
+.starkmenu-favorites-box .menu-category-button:last-child {
+    border: none;
+    color: #ccc;
+}
+
+.starkmenu-favorites-box .menu-category-button-selected:last-child {
+    border: none;
+    color: #fff;
+}
+
+.starkmenu-favorites-box {
+    padding: 5px;
+    border: 1px solid #202020;
+    border-radius: 4px;
+    background-color: rgba(65, 65, 65, 1);
+}
+
+.starkmenu-favorites-box .menu-favorites-button {
+    border: 1px solid rgba(0, 0, 0, 0, 0);
+}
+
+.starkmenu-favorites-box .menu-favorites-button:hover {
+    color: white;
+    background-color: rgba(21, 101, 192, 1);
+    border-radius: 4px;
+    border-color: #202020;
+}
+
+.starkmenu-quicklink-button {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.starkmenu-quit-vertical-button,
+.starkmenu-logout-vertical-button,
+.starkmenu-lockscreen-vertical-button {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.starkmenu-quit-horizontal-button,
+.starkmenu-logout-horizontal-button,
+.starkmenu-lockscreen-horizontal-button {
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+}
+
+.starkmenu-quit-horizontal-button-selected,
+.starkmenu-logout-horizontal-button-selected,
+.starkmenu-lockscreen-horizontal-button-selected {
+    border: 1px solid #202020;
+    border-radius: 4px;
+    background-color: rgba(100, 100, 100, 0.5);
+    padding: 0px;
+}
+
+.starkmenu-quit-dropdown-button,
+.starkmenu-arrow-dropdown-button {
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.starkmenu-quit-dropdown-button-selected,
+.starkmenu-arrow-dropdown-button-selected {
+    border: 1px solid #202020;
+    border-radius: 4px;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.starkhover-box .popup-menu-item {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+}
+
+.starkhover-box .popup-menu-item:hover {
+    color: white;
+    background-color: rgba(21, 101, 192, 1);
+    border-color: #202020;
+}
+
+.starkmenu-favorites-box .menu-categories-box .menu-category-button {
+    border-color:rgba(100, 100, 100, 0);
+}
+
+.starkmenu-applications-inner-box .menu-application-button {
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.starkmenu-applications-inner-box .menu-application-button-selected {
+    color: white;
+    background-color: rgba(21, 101, 192, 1);
+    border: 1px solid #202020;
+    border-radius: 4px;
+}
+
+.starkmenu-favorites-box StScrollBar {
+    padding: 0px;
+}
+
+.starkmenu-favorites-box StScrollView StScrollBar {
+    min-width: 0px;
+    min-height: 0px;
 }
