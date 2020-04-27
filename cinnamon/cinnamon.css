@@ -1235,6 +1235,8 @@ StScrollBar StButton#vhandle:hover {
 .menu-application-button {
     padding: 7px;
     max-width: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
 }
 
 .menu-application-button:highlighted {
@@ -1246,6 +1248,8 @@ StScrollBar StButton#vhandle:hover {
     padding: 7px;
     color: white;
     background-color: rgba(21, 101, 192, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 4px;
 }
 
 .menu-application-button-selected:highlighted {
