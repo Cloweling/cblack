@@ -17,7 +17,7 @@ stage {
 }
 
 StScrollBar {
-    padding: 8px 0px;
+    padding: 0px 0px;
 }
 
 StScrollView.vfade {
@@ -29,8 +29,8 @@ StScrollView.hfade {
 }
 
 StScrollView StScrollBar {
-    min-width: 7px;
-    min-height: 7px;
+    min-width: 0px;
+    min-height: 0px;
 }
 
 StScrollBar StBin#trough {
@@ -151,7 +151,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .popup-sub-menu {
-    background-color: rgb(55, 55, 55);
+    background-color: rgb(65, 65, 65);
 }
 
 .popup-sub-menu .popup-menu-item:ltr {
@@ -190,12 +190,17 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .popup-menu-item {
-    padding: 0.4em 1.75em;
+    padding: 0.4em 1.4em;
     spacing: 0.5em;
+    border-bottom: 1px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
 }
 
 .popup-menu-item:active {
     background-color: rgba(21, 101, 192, 1);
+    border-color: #202020;
     color: white;
 }
 
@@ -284,14 +289,20 @@ StScrollBar StButton#vhandle:hover {
     background-color: rgba(47, 47, 47, 1);
 }
 
-.panel-left,
-.panel-right {
-    box-shadow: 2px 2px 0px 0px rgba(20, 20, 20, 0.6);
+.panel-left {
+    box-shadow: 1px 0px 0px 0px rgba(20, 20, 20, 1);
 }
 
-.panel-top,
+.panel-right {
+    box-shadow: -1px 0px 0px 0px rgba(20, 20, 20, 1);
+}
+
+.panel-top {
+    box-shadow: 0px 1px 0px 0px rgba(20, 20, 20, 1);
+}
+
 .panel-bottom {
-    box-shadow: 0px 0px 2px 2px rgba(20, 20, 20, 0.6);
+    box-shadow: 0px -1px 0px 0px rgba(20, 20, 20, 1);
 }
 
 #panel:highlight {
@@ -441,7 +452,7 @@ StScrollBar StButton#vhandle:hover {
 
 .window-caption {
     background-color: rgba(47, 47, 47, 1);
-    border: 1px solid rgba(21, 101, 192, 1);
+    border: 1px solid #202020;
     color: white;
     padding: 0.5em;
     spacing: 0.5em;
@@ -450,7 +461,6 @@ StScrollBar StButton#vhandle:hover {
 
 .window-caption:focus {
     color: white;
-    font-weight: bold;
     background-color: rgba(21, 101, 192, 1);
 }
 
@@ -539,7 +549,7 @@ StScrollBar StButton#vhandle:hover {
  * Desklets (desklet.js)
  * ===================================================================*/
 .desklet {
-    color: #fff;
+    color: #ccc;
 }
 
 .desklet:highlight,
@@ -549,9 +559,10 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .desklet-with-borders {
-    border: 0px solid #a5a5a5;
-    background-color: rgba(47, 47, 47, 0.8);
-    color: #fff;
+    border: 1px solid #202020;
+    padding: 5px 10px;
+    background-color: rgba(47, 47, 47, 0);
+    color: #ccc;
     border-radius-bottomleft: 12px;
     border-radius-bottomright: 12px;
     border-radius-topleft: 12px;
@@ -579,7 +590,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .desklet-drag-placeholder {
-    border: 2px solid #6daa00;
+    border: 0px solid #6daa00;
     background-color: rgba(109, 170, 0, 0.3);
 }
 
@@ -706,7 +717,7 @@ StScrollBar StButton#vhandle:hover {
 .calendar-work-day {}
 
 .calendar-nonwork-day {
-    background-color: rgba(47, 47, 47, 1);
+    background-color: rgba(20, 20, 20, 0.05);
 }
 
 .calendar-today {
@@ -763,16 +774,16 @@ StScrollBar StButton#vhandle:hover {
     max-height: 10em;
 }
 
-#notification-scrollview>.top-shadow,
-#notification-scrollview>.bottom-shadow {
+#notification-scrollview >.top-shadow,
+#notification-scrollview >.bottom-shadow {
     height: 1em;
 }
 
-#notification-scrollview:ltr>StScrollBar {
+#notification-scrollview:ltr > StScrollBar {
     padding-left: 6px;
 }
 
-#notification-scrollview:rtl>StScrollBar {
+#notification-scrollview:rtl > StScrollBar {
     padding-right: 6px;
 }
 
@@ -802,7 +813,7 @@ StScrollBar StButton#vhandle:hover {
     padding: 4px;
 }
 
-.notification-icon-button>StIcon {
+.notification-icon-button > StIcon {
     icon-size: 20px;
 }
 
@@ -833,10 +844,9 @@ StScrollBar StButton#vhandle:hover {
 .switcher-list {
     background: rgba(47, 47, 47, 1);
     border: 1px solid #202020;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 9pt;
     color: white;
-    text-shadow: 0px 0px 12px 6px #202020;
 }
 
 .switcher-list-item-container {
@@ -875,6 +885,7 @@ StScrollBar StButton#vhandle:hover {
 
 .switcher-list .item-box:selected {
     background-color: rgba(21, 101, 192, 1);
+    border: 1px solid #202020;
 }
 
 .switcher-list .thumbnail-box {
@@ -1037,7 +1048,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .lightbox {
-    background-color: rgba(20, 20, 20, 0.4);
+    background-color: rgba(20, 20, 20, 0.6);
 }
 
 /* =============================================================================
@@ -1209,9 +1220,9 @@ StScrollBar StButton#vhandle:hover {
 /* Main menu title */
 .menu-favorites-box {
     padding: 5px;
-    border: 1px solid #202020;
+    border: 1px solid #000000;
     border-radius: 4px;
-    background-color: rgba(65, 65, 65, 1);
+    background-color: rgba(35, 35, 35, 1);
 }
 
 .menu-favorites-button {
@@ -1994,7 +2005,7 @@ StScrollBar StButton#vhandle:hover {
 /* ===================================================================
  * CinnVIIStarkMenu Applet
  * ===================================================================*/
-
+ /* All programs */
 .starkmenu-favorites-box .menu-category-button:last-child {
     border: none;
     color: #ccc;
@@ -2005,11 +2016,12 @@ StScrollBar StButton#vhandle:hover {
     color: #fff;
 }
 
+/* Favorite box */
 .starkmenu-favorites-box {
     padding: 5px;
-    border: 1px solid #202020;
+    border: 1px solid #000000;
     border-radius: 4px;
-    background-color: rgba(65, 65, 65, 1);
+    background-color: rgba(45, 45, 45, 1);
 }
 
 .starkmenu-favorites-box .menu-favorites-button {
@@ -2023,6 +2035,7 @@ StScrollBar StButton#vhandle:hover {
     border-color: #202020;
 }
 
+/* Menu power off */
 .starkmenu-quicklink-button {
     border-color: rgba(0, 0, 0, 0);
 }
@@ -2074,6 +2087,7 @@ StScrollBar StButton#vhandle:hover {
     border-color: #202020;
 }
 
+/* Menu category and application */
 .starkmenu-favorites-box .menu-categories-box .menu-category-button {
     border-color:rgba(100, 100, 100, 0);
 }
@@ -2089,6 +2103,7 @@ StScrollBar StButton#vhandle:hover {
     border-radius: 4px;
 }
 
+/* Scroll */
 .starkmenu-favorites-box StScrollBar {
     padding: 0px;
 }
