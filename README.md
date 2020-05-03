@@ -47,3 +47,7 @@ You modify the last value between 0 (full transparency) to 1 (full visibility)
 **What is the GTK theme based on?**
 
 It is based on the Linux Mint theme, only the colors, tooltip and the menu were modified.
+
+**Where can I get the wallpaper?**
+
+[Click here to download wallpaper](https://mocah.org/4536956-night-moon-dark-minimalism-digital-art.html)

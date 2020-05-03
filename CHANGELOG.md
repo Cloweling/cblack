@@ -1,3 +1,10 @@
+### Update 3.0.0
+* Support CSS CinnVIIStarkMenu Applet
+* Border most Highlighted
+* Round the edges of the container
+* Change the status style of an application on Grouped window list Apple
+* Update theme GTK
+
 ### Upadate 1.6
 * Compatible with cinnamon 4.
 * Added the new menu icon.
