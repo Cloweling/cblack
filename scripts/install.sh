@@ -3,7 +3,7 @@
 PREFIX="src/"
 LOCAL="/usr/share/themes"
 
-# Is root
+# It is not root
 if ! [ $(id -u) = 0 ]
 then
     if [ ! -d /home/$USER/.themes ]
