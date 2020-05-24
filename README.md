@@ -10,8 +10,29 @@ The theme is based on Linux Mint Dark and includes the gtk/gtk+ theme.
 
 ### Installation
 
+#### Install manually
+
 * Download the zip file and extract the folder.
-* Move the document to the .themes folder located in the /home/$USER/.themes
+* Copy the folder to .themes folder located in the /home/$USER/.themes
+
+----
+
+#### Install by makefile
+
+* Clone repository
+
+        git clone https://github.com/Cloweling/cblack.git
+
+* Enter the repository folder and type the following command in terminal
+
+        make install
+
+    **Note:** if you type sudo make install (theme is installed in **/usr/share/themes** and without sudo theme is installed **/home/$USER/.themes**)
+
+### Uninstall
+
+* Remove the CBlack file in **/home/$USER/.themes** or **/usr/share/themes**
+
 
 ## FQA
 
