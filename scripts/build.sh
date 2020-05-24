@@ -1,55 +1,55 @@
 #!/bin/bash
 
 PREFIX="src/"
-BUILD_LINUXMINT="build/linuxmint"
-BUILD_CINNAMON_LOOK="build/cinnamon_look"
+BUILD_SPICES="dist/spices"
+BUILD_OPENDESKTOP="dist/opendesktop"
 
-if ! [ -d build ]
+if ! [ -d dist ]
 then
-    mkdir -m 755 build
-    echo "Created build"
+    mkdir -m 755 dist
+    echo "Created dist"
 fi
 
 ## Build Repository Linux Mint
-if ! [ -d $BUILD_LINUXMINT ]
+if ! [ -d $BUILD_SPICES ]
 then
-    mkdir -m 755 $BUILD_LINUXMINT
-    echo "Created "$BUILD_LINUXMINT
+    mkdir -m 755 $BUILD_SPICES
+    echo "Created "$BUILD_SPICES
 else
-    rm -rf $BUILD_LINUXMINT
-    mkdir -m 755 $BUILD_LINUXMINT
-    echo "Created "$BUILD_LINUXMINT
+    rm -rf $BUILD_SPICES
+    mkdir -m 755 $BUILD_SPICES
+    echo "Created "$BUILD_SPICES
 fi
 
 ## copy file
-mkdir -m 755 -p $BUILD_LINUXMINT/CBlack/files/CBlack
-cp -prf $PREFIX/CHANGELOG.md $BUILD_LINUXMINT/CBlack/
-cp -prf $PREFIX/info.json $BUILD_LINUXMINT/CBlack/
-cp -prf $PREFIX/README.md $BUILD_LINUXMINT/CBlack/
-cp -prf $PREFIX/screenshot.png $BUILD_LINUXMINT/CBlack/
-cp -prf $PREFIX/cinnamon $BUILD_LINUXMINT/CBlack/files/CBlack/
-cp -prf $PREFIX/gtk-2.0 $BUILD_LINUXMINT/CBlack/files/CBlack/
-cp -prf $PREFIX/gtk-3.0 $BUILD_LINUXMINT/CBlack/files/CBlack/
-cp -prf $PREFIX/metacity-1 $BUILD_LINUXMINT/CBlack/files/CBlack/
-cp -prf $PREFIX/xfwm4 $BUILD_LINUXMINT/CBlack/files/CBlack/
-cp -prf $PREFIX/index.theme $BUILD_LINUXMINT/CBlack/files/CBlack/
+mkdir -m 755 -p $BUILD_SPICES/CBlack/files/CBlack
+cp -prf $PREFIX/CHANGELOG.md $BUILD_SPICES/CBlack/
+cp -prf $PREFIX/info.json $BUILD_SPICES/CBlack/
+cp -prf $PREFIX/README.md $BUILD_SPICES/CBlack/
+cp -prf $PREFIX/screenshot.png $BUILD_SPICES/CBlack/
+cp -prf $PREFIX/cinnamon $BUILD_SPICES/CBlack/files/CBlack/
+cp -prf $PREFIX/gtk-2.0 $BUILD_SPICES/CBlack/files/CBlack/
+cp -prf $PREFIX/gtk-3.0 $BUILD_SPICES/CBlack/files/CBlack/
+cp -prf $PREFIX/metacity-1 $BUILD_SPICES/CBlack/files/CBlack/
+cp -prf $PREFIX/xfwm4 $BUILD_SPICES/CBlack/files/CBlack/
+cp -prf $PREFIX/index.theme $BUILD_SPICES/CBlack/files/CBlack/
 
 ## Build Repository Cinnamon Look
-if ! [ -d $BUILD_CINNAMON_LOOK ]
+if ! [ -d $BUILD_OPENDESKTOP ]
 then
-    mkdir -m 755 $BUILD_CINNAMON_LOOK
-    echo "Created "$BUILD_CINNAMON_LOOK
+    mkdir -m 755 $BUILD_OPENDESKTOP
+    echo "Created "$BUILD_OPENDESKTOP
 else
-    rm -rf $BUILD_CINNAMON_LOOK
-    mkdir -m 755 $BUILD_CINNAMON_LOOK
-    echo "Created "$BUILD_CINNAMON_LOOK
+    rm -rf $BUILD_OPENDESKTOP
+    mkdir -m 755 $BUILD_OPENDESKTOP
+    echo "Created "$BUILD_OPENDESKTOP
 fi
 
 ## copy file
-mkdir -m 755 $BUILD_CINNAMON_LOOK/CBlack
-cp -prf $PREFIX/cinnamon $BUILD_CINNAMON_LOOK/CBlack/
-cp -prf $PREFIX/gtk-2.0 $BUILD_CINNAMON_LOOK/CBlack/
-cp -prf $PREFIX/gtk-3.0 $BUILD_CINNAMON_LOOK/CBlack/
-cp -prf $PREFIX/metacity-1 $BUILD_CINNAMON_LOOK/CBlack/
-cp -prf $PREFIX/xfwm4 $BUILD_CINNAMON_LOOK/CBlack/
-cp -prf $PREFIX/index.theme $BUILD_CINNAMON_LOOK/CBlack/
+mkdir -m 755 $BUILD_OPENDESKTOP/CBlack
+cp -prf $PREFIX/cinnamon $BUILD_OPENDESKTOP/CBlack/
+cp -prf $PREFIX/gtk-2.0 $BUILD_OPENDESKTOP/CBlack/
+cp -prf $PREFIX/gtk-3.0 $BUILD_OPENDESKTOP/CBlack/
+cp -prf $PREFIX/metacity-1 $BUILD_OPENDESKTOP/CBlack/
+cp -prf $PREFIX/xfwm4 $BUILD_OPENDESKTOP/CBlack/
+cp -prf $PREFIX/index.theme $BUILD_OPENDESKTOP/CBlack/
