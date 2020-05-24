@@ -26,7 +26,7 @@ mkdir -m 755 -p $BUILD_SPICES/CBlack/files/CBlack
 cp -prf $PREFIX/CHANGELOG.md $BUILD_SPICES/CBlack/
 cp -prf $PREFIX/info.json $BUILD_SPICES/CBlack/
 cp -prf $PREFIX/README.md $BUILD_SPICES/CBlack/
-cp -prf $PREFIX/screenshot.png $BUILD_SPICES/CBlack/
+cp -prf $PREFIX/screenshot/screenshot.png $BUILD_SPICES/CBlack/
 cp -prf $PREFIX/cinnamon $BUILD_SPICES/CBlack/files/CBlack/
 cp -prf $PREFIX/gtk-2.0 $BUILD_SPICES/CBlack/files/CBlack/
 cp -prf $PREFIX/gtk-3.0 $BUILD_SPICES/CBlack/files/CBlack/

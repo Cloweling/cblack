@@ -4,9 +4,9 @@
 
 The theme is based on Linux Mint Dark and includes the gtk/gtk+ theme.
 
-### Screenshot
+### Screenshot Theme
 
-![ScreenShot Cinnamon Theme](/screenshot/screenshot1.png)
+![ScreenShot Cinnamon Theme](src/screenshot/screenshot.png)
 
 ### Installation
 
