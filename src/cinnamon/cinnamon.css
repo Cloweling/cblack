@@ -1327,7 +1327,8 @@ StScrollBar StButton#vhandle:hover {
 
 #menu-search-entry {
     padding: 0 5px;
-    min-width: 250px;
+    min-width: 385px;
+    max-width: 385px;
     min-height: 25px;
     color: rgba(40, 40, 40, 1);
     transition-duration: 300;
