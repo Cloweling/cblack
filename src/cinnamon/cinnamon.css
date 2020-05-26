@@ -1278,22 +1278,20 @@ StScrollBar StButton#vhandle:hover {
 
 .menu-category-button {
     padding: 7px;
-    border: 0px solid rgba(47, 47, 47, 1);
-    border-left: 2px;
 }
 
 .menu-category-button-greyed {
     padding: 7px;
     color: white;
-    border: 0px solid rgba(47, 47, 47, 1);
-    border-left: 2px;
 }
 
 .menu-category-button-selected {
     padding: 7px;
     color: white;
-    border: 0px solid rgba(21, 101, 192, 1);
-    border-left: 2px;
+    border-radius: 4px;
+    background-gradient-start: rgba(21, 101, 192, 1);
+    background-gradient-end: rgba(47, 47, 47, 1);
+    background-gradient-direction: horizontal;
 }
 
 .menu-category-button-label:ltr {
