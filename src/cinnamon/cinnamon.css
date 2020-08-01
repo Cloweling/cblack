@@ -1431,7 +1431,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .window-list-item-box .progress {
-    background-color: rgba(49, 111, 255, 0.1);
+    background-color: rgba(152, 238, 153, 0.2);
 }
 
 .window-list-preview {
@@ -1459,9 +1459,10 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-badge {
-    border-radius: 256px;
-    background-color: rgb(100, 100, 100);
-    box-shadow: inset 0px 0px 0px 1px rgba(100, 100, 100, 1);
+    padding: 1px;
+    border-radius: 3px;
+    background-color: #383838;
+    box-shadow: inset 0px 0px 0px 1px rgba(60, 60, 60, 1);
 }
 
 .grouped-window-list-button-label {
@@ -1533,7 +1534,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-item-box .progress {
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: rgba(152, 238, 153, 0.2);
 }
 
 .panel-top .grouped-window-list-item-box .progress {
@@ -1549,30 +1550,30 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-thumbnail-menu {
-    background: rgba(47, 47, 47, 1);
-    border: 1px solid #202020;
-    border-radius: 0px;
+    background-color: #383838;
+    border: 1px solid rgba(20, 20, 20, 0);
+    border-radius: 5px;
     font-size: 9pt;
     color: white;
     text-shadow: #202020 0px 0px 2px;
-    padding: 8px;
-    spacing: 4px;
+    padding: 1px;
+    spacing: 0px;
 }
 
 .grouped-window-list-thumbnail-menu .item-box {
-    padding: 10px;
-    border: 1px solid #202020;
-    border-radius: 0px;
-    spacing: 4px;
+    padding: 0px;
+    border: 1px solid rgba(20, 20, 20, 0);
+    border-radius: 5px;
+    spacing: 0px;
 }
 
 .grouped-window-list-thumbnail-menu .item-box:outlined {
-    padding: 6px;
+    padding: 10px;
     border: 1px solid rgba(21, 101, 192, 1);
 }
 
 .grouped-window-list-thumbnail-menu .item-box:selected {
-    background: rgba(70, 70, 70, 1);
+    background: rgba(100, 100, 100, 0.3);
 }
 
 .grouped-window-list-thumbnail-menu .thumbnail {
@@ -1580,7 +1581,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-thumbnail-menu .separator {
-    width: 1px;
+    width: 10px;
     background: rgba(255, 255, 255, 0.2);
 }
 
