@@ -973,10 +973,9 @@ StScrollBar StButton#vhandle:hover {
 
 /* Info OSD popup */
 .info-osd {
-    font-size: 18pt;
-    border-radius: 0px;
-    background-color: rgba(47, 47, 47, 1);
-    border: 1px solid #202020;
+    font-size: 1.5em;
+    border-radius: 24px;
+    background-color: rgba(47, 47, 47, 0.4);
     color: white;
     padding: 20px;
     text-align: center;
