@@ -973,33 +973,33 @@ StScrollBar StButton#vhandle:hover {
 
 /* Info OSD popup */
 .info-osd {
-    font-size: 1.5em;
-    border-radius: 24px;
-    background-color: rgba(47, 47, 47, 0.4);
+    font-size: 2.5em;
+    background-color: rgba(47, 47, 47, 0.9);
+    border: 1px solid rgba(20, 20, 20, 1);
+    border-radius: 10px;
     color: white;
     padding: 20px;
     text-align: center;
+
 }
 
 /* Media keys OSD popup */
 .osd-window {
-    background: rgba(47, 47, 47, 1);
-    box-shadow: 0px 0px 4px 2px rgba(20, 20, 20, 0.6);
-    border: 1px solid #202020;
-    border-radius: 0px;
-    padding: 20px;
+    background: rgba(47, 47, 47, 0.9);
+    border: 1px solid rgba(20, 20, 20, 1);
+    border-radius: 10px;
+    padding: 15px;
     color: white;
     spacing: 1em;
 }
 
 .osd-window .level {
     height: 0.4em;
-    border-radius: 0.1em;
-    background-color: rgba(47, 47, 47, 1);
+    border-radius: 0em;
 }
 
 .osd-window .level-bar {
-    border-radius: 0.3em;
+    border-radius: 0em;
     background-color: white;
 }
 
@@ -1495,19 +1495,19 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-item-box.bottom {
-    border-bottom: 3px solid rgba(21, 101, 192, 0);
+    border-bottom: 2px solid rgba(21, 101, 192, 0);
 }
 
 .grouped-window-list-item-box.top {
-    border-top: 3px solid rgba(21, 101, 192, 0);
+    border-top: 2px solid rgba(21, 101, 192, 0);
 }
 
 .grouped-window-list-item-box.left {
-    border-left: 3px solid rgba(21, 101, 192, 0);
+    border-left: 2px solid rgba(21, 101, 192, 0);
 }
 
 .grouped-window-list-item-box.right {
-    border-right: 5px solid rgba(21, 101, 192, 0);
+    border-right: 2px solid rgba(21, 101, 192, 0);
 }
 
 .grouped-window-list-item-box:hover,
@@ -1524,7 +1524,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-item-box:active {
-    border-color: rgba(21, 101, 192, 0.4);
+    border-color: rgba(100, 100, 100, 1);
 }
 
 .grouped-window-list-item-demands-attention {
@@ -1855,10 +1855,10 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 .workspace-osd {
     color: white;
-    text-shadow: black 5px 5px 5px;
+    border: 1px solid rgba(20, 20, 20, 1);
+    border-radius: 10px;
     font-weight: bold;
-    font-size: 48pt;
-    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.6);
+    font-size: 3.5em;
 }
 
 /* ===================================================================
