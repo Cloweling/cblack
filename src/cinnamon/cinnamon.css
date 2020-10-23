@@ -3,7 +3,6 @@
  * ... contains a few cinnamon specific styles (rare occurrences)
  * ###################################################################*/
 stage {
-    font-family: Ubuntu, Roboto, Cantarell, sans-serif;
     font-size: 1em;
     color: #f0f0f0;
 }
@@ -1459,9 +1458,10 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-badge {
-    padding: 1px;
+    padding: 0px;
     border-radius: 3px;
     background-color: #383838;
+    font-size: 5px;
     box-shadow: inset 0px 0px 0px 1px rgba(60, 60, 60, 1);
 }
 
