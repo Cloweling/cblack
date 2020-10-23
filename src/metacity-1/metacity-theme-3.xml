@@ -42,7 +42,7 @@
 
 <!-- geometries -->
 
-<frame_geometry name="normal" title_scale="medium" rounded_top_left="1" rounded_top_right="1">
+<frame_geometry name="normal" title_scale="medium" rounded_top_left="8" rounded_bottom_left="8" rounded_bottom_right="8" rounded_top_right="8">
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
 	<distance name="bottom_height" value="0" />
@@ -55,7 +55,7 @@
   <distance name="button_height" value="16"/>
 </frame_geometry>
 
-<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="1" rounded_top_right="1" parent="normal">
+<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="8" rounded_bottom_left="8" rounded_bottom_right="8" rounded_top_right="8" parent="normal">
 </frame_geometry>
 
 <frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
@@ -80,7 +80,7 @@
 	<distance name="bottom_height" value="1" />
 </frame_geometry>
 
-<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="1" rounded_top_right="1">
+<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="8" rounded_bottom_left="8" rounded_bottom_right="8" rounded_top_right="8">
 	<distance name="title_vertical_pad" value="7"/>
 	<distance name="left_titlebar_edge" value="1"/>
 	<distance name="right_titlebar_edge" value="1"/>
@@ -108,11 +108,11 @@
     <distance name="button_height" value="0"/>
 </frame_geometry>
 
-<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="1" rounded_top_right="1" parent="small">
+<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="8" rounded_bottom_left="8" rounded_bottom_right="8" rounded_top_right="8" parent="small">
 	<distance name="title_vertical_pad" value="5"/>
 </frame_geometry>
 
-<frame_geometry name="attached" title_scale="small" hide_buttons="true" rounded_top_left="1" rounded_top_right="1" parent="small">
+<frame_geometry name="attached" title_scale="small" hide_buttons="true" rounded_top_left="8" rounded_bottom_left="8" rounded_bottom_right="8" rounded_top_right="8" parent="small">
 	<distance name="title_vertical_pad" value="5"/>
 </frame_geometry>
 
@@ -183,16 +183,6 @@
 
 <draw_ops name="border_unfocused">
 	<rectangle color="C_wm_bg_unfocused" x="0" y="0" width="width" height="height" filled="false" />
-</draw_ops>
-
-<draw_ops name="border_tiled_right">
-	<line x1="0" y1="0" x2="0" y2="height" color="C_wm_border" />
-	<line x1="1" y1="height-1" x2="width" y2="height-1" color="C_wm_border" />
-</draw_ops>
-
-<draw_ops name="border_tiled_left">
-	<line x1="width-1" y1="0" x2="width-1" y2="height" color="C_wm_border" />
-	<line x1="1" y1="height-1" x2="width" y2="height-1" color="C_wm_border" />
 </draw_ops>
 
 <draw_ops name="border_max">
@@ -988,7 +978,6 @@
 
 <frame_style name="tiled_left_focused" geometry="tiled_left">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="overlay" draw_ops="border_tiled_left" />
 	<piece position="titlebar" draw_ops="titlebar_focused" />
 	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal" draw_ops="close_focused" />
@@ -1023,7 +1012,6 @@
 
 <frame_style name="tiled_left_unfocused" geometry="tiled_left">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="overlay" draw_ops="border_tiled_left" />
 	<piece position="titlebar" draw_ops="titlebar_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
@@ -1058,7 +1046,6 @@
 
 <frame_style name="tiled_right_focused" geometry="tiled_right">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="overlay" draw_ops="border_tiled_right" />
 	<piece position="titlebar" draw_ops="titlebar_focused" />
 	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal" draw_ops="close_focused" />
@@ -1093,7 +1080,6 @@
 
 <frame_style name="tiled_right_unfocused" geometry="tiled_right">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="overlay" draw_ops="border_tiled_right" />
 	<piece position="titlebar" draw_ops="titlebar_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
