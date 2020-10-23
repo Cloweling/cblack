@@ -40,7 +40,7 @@
 
 <!-- geometries -->
 
-<frame_geometry name="normal" title_scale="medium" rounded_top_left="1" rounded_top_right="1">
+<frame_geometry name="normal" title_scale="medium" rounded_top_left="8" rounded_bottom_left="8" rounded_bottom_right="8" rounded_top_right="8">
 	<distance name="left_width" value="3" />
 	<distance name="right_width" value="3" />
 	<distance name="bottom_height" value="3" />
@@ -53,7 +53,7 @@
   <distance name="button_height" value="16"/>
 </frame_geometry>
 
-<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="1" rounded_top_right="1" parent="normal">
+<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="8" rounded_bottom_left="8" rounded_bottom_right="8" rounded_top_right="8" parent="normal">
 </frame_geometry>
 
 <frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
@@ -69,7 +69,7 @@
 	<distance name="bottom_height" value="0" />
 </frame_geometry>
 
-<frame_geometry name="small" title_scale="small" parent="normal" hide_buttons="true" rounded_top_left="1" rounded_top_right="1">
+<frame_geometry name="small" title_scale="small" parent="normal" hide_buttons="true" rounded_top_left="8" rounded_bottom_left="8" rounded_bottom_right="8" rounded_top_right="8">
 	<distance name="title_vertical_pad" value="7"/>
 	<border name="title_border" left="10" right="10" top="0" bottom="1"/>
 </frame_geometry>
@@ -92,7 +92,7 @@
 	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
 </frame_geometry>
 
-<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="1" rounded_top_right="1" parent="small">
+<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="8" rounded_bottom_left="8" rounded_bottom_right="8" rounded_top_right="8" parent="small">
 	<distance name="title_vertical_pad" value="5"/>
 </frame_geometry>
 
