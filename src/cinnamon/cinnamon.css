@@ -65,27 +65,23 @@ StScrollBar StButton#vhandle:hover {
 .modal-dialog-button {
     color: white;
     border: 1px solid #202020;
-    background-color: rgba(45, 45, 45, 1);
-}
-
-.notification-button:hover,
-.notification-icon-button:hover,
-.modal-dialog-button:hover {
-    background-color: rgba(80, 80, 80, 1);
-    border: 1px solid #202020;
-}
-
-.notificatio-button:focus,
-.notification-icon-button:focus,
-.modal-dialog-button:focus {
-    border: 1px solid #202020;
+    background-color: #454545;
 }
 
 .notification-button:active,
 .notification-icon-button:active,
 .modal-dialog-button:active,
-.modal-dialog-button:pressed {
+.modal-dialog-button:pressed,
+.notification-button:hover,
+.notification-icon-button:hover,
+.modal-dialog-button:hover {
+    border: 1px solid #202020;
     background-color: rgba(80, 80, 80, 1);
+}
+
+.notificatio-button:focus,
+.notification-icon-button:focus,
+.modal-dialog-button:focus {
     border: 1px solid #202020;
 }
 
@@ -512,8 +508,7 @@ StScrollBar StButton#vhandle:hover {
 
 .expo-workspaces-name-entry {
     padding: 10px 5px;
-    font-size: 12pt;
-    font-weight: bold;
+    font-size: 9pt;
     width: 250px;
     height: 15px;
     background-color: white;
@@ -795,21 +790,30 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .notification-button {
-    border-radius: 0px;
+    color: white;
+    border: 1px solid #202020;
+    border-radius: 4px;
+    background-color: #454545;
     padding: 4px 8px 5px;
 }
 
 .notification-button:focus {
-    padding: 3px 8px 4px;
+    padding: 4px 8px 5px;
+    border: 1px solid #202020;
+    background-color:  rgba(21, 101, 192, 1);
 }
 
 .notification-icon-button {
-    border-radius: 0px;
+    border: 1px solid #202020;
+    border-radius: 4px;
+    background-color:  rgba(21, 101, 192, 1);
     padding: 5px;
 }
 
 .notification-icon-button:focus {
     padding: 4px;
+    border: 1px solid #202020;
+    background-color:  rgba(21, 101, 192, 1);
 }
 
 .notification-icon-button > StIcon {
@@ -1018,7 +1022,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .run-dialog-error-box {
-    padding-top: 15px;
+    padding-top: 10px;
     spacing: 5px;
 }
 
@@ -1029,13 +1033,13 @@ StScrollBar StButton#vhandle:hover {
     background-color: white;
     border: 0.1em solid rgba(20, 20, 20, 1);
     border-radius: 0.25em;
-    selection-background-color: rgb(9, 13, 17);
+    selection-background-color: rgb(21, 101, 192);
     selected-color: white;
 }
 
 .run-dialog-completion-box {
-    padding: 10px 5px;
-    font-size: 12px;
+    padding: 10px 0px;
+    font-size: 14px;
 }
 
 .run-dialog {
