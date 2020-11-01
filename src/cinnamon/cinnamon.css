@@ -1706,6 +1706,7 @@ StScrollBar StButton#vhandle:hover {
     border: 1px solid #202020;
     color: white;
     transition-duration: 300;
+    background-color: rgb(60, 60, 60);
 }
 
 .panel-top .workspace-button,
@@ -1726,7 +1727,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .workspace-button:shaded {
-    color: #13191c;
+    color: white;
 }
 
 /* Controls the style when using the "Visual representation" option */
@@ -1736,7 +1737,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .workspace-graph .workspace {
-    background-color: rgba(47, 47, 47, 1);
+    background-color: rgb(60, 60, 60);
     border: 1px solid #202020;
 }
 
