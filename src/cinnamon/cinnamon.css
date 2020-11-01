@@ -445,6 +445,13 @@ StScrollBar StButton#vhandle:hover {
     -cinnamon-close-overlap: 20px;
 }
 
+.workspace-close-button:hover {
+    background-image: url("common-assets/misc/close-hover.svg");
+    height: 34px;
+    width: 34px;
+    -cinnamon-close-overlap: 20px;
+}
+
 .window-caption {
     background-color: rgba(47, 47, 47, 1);
     border: 1px solid #202020;
@@ -1577,7 +1584,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-thumbnail-menu .item-box:selected {
-    background: rgba(100, 100, 100, 0.3);
+    background: rgba(100, 100, 100, 0.2);
 }
 
 .grouped-window-list-thumbnail-menu .thumbnail {
