@@ -1287,6 +1287,10 @@ StScrollBar StButton#vhandle:hover {
 
 .menu-category-button {
     padding: 7px;
+    border-left: 2px;
+    border-style: solid;
+    border-color: none;
+    border-radius: 4px;
 }
 
 .menu-category-button-greyed {
@@ -1297,11 +1301,18 @@ StScrollBar StButton#vhandle:hover {
 .menu-category-button-selected {
     padding: 7px;
     color: white;
-    border-radius: 4px;
-    background-gradient-start: rgba(21, 101, 192, 1);
-    background-gradient-end: rgba(47, 47, 47, 1);
-    background-gradient-direction: horizontal;
+    border-left: 2px;
+    border-style: solid;
+    border-color: rgba(21, 101, 192, 1);
+    border-color: none;
+    border-radius: 0px;
 }
+
+.menu-category-button-hover {
+    background-color: rgba(21, 101, 192, 1);
+    border-radius: 4px;
+}
+
 
 .menu-category-button-label:ltr {
     padding-left: 5px;
