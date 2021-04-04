@@ -852,10 +852,8 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .switcher-list {
-    background: rgba(47, 47, 47, 1);
+    background: rgba(47, 47, 47, 0.95);
     border: 1px solid #202020;
-    border-radius: 4px;
-    font-size: 9pt;
     color: white;
 }
 
@@ -885,7 +883,6 @@ StScrollBar StButton#vhandle:hover {
 
 .switcher-list .item-box {
     padding: 8px;
-    border-radius: 8px;
 }
 
 .switcher-list .item-box:outlined {
@@ -895,7 +892,6 @@ StScrollBar StButton#vhandle:hover {
 
 .switcher-list .item-box:selected {
     background-color: rgba(21, 101, 192, 1);
-    border: 1px solid #202020;
 }
 
 .switcher-list .thumbnail-box {
@@ -995,21 +991,29 @@ StScrollBar StButton#vhandle:hover {
 
 /* Media keys OSD popup */
 .osd-window {
+    text-align: center;
+    font-weight: bold;
     background: rgba(47, 47, 47, 0.9);
     border: 1px solid rgba(20, 20, 20, 1);
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     color: white;
     spacing: 1em;
 }
 
+.osd-window .osd-monitor-label {
+    font-size: 3em;
+}
+
 .osd-window .level {
-    height: 0.4em;
-    border-radius: 0em;
+    padding: 0;
+    height: 0.7em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
 }
 
 .osd-window .level-bar {
-    border-radius: 0em;
+    border-radius: 2px;
     background-color: white;
 }
 
@@ -1709,32 +1713,49 @@ StScrollBar StButton#vhandle:hover {
     padding: 0.3em 0;
 }
 
-.panel-left .workspace-switcher .panel-right .workspace-switcher {
+.panel-left .workspace-switcher
+.panel-right .workspace-switcher {
     padding: 0;
 }
 
 .workspace-button {
-    border: 1px solid #202020;
     color: white;
+    border-color: rgba(100, 100, 100, 1);
     transition-duration: 300;
-    background-color: rgb(60, 60, 60);
+    background-color: none;
 }
 
-.panel-top .workspace-button,
+.panel-bottom .workspace-button,
+.panel-top .workspace-button {
+    padding: 0 1em;
+    margin: 0 0.4em 0 0;
+}
+
 .panel-bottom .workspace-button {
-    margin: 0 0.3em;
-    padding: 0 0.8em;
+  border-bottom: 2px;
+}
+
+.panel-top .workspace-button {
+  border-top: 2px;
 }
 
 .panel-left .workspace-button,
 .panel-right .workspace-button {
-    margin: 0.3em 0;
-    padding: 0.4em 0;
+    padding: 0.5em 0;
+    margin: 0.4em 0 0 0;
+}
+
+.panel-left .workspace-button {
+  border-left: 2px;
+}
+
+.panel-right .workspace-button {
+  border-right: 2px;
 }
 
 .workspace-button:outlined {
-    border-color: #202020;
-    background-color: rgba(21, 101, 192, 1);
+  background-color: rgba(255, 255, 255, 0.10);
+  border-color: rgba(21, 101, 192, 1);
 }
 
 .workspace-button:shaded {
