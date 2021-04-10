@@ -619,6 +619,7 @@ StScrollBar StButton#vhandle:hover {
 .calendar-background {}
 
 .calendar {
+    width: 300px;
     padding: 0.4em 1.75em;
     spacing-rows: 0px;
     spacing-columns: 5px;
@@ -717,9 +718,7 @@ StScrollBar StButton#vhandle:hover {
 
 .calendar-work-day {}
 
-.calendar-nonwork-day {
-    background-color: rgba(20, 20, 20, 0.05);
-}
+.calendar-nonwork-day {}
 
 .calendar-today {
     font-weight: bold;
@@ -728,7 +727,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .calendar-other-month-day {
-    color: #505050;
+    color: rgba(204, 204, 204, 0.5);
 }
 
 .calendar-day-with-events {
