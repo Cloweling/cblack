@@ -1,0 +1,51 @@
+@import "../colors";
+
+/* ===================================================================
+ * Desklets (desklet.js)
+ * ===================================================================*/
+ .desklet {
+    color: $fg-secundary;
+}
+
+.desklet:highlight,
+.desklet:highlight-with-borders,
+.desklet:highlight-with-borders-and-header {
+    background-color: #aa5555;
+}
+
+.desklet-with-borders {
+    border: 0px solid $border-color;
+    padding: 5px 10px;
+    background-color: rgba($bg-primary, 0);
+    color: $fg-secundary;
+    border-radius-bottomleft: 12px;
+    border-radius-bottomright: 12px;
+    border-radius-topleft: 12px;
+    border-radius-topright: 12px;
+}
+
+.desklet-with-borders-and-header {
+    border: 0px solid $fg-secundary;
+    background-color: rgba($bg-primary, 0.8);
+    color: $fg-primary;
+    border-top: 1px;
+    border-radius-bottomleft: 12px;
+    border-radius-bottomright: 12px;
+}
+
+.desklet-header {
+    border-radius-topleft: 12px;
+    border-radius-topright: 12px;
+    font-size: 10.5pt;
+    border: 0px solid #a5a5a5;
+    border-bottom: 0px;
+    background-color: rgba($bg-primary, 0.8);
+    color: $fg-primary;
+    padding: 6px;
+}
+
+.desklet-drag-placeholder {
+    border: 0px solid #6daa00;
+    background-color: rgba(109, 170, 0, 0.3);
+}
+ 

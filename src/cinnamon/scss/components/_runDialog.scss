@@ -1,0 +1,48 @@
+@import "../colors";
+
+/* ===================================================================
+ * Run dialog
+ * ===================================================================*/
+ .run-dialog-label {
+    font-size: 0pt;
+    color: $fg-primary;
+    font-weight: bold;
+    padding: 0px 0px;
+}
+
+.run-dialog-error-label {
+    font-size: $font-size;
+    color: $fg-primary;
+}
+
+.run-dialog-error-box {
+    padding-top: 10px;
+    spacing: 5px;
+}
+
+.run-dialog-entry {
+    padding: 5px;
+    width: 23em;
+    color: $fg-entry;
+    background-color: white;
+    border: 0.1em solid $border-color;
+    border-radius: $border-radius;
+    selection-background-color: $bg-select;
+    selected-color: $fg-primary;
+}
+
+.run-dialog-completion-box {
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.run-dialog {
+    border-radius: $border-radius;
+    padding: 20px 15px 0px 15px;
+    background-color: $bg-primary;
+    border: 1px solid $border-color;
+}
+
+.lightbox {
+    background-color: rgba($bg-light-box, 0.6);
+}
