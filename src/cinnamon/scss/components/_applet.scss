@@ -1,0 +1,71 @@
+@import "../colors";
+
+/* ===================================================================
+ * Applets (applet.js)
+ * ===================================================================*/
+ .applet-separator {
+    padding: 5px 4px;
+}
+
+.applet-separator-line {
+    width: 1px;
+    background-color: rgba($bg-applet-separator, 0.2);
+    margin: 3px 5px;
+}
+
+.applet-separator-line-vertical {
+    border: 0px solid rgba($bg-applet-separator, 0.5);
+    border-bottom-width: 0.05em;
+    margin: 5px 3px;
+}
+
+.applet-box {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    color: $fg-secundary;
+    text-shadow: black 0px 0px 2px;
+    transition-duration: 300;
+}
+
+.panel-top .applet-box,
+.panel-bottom .applet-box {
+    spacing: 0.2em;
+}
+
+.applet-box:checked,
+.applet-box:hover {
+    color: $fg-primary;
+}
+
+.applet-box.vertical {
+    padding: 3px 0;
+}
+
+.applet-box.vertical:hover {}
+
+.applet-box:highlight {
+    background-color: #aa5555;
+}
+
+.applet-label {
+    font-weight: bold;
+    color: $fg-secundary;
+}
+
+.applet-box:hover .applet-label,
+.applet-box:checked>.applet-label,
+.applet-box.vertical:hover .applet-label {
+    color: $fg-primary;
+}
+
+.applet-icon {
+    color: $fg-secundary;
+    icon-size: 22px;
+}
+
+.applet-box:checked .applet-icon,
+.applet-box:hover .applet-icon {
+    color: $fg-primary;
+}
+
+.applet-box.vertical:hover .applet-icon {}

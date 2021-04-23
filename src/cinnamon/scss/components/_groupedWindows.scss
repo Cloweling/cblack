@@ -1,0 +1,141 @@
+@import "../colors", "../properties";
+
+/* ===================================================================
+ * Grouped window list (grouped-window-list@cinnamon.org)
+ * ===================================================================*/
+ .grouped-window-list-thumbnail-label {
+    padding-left: 4px;
+}
+
+.grouped-window-list-number-label {
+    z-index: 99;
+    color: white;
+}
+
+.grouped-window-list-badge {
+    padding: 0px;
+    border-radius: 3px;
+    background-color: $bg-popup-menu;
+    font-size: 5px;
+    box-shadow: inset 0px 0px 0px 1px rgba($bg-shadown, 1);
+}
+
+.grouped-window-list-button-label {
+    padding-left: 4px;
+}
+
+.grouped-window-list-thumbnail-alert {
+    background: rgba($bg-item-window-alert, 0.3);
+}
+
+.grouped-window-list-item-box {
+    color: $fg-primary;
+    transition-duration: 100;
+    spacing: 0.5em;
+}
+
+.grouped-window-list-item-box.top,
+.grouped-window-list-item-box.bottom {
+    padding: 0 0.5em;
+}
+
+.grouped-window-list-item-box.right,
+.grouped-window-list-item-box.left {
+    padding: 0.5em 0;
+}
+
+.grouped-window-list-item-box.top StLabel,
+.grouped-window-list-item-box.bottom StLabel {
+    padding-left: 2px;
+}
+
+.grouped-window-list-item-box.bottom {
+    border-bottom: 2px solid rgba($bg-select, 0);
+}
+
+.grouped-window-list-item-box.top {
+    border-top: 2px solid rgba($bg-select, 0);
+}
+
+.grouped-window-list-item-box.left {
+    border-left: 2px solid rgba($bg-select, 0);
+}
+
+.grouped-window-list-item-box.right {
+    border-right: 2px solid rgba($bg-select, 0);
+}
+
+.grouped-window-list-item-box:hover,
+.grouped-window-list-item-box:focus:hover,
+.grouped-window-list-item-box:active:hover {
+    border-color: rgba($bg-select, 1);
+    background-color: rgba($bg-item-window-list, 0.06);
+}
+
+.grouped-window-list-item-box:checked,
+.grouped-window-list-item-box:active:focus {
+    border-color: rgba($bg-select, 1);
+    background-color: rgba($bg-item-window-list, 0.10);
+}
+
+.grouped-window-list-item-box:active {
+    border-color: rgba($bg-item-window-list-active, 1);
+}
+
+.grouped-window-list-item-demands-attention {
+    background-gradient-direction: vertical;
+    background-gradient-start: #f04a50;
+    background-gradient-end: #f04a50;
+}
+
+.grouped-window-list-item-box .progress {
+    background-color: rgba($bg-item-window-list-progress, 0.2);
+}
+
+.panel-top .grouped-window-list-item-box .progress {
+    border-radius: 0px 0px 2px 2px;
+}
+
+.panel-left .grouped-window-list-item-box .progress {
+    border-radius: 0px 2px 2px 0px;
+}
+
+.panel-right .grouped-window-list-item-box .progress {
+    border-radius: 2px 0px 0px 2px;
+}
+
+.grouped-window-list-thumbnail-menu {
+    background-color: $bg-popup-menu;
+    border: 1px solid rgba($border-color, 0);
+    border-radius: $border-radius;
+    font-size: $font-size;
+    color: $fg-primary;
+    text-shadow: $bg-shadown 0px 0px 2px;
+    padding: 1px;
+    spacing: 0px;
+}
+
+.grouped-window-list-thumbnail-menu .item-box {
+    padding: 0px;
+    border: 1px solid rgba($border-color, 0);
+    border-radius: $border-radius;
+    spacing: 0px;
+}
+
+.grouped-window-list-thumbnail-menu .item-box:outlined {
+    padding: 10px;
+    border: 1px solid rgba($bg-select, 1);
+}
+
+.grouped-window-list-thumbnail-menu .item-box:selected {
+    background: rgba($bg-item-window-list-active, 0.2);
+}
+
+.grouped-window-list-thumbnail-menu .thumbnail {
+    width: 256px;
+}
+
+.grouped-window-list-thumbnail-menu .separator {
+    width: 10px;
+    background: rgba($bg-item-window-list-active, 0.2);
+}

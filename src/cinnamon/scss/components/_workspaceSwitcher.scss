@@ -1,0 +1,75 @@
+@import "../colors";
+
+/* ===================================================================
+ * Workspace Switcher applet (workspaceSwitcher.js)
+ * ===================================================================*/
+/* Controls the styling when using the "Simple buttons" option */
+.panel-top .workspace-switcher,
+.panel-bottom .workspace-switcher {
+    padding: 0.3em 0;
+}
+
+.panel-left .workspace-switcher
+.panel-right .workspace-switcher {
+    padding: 0;
+}
+
+.workspace-button {
+    color: $fg-primary;
+    border-color: rgba($bg-item-window-list-active, 1);
+    transition-duration: 300;
+    background-color: none;
+}
+
+.panel-bottom .workspace-button,
+.panel-top .workspace-button {
+    padding: 0 1em;
+    margin: 0 0.4em 0 0;
+}
+
+.panel-bottom .workspace-button {
+  border-bottom: 2px;
+}
+
+.panel-top .workspace-button {
+  border-top: 2px;
+}
+
+.panel-left .workspace-button,
+.panel-right .workspace-button {
+    padding: 0.5em 0;
+    margin: 0.4em 0 0 0;
+}
+
+.panel-left .workspace-button {
+  border-left: 2px;
+}
+
+.panel-right .workspace-button {
+  border-right: 2px;
+}
+
+.workspace-button:outlined {
+  background-color: rgba($bg-item-window-list-active, 0.2);
+  border-color: rgba($bg-select, 1);
+}
+
+.workspace-button:shaded {
+    color: $fg-primary;
+}
+
+/* Controls the style when using the "Visual representation" option */
+.workspace-graph {
+    padding: 0.3em;
+    spacing: 0.3em;
+}
+
+.workspace-graph .workspace {
+    background-color: $bg-primary;
+    border: 1px solid $border-color;
+}
+
+.workspace-graph .workspace:active {
+    background-color: $bg-select;
+    border: 1px solid $border-color;
+}

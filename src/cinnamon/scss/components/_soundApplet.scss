@@ -1,0 +1,75 @@
+@import "../colors";
+
+/* ===================================================================
+ * Sound Applet (sound@cinnamon.org)
+ * ===================================================================*/
+ .sound-player StButton {
+    width: 20px;
+    height: 20px;
+    color: $fg-sound-applet-btn-icon;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.sound-player StButton:hover,
+.sound-player StButton:active {
+    color: $fg-sound-applet-btn-icon-hover;
+    border: 1px solid $bg-sound-applet-btn-icon-hover;
+    border-radius: 25px;
+}
+
+.sound-player StButton:small {
+    width: 16px;
+    height: 16px;
+}
+
+.sound-player StButton:small StIcon {
+    icon-size: 1.2em;
+}
+
+.sound-player StButton StIcon {
+    icon-size: 1.5em;
+}
+
+.sound-player .slider {
+    height: 0.5em;
+    -slider-height: 0.5em;
+    -slider-background-color: rgba($bg-primary, 1);
+    -slider-border-color: $border-color;
+    -slider-active-background-color: rgba($bg-select, 1);
+    -slider-active-border-color: $border-color;
+    -slider-border-width: 0px;
+    -slider-handle-radius: 0px;
+}
+
+.sound-player StBoxLayout {
+    spacing: 0.5em;
+}
+
+.sound-player>StBoxLayout {
+    padding: 0.5em;
+}
+
+.sound-player-overlay {
+    width: 300px;
+    padding: 0.7em 1em;
+    background-color: rgba($bg-sound-applet-player-overlay, 0.9);
+    color: $fg-primary;
+}
+
+.sound-player-overlay StButton {
+    padding: 0.5em;
+    margin: 0px 0.5em;
+}
+
+.sound-player-overlay StButton>StIcon {
+    icon-size: 16px;
+}
+
+.sound-player-overlay StBoxLayout {
+    padding-top: 2px;
+}
+
+.sound-player-generic-coverart {
+    background: rgba(0, 0, 0, 0.1);
+}
