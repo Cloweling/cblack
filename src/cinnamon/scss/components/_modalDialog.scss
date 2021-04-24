@@ -1,0 +1,85 @@
+@import "../colors", "../properties";
+
+/* ===================================================================
+ * Modal dialogs
+ * ===================================================================*/
+ .modal-dialog {
+    font-size: 3pt + $font-size;
+    background-color: rgba($bg-primary, 1);
+    border: 1px solid $border-color;
+    color: $fg-primary;
+    padding: 30px 42px;
+}
+
+.modal-dialog-button-box {
+    padding-top: 20px;
+}
+
+.modal-dialog-button {
+    font-size: 2pt + $font-size;
+    color: $fg-primary;
+    margin: 0 10px;
+    padding: 4px 32px 5px;
+}
+
+.modal-dialog-button:hover {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(90, 90, 90, 1);
+    background-gradient-end: rgba(70, 70, 70, 1);
+    border: 1px solid rgba(120, 120, 120, 1);
+}
+
+.modal-dialog-button:active,
+.modal-dialog-button:checked {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(60, 60, 60, 1);
+    background-gradient-end: rgba(40, 40, 40, 1);
+    box-shadow: inset 0px 1px 0px 0px rgba(35, 35, 35, 1);
+}
+
+.modal-dialog-button:disabled {
+    color: rgba(60, 60, 60, 1);
+}
+
+.modal-dialog-button:focus {
+    padding: 3px 31px 4px;
+}
+
+/* Info OSD popup */
+.info-osd {
+    font-size: 4.5 * $font-size;
+    background-color: rgba($bg-primary, 0.9);
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    color: $fg-primary;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media keys OSD popup */
+.osd-window {
+    text-align: center;
+    font-weight: bold;
+    background: rgba($bg-primary, 0.9);
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: 20px;
+    color: $fg-primary;
+    spacing: 1em;
+}
+
+.osd-window .osd-monitor-label {
+    font-size: 3em;
+}
+
+.osd-window .level {
+    padding: 0;
+    height: 0.7em;
+    background-color: rgba($bg-level-bar, 0);
+    border-radius: $border-radius-level-bar;
+}
+
+.osd-window .level-bar {
+    border-radius: $border-radius-level-bar;
+    background-color: $bg-level-bar;
+}

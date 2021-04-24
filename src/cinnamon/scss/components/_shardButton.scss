@@ -1,0 +1,29 @@
+@import "../colors";
+
+/* ===================================================================
+ * Shared button properties
+ * ===================================================================*/
+ .notifcation-button,
+ .notification-icon-button,
+ .modal-dialog-button {
+     color: white;
+     border: 1px solid $border-button-color;
+     background-color: $bg-button;
+ }
+ 
+ .notification-button:active,
+ .notification-icon-button:active,
+ .modal-dialog-button:active,
+ .modal-dialog-button:pressed,
+ .notification-button:hover,
+ .notification-icon-button:hover,
+ .modal-dialog-button:hover {
+     border: 1px solid $border-button-color;
+     background-color: $bg-button-hover;
+ }
+ 
+ .notificatio-button:focus,
+ .notification-icon-button:focus,
+ .modal-dialog-button:focus {
+     border: 1px solid $border-button-color;
+ }

@@ -1,0 +1,68 @@
+@import "colors", "properties";
+
+/* ###################################################################
+ * Section common with Gnome Shell
+ * ... contains a few cinnamon specific styles (rare occurrences)
+ * ###################################################################*/
+stage {
+    font-size: $font-size;
+    color: $fg-primary;
+}
+
+.cinnamon-link {
+    color: $fg-link;
+}
+
+.cinnamon-link:hover {
+    color: $fg-link-hover;
+}
+
+StScrollBar {
+    padding: 0px 0px;
+}
+
+StScrollView.vfade {
+    -st-vfade-offset: 68px;
+}
+
+StScrollView.hfade {
+    -st-vfade-offset: 68px;
+}
+
+StScrollView StScrollBar {
+    min-width: 0px;
+    min-height: 0px;
+}
+
+StScrollBar StBin#trough {
+    background-color: rgba($bg-select, 0);
+}
+
+StScrollBar StButton#vhandle,
+StScrollBar StButton#hhandle {
+    background-color: rgba($bg-select, 1);
+    border-radius: $border-radius;
+}
+
+StScrollBar StButton#hhandle:hover,
+StScrollBar StButton#vhandle:hover {
+    background-color: rgba($bg-select, 1);
+}
+
+#Tooltip {
+    color: white;
+    background-color: $bg-popup-menu;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: 4px 12px;
+    margin: 0.5em;
+    font-weight: normal;
+    text-align: center;
+}
+
+@import "components/popupMenu", "components/panel", "components/notification", "components/desklest",
+    "components/calendar", "components/altTab", "components/runDialog", "components/modalDialog",
+    "components/windowList", "components/groupedWindows", "components/applet", "components/soundApplet",
+    "components/menu", "components/workspaceSwitcher", "components/overViewWorkspace", "components/onScreenKeyboard",
+    "components/spacer", "components/launcher", "components/mountOperation", "components/shardButton",
+    "components/workspaceOSD", "components/other";

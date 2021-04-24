@@ -1,0 +1,34 @@
+/* ===================================================================
+ * Panel Launchers Applet (panelLaunchers.js)
+ * ===================================================================*/
+ .panel-launchers {
+    padding-left: 7px;
+    spacing: 5px;
+}
+
+.panel-launchers.vertical {
+    spacing: 3px;
+}
+
+.launcher {
+    padding-left: 1px;
+    padding-right: 1px;
+    border-bottom-width: 1px;
+    transition-duration: 300;
+}
+
+.launcher .icon-box {
+    padding-top: 2px;
+}
+
+.panel-launchers .launcher .icon-box {
+    padding: 0 0.1em;
+}
+
+.panel-launchers.vertical .launcher .icon-box {
+    padding: 0.1em 0;
+}
+
+.panel-launchers .launcher:hover {
+    background-color: rgba(100, 100, 100, 0.4);
+}

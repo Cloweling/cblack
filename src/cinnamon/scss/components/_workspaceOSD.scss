@@ -1,0 +1,12 @@
+@import "../colors", "../properties";
+
+/* ===================================================================
+ * Workspace OSD
+ * ===================================================================*/
+ .workspace-osd {
+    color: $fg-primary;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    font-weight: bold;
+    font-size: 3.5em;
+}

@@ -1,0 +1,164 @@
+@import "../colors", "../properties";
+
+/* ###################################################################
+ * Cinnamon Specific Section
+ * ###################################################################*/
+/* ===================================================================
+ * Menu applet (menu@cinnamon.org/applet.js)
+ * ===================================================================*/
+ .menu-background {
+    background-color: rgba($bg-primary, 1);
+    border: 1px solid $border-color;
+}
+
+/* Main menu title */
+.menu-favorites-box {
+    padding: 5px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background-color: rgba($bg-menu-favorite-box, 1);
+}
+
+.menu-favorites-button {
+    padding: 0.5em 0.5em;
+}
+
+.menu-favorites-button:hover {
+    color: rgba($bg-select, 1);
+    border-radius: $border-radius;
+    background-color: rgba($bg-menu-favorite-box-btn-hover, 0.5);
+}
+
+.menu-categories-box {
+    padding: 10px 15px;
+}
+
+.menu-applications-inner-box .menu-applications-outer-box {
+    padding: 5px 5px 0 10px;
+}
+
+.menu-application-button {
+    padding: 7px;
+    max-width: 10px;
+    border: 1px solid rgba($border-color, 0);
+    border-radius: $border-radius;
+}
+
+.menu-application-button:highlighted {
+    /* This style is used in menu application buttons for applications which were newly installed */
+    font-weight: bold;
+}
+
+.menu-application-button-selected {
+    padding: 7px;
+    color: $fg-primary;
+    background-color: rgba($bg-select, 1);
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+}
+
+.menu-application-button-selected:highlighted {
+    /* This style is used in menu application buttons for applications which were newly installed */
+    font-weight: bold;
+}
+
+.menu-application-button-label:ltr {
+    padding-left: 5px;
+}
+
+.menu-application-button-label:rtl {
+    padding-right: 5px;
+}
+
+.menu-category-button {
+    padding: 7px;
+    border-left: 2px;
+    border-style: solid;
+    border-color: none;
+    border-radius: $border-radius;
+}
+
+.menu-category-button-greyed {
+    padding: 7px;
+    color: $fg-primary;
+}
+
+.menu-category-button-selected {
+    padding: 7px;
+    color: $fg-primary;
+    border-left: 2px;
+    border-style: solid;
+    border-color: rgba($bg-select, 1);
+    border-radius: 0px;
+}
+
+.menu-category-button-hover {
+    background-color: rgba($bg-select, 1);
+    border-radius: $border-radius;
+}
+
+
+.menu-category-button-label:ltr {
+    padding-left: 5px;
+}
+
+.menu-category-button-label:rtl {
+    padding-right: 5px;
+}
+
+/* Name and description of the currently hovered item in the menu
+* This appears on the bottom right hand corner of the menu*/
+.menu-selected-app-box {
+    padding-right: 30px;
+    padding-left: 28px;
+    text-align: right;
+    color: $fg-primary;
+}
+
+.menu-selected-app-title {
+    font-weight: bold;
+}
+
+.menu-selected-app-description {
+    max-width: 150px;
+}
+
+.menu-search-box {
+    padding-left: 15px;
+}
+
+#menu-search-entry {
+    padding: 5px;
+    min-width: 385px;
+    max-width: 385px;
+    // min-height: 25px;
+    color: $fg-entry;
+    transition-duration: 300;
+    border: 0.1em solid $border-color;
+    border-radius: $border-radius;
+    selection-background-color: $bg-select;
+    selected-color: $fg-primary;
+}
+
+#menu-search-entry:focus,
+#menu-search-entry:hover {
+    background-color: $fg-primary;
+    border: 0.1em solid $border-color;
+    border-radius: $border-radius;
+}
+
+#menu-search-entry:hover {
+    transition-duration: 300;
+}
+
+#menu-search-entry:focus {
+    transition-duration: 0;
+}
+
+.menu-search-entry-icon {
+    icon-size: 1.2em;
+    color: rgba($fg-entry, 1);
+}
+
+/* Context menu (at the moment only for favorites) */
+.menu-context-menu {}

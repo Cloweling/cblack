@@ -1,0 +1,237 @@
+@import "../colors", "../properties";
+
+/* ===================================================================
+ * Notifications
+ * ===================================================================*/
+#notification {
+    font-size: $font-size;
+    border: 1px solid $border-color;
+    background-color: rgba($bg-primary, 1);
+    border-radius: $border-radius;
+    padding: 8px;
+    spacing-rows: 10px;
+    spacing-columns: 10px;
+    margin-from-right-edge-of-screen: 20px;
+    width: 35em;
+    color: $fg-primary;
+}
+
+/* For the links inside notifications. These URLs are already underlined with Pango markup. */
+#notification .url-highlighter {
+    link-color: $fg-link;
+}
+
+#notification.multi-line-notification {
+    padding-bottom: 8px;
+    color: white;
+}
+
+/* We use row-span = 2 for the image cell, which prevents its height preferences to be
+  taken into account during allocation, so its height ends up being limited by the height
+  of the content in the other rows. To avoid showing a stretched image, we set the minimum
+  height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 = 159 */
+.notification-with-image {
+    min-height: 159px;
+    color: white;
+}
+
+#notification-scrollview {
+    max-height: 10em;
+}
+
+#notification-scrollview >.top-shadow,
+#notification-scrollview >.bottom-shadow {
+    height: 1em;
+}
+
+#notification-scrollview:ltr > StScrollBar {
+    padding-left: 6px;
+}
+
+#notification-scrollview:rtl > StScrollBar {
+    padding-right: 6px;
+}
+
+#notification-body {
+    spacing: 5px;
+}
+
+#notification-actions {
+    spacing: 10px;
+}
+
+.notification-button {
+    color: white;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background-color: $bg-button;
+    padding: 4px 8px 5px;
+}
+
+.notification-button:focus {
+    padding: 4px 8px 5px;
+    border: 1px solid $border-color;
+    background-color:  rgba($bg-select, 1);
+}
+
+.notification-icon-button {
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background-color:  rgba($bg-select, 1);
+    padding: 5px;
+}
+
+.notification-icon-button:focus {
+    padding: 4px;
+    border: 1px solid $border-color;
+    background-color:  rgba($bg-select, 1);
+}
+
+.notification-icon-button > StIcon {
+    icon-size: 20px;
+}
+
+#notification StEntry {
+    padding: 0 5px;
+    background-color: rgba($bg-entry, 1);
+    border: 0.1em solid rgba($bg-select, 1);
+    color: white;
+    transition-duration: 300;
+    selection-background-color: rgba($bg-select, 1);
+    selected-color: white;
+    caret-size: 1px;
+}
+
+#notification StEntry:focus {
+    background-color: rgba($bg-select, 1);
+    border: 0.1em solid rgba($bg-entry, 1);
+}
+
+/* ===================================================================
+ * Notification Applet
+ * ===================================================================*/
+ .notification-applet-padding {
+    padding: 0.5em 1em;
+}
+
+.notification-applet-container {
+    max-height: 100px;
+}
+
+/* Check Boxes */
+.check-box CinnamonGenericContainer {
+    spacing: 0.2em;
+}
+
+.check-box StBin,
+.check-box:focus StBin {
+    width: 16px;
+    height: 16px;
+    background-image: url("common-assets/checkbox/checkbox-off.svg");
+}
+
+.check-box:checked StBin,
+.check-box:focus:checked StBin {
+    background-image: url("common-assets/checkbox/checkbox.svg");
+}
+
+.check-box StLabel {
+    font-weight: normal;
+}
+
+.radiobutton CinnamonGenericContainer {
+    spacing: 0.2em;
+    height: 18px;
+    padding-top: 2px;
+}
+
+.radiobutton StBin,
+.radiobutton:focus StBin {
+    width: 16px;
+    height: 16px;
+    background-image: url("common-assets/checkbox/radiobutton-off.svg");
+    border-radius: 15px;
+}
+
+.radiobutton:checked StBin,
+.radiobutton:focus:checked StBin {
+    background-image: url("common-assets/checkbox/radiobutton.svg");
+}
+
+.radiobutton StLabel {
+    padding-top: 4px;
+    font-size: 0.9em;
+    box-shadow: none;
+}
+
+.flashspot {
+    background-color: white;
+}
+
+/* Notifs look inside the notification applet & other popups. */
+.popup-menu-content #notification {
+    border-image: url("common-assets/misc/message.svg") 7;
+    padding: 0.8em 0.8em 0.6em 1em;
+}
+
+.tile-preview,
+.tile-hud {
+    background-color: rgba(41, 41, 41, 0.5);
+    border: 2px solid rgba(134, 134, 134, 0.8);
+}
+
+.tile-preview,
+.tile-hud {
+    background-color: rgba(41, 41, 41, 0.5);
+    border: 2px solid rgba(134, 134, 134, 0.8);
+}
+
+.tile-preview.snap,
+.tile-hud.snap {
+    background-color: rgba(134, 134, 170, 0.5);
+    border: 2px solid rgba(41, 41, 41, 0.8);
+}
+
+.tile-hud:top {
+    border-top-width: 0px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.tile-hud:bottom {
+    border-bottom-width: 0px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.tile-hud:left {
+    border-left-width: 0px;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.tile-hud:right {
+    border-right-width: 0px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.tile-hud:top-left {
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-radius: 0px 0px 8px 0px;
+}
+
+.tile-hud:top-right {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-radius: 0px 0px 0px 8px;
+}
+
+.tile-hud:bottom-left {
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-radius: 0px 8px 0px 0px;
+}
+
+.tile-hud:bottom-right {
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-radius: 8px 0px 0px 0px;
+}

@@ -1,6 +1,9 @@
 install:
 	sh scripts/install.sh
 
+generate-build-cinnamon:
+	sassc src/cinnamon/scss/index.scss src/cinnamon/cinnamon.css --style nested
+
 uninstall:
 	sh scripts/uninstall.sh
 

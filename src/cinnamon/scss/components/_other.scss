@@ -1,0 +1,52 @@
+@import "../colors", "../properties";
+
+/* ===================================================================
+ * Clock Desklet (desklet.js)
+ * ===================================================================*/
+ .clock-desklet-label {}
+
+ /* ===================================================================
+  * Looking Glass
+  * ===================================================================*/
+ #LookingGlassDialog {
+     background-color: rgba($bg-primary, 0.85);
+     spacing: 4px;
+     padding: 4px;
+     border: 2px solid $border-color;
+     border-radius: $border-radius;
+     color: $fg-secundary;
+ }
+ 
+ /* ===================================================================
+  * Magnifier (magnifier.js)
+  * ===================================================================*/
+ .magnifier-zoom-region {
+     border: 2px solid $border-color;
+ }
+ 
+ .magnifier-zoom-region.full-screen {
+     border-width: 0px;
+ }
+ 
+ /* ===================================================================
+  * Overview corner
+  * ===================================================================*/
+ #overview-corner {
+     background-image: url("common-assets/misc/overview.png");
+ }
+ 
+ #overview-corner:hover {
+     background-image: url("common-assets/misc/overview-hover.png");
+ }
+
+
+/* ===================================================================
+* Systray Applet
+*
+* .systray is for theming to be applied to the systray as a whole
+* .applet-box is used for indicators (not tray icons) within the systray
+* tray icons are not themed
+* ===================================================================*/
+.systray {
+    spacing: 5px;
+}
