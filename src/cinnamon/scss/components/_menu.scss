@@ -40,7 +40,7 @@
 .menu-application-button {
     padding: 7px;
     max-width: 10px;
-    border: 1px solid $border-color;
+    border: 1px solid rgba($border-color, 0);
     border-radius: $border-radius;
 }
 
@@ -89,7 +89,6 @@
     border-left: 2px;
     border-style: solid;
     border-color: rgba($bg-select, 1);
-    border-color: none;
     border-radius: 0px;
 }
 

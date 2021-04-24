@@ -4,7 +4,7 @@
  * Run dialog
  * ===================================================================*/
  .run-dialog-label {
-    font-size: 0pt;
+    font-size: $font-size;
     color: $fg-primary;
     font-weight: bold;
     padding: 0px 0px;
@@ -33,7 +33,7 @@
 
 .run-dialog-completion-box {
     padding: 10px 0px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .run-dialog {

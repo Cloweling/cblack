@@ -725,7 +725,7 @@ StScrollBar StButton#vhandle:hover {
  * Run dialog
  * ===================================================================*/
 .run-dialog-label {
-  font-size: 0pt;
+  font-size: 9pt;
   color: #ffffff;
   font-weight: bold;
   padding: 0px 0px; }
@@ -750,7 +750,7 @@ StScrollBar StButton#vhandle:hover {
 
 .run-dialog-completion-box {
   padding: 10px 0px;
-  font-size: 14px; }
+  font-size: 13px; }
 
 .run-dialog {
   border-radius: 6px;
@@ -1117,7 +1117,7 @@ StScrollBar StButton#vhandle:hover {
 .sound-player-overlay {
   width: 300px;
   padding: 0.7em 1em;
-  background-color: rgba(21, 101, 192, 0.9);
+  background-color: rgba(30, 30, 30, 0.9);
   color: #ffffff; }
 
 .sound-player-overlay StButton {
@@ -1167,7 +1167,7 @@ StScrollBar StButton#vhandle:hover {
 .menu-application-button {
   padding: 7px;
   max-width: 10px;
-  border: 1px solid #202020;
+  border: 1px solid rgba(32, 32, 32, 0);
   border-radius: 6px; }
 
 .menu-application-button:highlighted {
@@ -1208,7 +1208,6 @@ StScrollBar StButton#vhandle:hover {
   border-left: 2px;
   border-style: solid;
   border-color: #1565c0;
-  border-color: none;
   border-radius: 0px; }
 
 .menu-category-button-hover {
