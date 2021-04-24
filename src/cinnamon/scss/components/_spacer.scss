@@ -1,0 +1,18 @@
+/* ===================================================================
+ * Spacer applet
+ * ===================================================================*/
+ .spacer-box {
+    border-radius: 1px;
+    border: 1px solid transparent;
+}
+
+.spacer-box:highlight {
+    background-color: #aa5555;
+}
+
+.spacer-box.vertical {}
+
+.spacer-box.edit-mode {
+    border-radius: 1px;
+    border: 1px symbolic;
+}
