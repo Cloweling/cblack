@@ -29,9 +29,14 @@
     background-color: white;
     border: 0.1em solid $border-color;
     border-radius: $border-radius;
+    transition-duration: 300;
 
     &:hover {
         transition-duration: 300;
+    }
+
+    &:focus {
+        transition-duration: 0;
     }
 }
 
