@@ -1,4 +1,4 @@
-@import "../colors", "../properties";
+@import "../colors", "../properties", "../assets";
 
 /* ===================================================================
  * PopupMenu (popupMenu.js)
@@ -168,6 +168,22 @@
 .toggle-switch {
     width: 64px;
     height: 18px;
+}
+
+.toggle-switch-us {
+    background-image: url($url-switch);
+}
+
+.toggle-switch-us:checked {
+    background-image: url($url-switch-checked);
+}
+
+.toggle-switch-intl {
+    background-image: url($url-switch);
+}
+
+.toggle-switch-intl:checked {
+    background-image: url($url-switch-checked);
 }
 
 .nm-menu-item-icons {
