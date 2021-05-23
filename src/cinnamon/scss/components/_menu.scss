@@ -82,7 +82,10 @@
 
 .menu-category-button-greyed {
     padding: 7px;
-    color: $fg-primary;
+    color: $fg-secundary;
+    border-left: 2px;
+    border-style: solid;
+    border-color: rgba($bg-select, 0);
 }
 
 .menu-category-button-selected {
@@ -91,7 +94,6 @@
     border-left: 2px;
     border-style: solid;
     border-color: rgba($bg-select, 1);
-    border-radius: 0px;
 }
 
 .menu-category-button-hover {
@@ -132,10 +134,11 @@
 
 #menu-search-entry {
     padding: 5px;
-    min-width: 385px;
-    max-width: 385px;
-    color: $fg-entry;
+    width: 23em;
+    height: 1.4em;
+    font-size: $font-size + 2;
     selection-background-color: $bg-select;
+    color: $fg-entry;
     selected-color: $fg-primary;
     border: 0.1em solid $border-color;
     border-radius: $border-radius;
@@ -143,6 +146,8 @@
 
     &:focus,
     &:hover {
+        padding: 5px;
+        font-size: $font-size + 2;
         background-color: $fg-primary;
         border: 0.1em solid $border-color;
         border-radius: $border-radius;
@@ -164,6 +169,7 @@
 
 /* Context menu (at the moment only for favorites) */
 .menu-context-menu {
-    margin: 0px 5px;
-    background-color: rgba($bg-popup-submenu, 1);
+    margin: 2px 0px;
+    background-color: rgba($bg-popup-submenu, 0.4);
+    border-radius: $border-radius;
 }

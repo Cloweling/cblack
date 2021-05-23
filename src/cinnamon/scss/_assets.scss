@@ -1,0 +1,16 @@
+/* Switches (to be used in menus) */
+.toggle-switch-us {
+    background-image: url("common-assets/switch/switch-off.svg");
+}
+
+.toggle-switch-us:checked {
+    background-image: url("common-assets/switch/switch-on.svg");
+}
+
+.toggle-switch-intl {
+    background-image: url("common-assets/switch/switch-off.svg");
+}
+
+.toggle-switch-intl:checked {
+    background-image: url("common-assets/switch/switch-on.svg");
+}
