@@ -17,12 +17,12 @@
 
 .show-processes-dialog-subject,
 .mount-question-dialog-subject {
-    font-size: 10pt;
-    font-weight: bold;
-    color: #666666;
     padding-top: 10px;
     padding-left: 17px;
     padding-bottom: 6px;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #666666;
 }
 
 .show-processes-dialog-subject:rtl,
@@ -33,10 +33,10 @@
 
 .show-processes-dialog-description,
 .mount-question-dialog-description {
-    font-size: 10pt;
-    color: white;
     padding-left: 17px;
     width: 28em;
+    font-size: 10pt;
+    color: white;
 }
 
 .show-processes-dialog-description:rtl,
@@ -45,32 +45,32 @@
 }
 
 .show-processes-dialog-app-list {
-    font-size: 10pt;
     max-height: 200px;
     padding-top: 24px;
     padding-left: 49px;
     padding-right: 32px;
-}
-
-.show-processes-dialog-app-list:rtl {
-    padding-right: 49px;
-    padding-left: 32px;
+    font-size: 10pt;
+    
+    &:rtl {
+        padding-right: 49px;
+        padding-left: 32px;
+    }
 }
 
 .show-processes-dialog-app-list-item {
     color: #ccc;
-}
 
-.show-processes-dialog-app-list-item:hover {
-    color: white;
-}
+    &:hover {
+        color: white;
+    }
 
-.show-processes-dialog-app-list-item:ltr {
-    padding-right: 1em;
-}
-
-.show-processes-dialog-app-list-item:rtl {
-    padding-left: 1em;
+    &:ltr {
+        padding-right: 1em;
+    }
+    
+    &:rtl {
+        padding-left: 1em;
+    }
 }
 
 .show-processes-dialog-app-list-item-icon:ltr {
