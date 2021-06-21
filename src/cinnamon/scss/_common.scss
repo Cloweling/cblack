@@ -1,0 +1,30 @@
+@import "./colors", "./properties";
+
+%entry {
+    padding: 5px;
+    width: 23em;
+    height: 1.4em;
+    font-size: $font-size + 2;
+    selection-background-color: $bg-select;
+    color: $fg-entry;
+    selected-color: $fg-primary;
+    border: 0.1em solid $border-color;
+    border-radius: $border-radius;
+    transition-duration: 300;
+}
+
+%entry-focus {
+    transition-duration: 0;
+}
+
+%entry-hover {
+    transition-duration: 300;
+}
+
+%entry-focus-hover {
+    padding: 5px;
+    font-size: $font-size + 2;
+    background-color: $fg-primary;
+    border: 0.1em solid $border-color;
+    border-radius: $border-radius;
+}

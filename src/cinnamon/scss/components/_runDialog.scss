@@ -1,4 +1,4 @@
-@import "../colors", "../properties";
+@import "../colors", "../properties", "../common";
 
 /* ===================================================================
  * Run dialog
@@ -21,39 +21,26 @@
 }
 
 .run-dialog-entry {
-    padding: 5px;
-    width: 23em;
-    height: 1.4em;
-    font-size: $font-size + 2;
-    selection-background-color: $bg-select;
-    color: $fg-entry;
-    selected-color: $fg-primary;
-    border: 0.1em solid $border-color;
-    border-radius: $border-radius;
-    transition-duration: 300;
+    @extend %entry;
 
     &:focus,
     &:hover {
-        padding: 5px;
-        font-size: $font-size + 2;
-        background-color: $fg-primary;
-        border: 0.1em solid $border-color;
-        border-radius: $border-radius;
+        @extend %entry-focus-hover;
     }
 
     &:hover {
-        transition-duration: 300;
+        @extend %entry-hover;
     }
 
     &:focus {
-        transition-duration: 0;
+        @extend %entry-focus;
     }
 }
 
 .run-dialog-completion-box {
     padding: 10px 0px 0px 0px;
     font-size: 1pt + $font-size;
-} 
+}
 
 .run-dialog {
     padding: 20px 15px 0px 15px;

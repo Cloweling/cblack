@@ -1,4 +1,4 @@
-@import "../colors", "../properties";
+@import "../colors", "../properties", "../common";
 
 /* ===================================================================
  * Notifications
@@ -6,29 +6,29 @@
 #notification {
     padding: 8px;
     width: 35em;
-    background-color: rgba($bg-primary, 1);
     color: $fg-primary;
     font-size: $font-size;
-    border: 1px solid $border-color;
+    border-image: url($url-message) 7;
     border-radius: $border-radius;
     margin-from-right-edge-of-screen: 20px;
     spacing-rows: 10px;
     spacing-columns: 10px;
 
     & StEntry {
-        padding: 0 5px;
-        background-color: rgba($bg-entry, 1);
-        color: white;
-        border: 0.1em solid rgba($bg-select, 1);
-        transition-duration: 300;
-        selection-background-color: rgba($bg-select, 1);
-        selected-color: white;
-        caret-size: 1px;
-    }
+        @extend %entry;
 
-    & StEntry:focus {
-        background-color: rgba($bg-select, 1);
-        border: 0.1em solid rgba($bg-entry, 1);
+        &:focus,
+        &:hover {
+            @extend %entry-focus-hover;
+        }
+    
+        &:hover {
+            @extend %entry-hover;
+        }
+    
+        &:focus {
+            @extend %entry-focus;
+        }
     }
 
     /* For the links inside notifications. These URLs are already underlined with Pango markup. */
@@ -37,6 +37,7 @@
     }
 
     &.multi-line-notification {
+        background-color: rgba(0,0,0, 1);
         padding-bottom: 8px;
         color: white;
     }
