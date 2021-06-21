@@ -1,4 +1,4 @@
-@import "../colors", "../assets", "../common";
+@import "../colors", "../assets", "../properties", "../common";
 
 /* ===================================================================
  * Overview (workspace.js)
@@ -37,7 +37,8 @@
     padding: 0.5em;
     spacing: 0.5em;
     -cinnamon-caption-spacing: 8px;
-    border: 1px solid #202020;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
     background-color: $bg-primary;
     color: $fg-primary;
 
