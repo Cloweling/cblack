@@ -61,7 +61,7 @@
 	<distance name="left_titlebar_edge" value="2"/>
 	<distance name="right_titlebar_edge" value="2"/>
 	<distance name="title_vertical_pad" value="5"/>
-	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
+	<border name="title_border" left="10" right="10" top="5" bottom="5"/>
 	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
   <distance name="button_width" value="30"/>
   <distance name="button_height" value="16"/>

@@ -1,4 +1,4 @@
-@import "../colors", "../properties";
+@import "../colors", "../properties", "../assets";
 
 /* ===================================================================
  * PopupMenu (popupMenu.js)
@@ -6,184 +6,186 @@
 
 /* .popup-menu-boxpointer and .popup-menu are kept for compatibility
     with cinnamon version under 3.2. Use .menu in version 3.2 and above */
-    .popup-menu-boxpointer {
-        -arrow-border-color: transparent;
-        -arrow-background-color: transparent;
-        -boxpointer-gap: 5px;
-        -arrow-border-radius: 20px;
-        -arrow-border-idth: 0px;
-    }
-    
-    .popup-menu {
-        color: $fg-primary;
-        background-color: rgba($bg-primary, 1);
-        border: solid 1px $border-color;
-        min-width: 150px;
-    }
-    
-    .menu {
-        color: $fg-primary;
-        border-radius: $border-radius;
-        background-color: $bg-popup-menu;
-        border: solid 1px $border-color;
-        min-width: 100px;
-    }
-    
-    .menu.bottom {
+.popup-menu-boxpointer {
+    -arrow-background-color: transparent;
+    -arrow-border-color: transparent;
+    -boxpointer-gap: 5px;
+    -arrow-border-radius: 20px;
+    -arrow-border-width: 0px;
+}
+
+.popup-menu {
+    color: $fg-primary;
+    background-color: rgba($bg-primary, 1);
+    border: solid 1px $border-color;
+}
+
+.menu {
+    color: $fg-primary;
+    background-color: $bg-popup-menu;
+    border: solid 1px $border-color;
+    border-radius: $border-radius;
+
+    &.bottom {
         margin-left: 0.5em;
         margin-bottom: 0.8em;
         margin-right: 0.5em;
     }
-    
-    .menu.top {
+
+    &.top {
         margin-left: 0.5em;
         margin-top: 0.8em;
         margin-right: 0.5em;
     }
-    
-    .menu.left {
+
+    &.left {
         margin-top: 0.5em;
         margin-left: 0.8em;
         margin-bottom: 0.5em;
     }
-    
-    .menu.right {
+
+    &.right {
         margin-top: 0.5em;
         margin-right: 0.8em;
         margin-bottom: 0.5em;
     }
-    
-    .popup-menu-arrow {
-        icon-size: 1.14em;
+}
+
+.popup-menu-arrow {
+    icon-size: 1.14em;
+}
+
+.popup-submenu-menu-item:open {
+    background-color: transparent;
+}
+
+.popup-sub-menu {
+    background-color: rgba($bg-popup-submenu, 1);
+
+    & .popup-menu-item {
+        &:ltr {
+            padding-right: 1.75em;
+        }
+
+        &:rtl {
+            padding-left: 1.75em;
+        }
     }
-    
-    .popup-submenu-menu-item:open {
-        background-color: transparent;
-    }
-    
-    .popup-sub-menu {
-        background-color: rgba($bg-popup-submenu, 1);
-    }
-    
-    .popup-sub-menu .popup-menu-item:ltr {
-        padding-right: 1.75em;
-    }
-    
-    .popup-sub-menu .popup-menu-item:rtl {
-        padding-left: 1.75em;
-    }
-    
-    .popup-sub-menu StScrollBar {
+
+    & StScrollBar {
         padding: 4px;
+
+        & StBin {
+            &#trough {
+                border-width: 5px;
+            }
+
+            &#vhandle {
+                border-width: 10px;
+            }
+        }
     }
-    
-    .popup-sub-menu StScrollBar StBin#trough {
-        border-width: 0px;
-    }
-    
-    .popup-sub-menu StScrollBar StBin#vhandle {
-        border-width: 0px;
-    }
-    
-    .popup-combo-menu {
-        color: $fg-primary;
-        background-color: rgba($bg-primary, 1);
-        border: 1px solid $border-color;
-        padding: 1em 0em;
-        border-radius: $border-radius;
-    }
-    
-    /* The remaining popup-menu sizing is all done in ems, so that if you
-     * override .popup-menu.font-size, everything else will scale with it.
-     */
-    .popup-menu-content {
-        padding: 1em 0em;
-    }
-    
-    .popup-menu-item {
-        padding: 0.4em 1.4em;
-        spacing: 0.5em;
-        border-bottom: 1px;
-        border-top: 1px;
-        border-style: solid;
-        border-color: rgba($border-color, 0);
-    }
-    
-    .popup-menu-item:active {
+}
+
+.popup-combo-menu {
+    padding: 1em 0em;
+    background-color: rgba($bg-primary, 1);
+    color: $fg-primary;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+}
+
+/* The remaining popup-menu sizing is all done in ems, so that if you
+ * override .popup-menu.font-size, everything else will scale with it.
+ */
+.popup-menu-content {
+    padding: 1em 0em;
+}
+
+.popup-menu-item {
+    padding: 0.4em 1.4em;
+    border-bottom: 1px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: rgba($border-color, 0);
+    spacing: 0.5em;
+
+    &:active {
         background-color: rgba($bg-select, 1);
-        border-color: #202020;
         color: $fg-primary;
+        border-color: #202020;
     }
-    
-    .popup-menu-item:insensitive {
+
+    &:insensitive {
         background-color: rgba($bg-select-second, 0.4);
         color: $fg-primary;
     }
-    
-    .popup-combobox-item {
-        spacing: 1em;
-    }
-    
-    .popup-separator-menu-item {
-        background-color: rgba($border-color, 0);
-        height: 0em;
-    }
-    
-    .popup-alternating-menu-item:alternate {
-        font-weight: bold;
-    }
-    
-    .popup-slider-menu-item {
-        height: 1em;
-        min-width: 15em;
-        -slider-height: 0.1em;
-        -slider-background-color: rgba($bg-select-second, 1);
-        -slider-border-color: rgba(0, 0, 0, 0);
-        -slider-active-background-color: rgba(255, 255, 255, 1);
-        -slider-active-border-color: rgba(0, 0, 0, 0);
-        -slider-border-width: 0px;
-        -slider-handle-radius: 0.5em;
-    }
-    
-    .popup-device-menu-item {
-        spacing: 0.5em;
-    }
-    
-    .popup-inactive-menu-item {
-        color: grey;
-        font-weight: normal;
-    }
-    
-    .popup-subtitle-menu-item {
-        font-weight: bold;
-    }
-    
-    .popup-menu-icon {
-        icon-size: 1.3em;
-    }
-    
-    /* Switches (to be used in menus) */
-    .toggle-switch {
-        width: 64px;
-        height: 18px;
-    }
-    
-    .toggle-switch-us {
-        background-image: url("common-assets/switch/switch-off.svg");
-    }
-    
-    .toggle-switch-us:checked {
-        background-image: url("common-assets/switch/switch-on.svg");
-    }
-    
-    .toggle-switch-intl {
-        background-image: url("common-assets/switch/switch-off.svg");
-    }
-    
-    .toggle-switch-intl:checked {
-        background-image: url("common-assets/switch/switch-on.svg");
-    }
-    
-    .nm-menu-item-icons {
-        spacing: 0.5em;
-    }
+}
+
+.popup-combobox-item {
+    spacing: 1em;
+}
+
+.popup-separator-menu-item {
+    height: 0em;
+    background-color: rgba($border-color, 0);
+}
+
+.popup-alternating-menu-item:alternate {
+    font-weight: bold;
+}
+
+.popup-slider-menu-item {
+    height: 1em;
+    min-width: 15em;
+    -slider-height: 0.1em;
+    -slider-background-color: rgba($bg-select-second, 1);
+    -slider-border-color: rgba(0, 0, 0, 0);
+    -slider-active-background-color: rgba(255, 255, 255, 1);
+    -slider-active-border-color: rgba(0, 0, 0, 0);
+    -slider-border-width: 0px;
+    -slider-handle-radius: 0.5em;
+}
+
+.popup-device-menu-item {
+    spacing: 0.5em;
+}
+
+.popup-inactive-menu-item {
+    color: grey;
+    font-weight: normal;
+}
+
+.popup-subtitle-menu-item {
+    font-weight: bold;
+}
+
+.popup-menu-icon {
+    icon-size: 1.3em;
+}
+
+/* Switches (to be used in menus) */
+.toggle-switch {
+    width: 64px;
+    height: 18px;
+}
+
+.toggle-switch-us {
+    background-image: url($url-switch);
+}
+
+.toggle-switch-us:checked {
+    background-image: url($url-switch-checked);
+}
+
+.toggle-switch-intl {
+    background-image: url($url-switch);
+}
+
+.toggle-switch-intl:checked {
+    background-image: url($url-switch-checked);
+}
+
+.nm-menu-item-icons {
+    spacing: 0.5em;
+}

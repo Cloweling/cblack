@@ -1,9 +1,9 @@
-@import "../colors";
+@import "../colors", "../assets", "../properties", "../common";
 
 /* ===================================================================
  * Overview (workspace.js)
  * ===================================================================*/
- #overview {
+#overview {
     spacing: 12px;
 }
 
@@ -12,72 +12,68 @@
 }
 
 .workspace-add-button {
-    background-image: url("common-assets/misc/add-workspace.svg");
     height: 200px;
     width: 35px;
+    background-image: url($url-workspace-add-button);
     transition-duration: 300;
-}
 
-.workspace-add-button:hover {
-    background-image: url("common-assets/misc/add-workspace-hover.svg");
-    transition-duration: 300;
+    &:hover {
+        background-image: url($url-workspace-add-button-hover);
+    }
 }
 
 .workspace-close-button {
-    background-image: url("common-assets/misc/close.svg");
     height: 34px;
     width: 34px;
     -cinnamon-close-overlap: 20px;
-}
+    background-image: url($url-workspace-closed-button);
 
-.workspace-close-button:hover {
-    background-image: url("common-assets/misc/close-hover.svg");
-    height: 34px;
-    width: 34px;
-    -cinnamon-close-overlap: 20px;
+    &:hover {
+        background-image: url($url-workspace-closed-button-hover);
+    }
 }
 
 .window-caption {
-    background-color: $bg-primary;
-    border: 1px solid #202020;
-    color: $fg-primary;
     padding: 0.5em;
     spacing: 0.5em;
     -cinnamon-caption-spacing: 8px;
-}
-
-.window-caption:focus {
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background-color: $bg-primary;
     color: $fg-primary;
-    background-color: $bg-select;
+
+    &:focus {
+        background-color: $bg-select;
+    }
 }
 
 .window-border {
-    border: 2px $bg-select;
     background-color: rgba(255, 255, 255, 0.05);
+    border: 2px $bg-select;
     /* Cover rounded corners and some bad adjustment gaps */
     box-shadow: 0 0 0 1px $bg-select inset;
 }
 
 .window-close {
-    background-image: url("common-assets/misc/close.svg");
-    height: 28px;
     width: 28px;
+    height: 28px;
     -cinnamon-close-overlap: 13px;
-}
+    background-image: url($url-window-closed);
 
-.window-close:hover {
-    background-image: url("common-assets/misc/close-hover.svg");
+    &:hover {
+        background-image: url($url-window-closed-hover);
+    }
 }
 
 .window-close-area {
-    background-image: url("common-assets/misc/trash-icon.png");
-    background-size: 100px;
+    width: 400px;
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
     background-color: $bg-primary;
+    background-image: url($url-window-closed-area);
+    background-size: 100px;
     border: 1px solid $border-color;
     border-bottom-width: 0px;
-    border-radius: 20px 20px 0px 0px;
-    height: 120px;
-    width: 400px;
 }
 
 .expo-background {
@@ -89,38 +85,28 @@
 }
 
 .expo-workspace-thumbnail-frame {
-    border: 1px solid $border-color;
     background-color: rgba(45, 45, 45, 1);
-}
+    border: 1px solid $border-color;
 
-.expo-workspace-thumbnail-frame#active {
-    border: 1px solid $bg-select;
-    background-color: $bg-select;
+    &#active {
+        background-color: $bg-select;
+        border: 1px solid $bg-select;
+    }
 }
 
 .expo-workspaces-name-entry {
-    padding: 10px 5px;
-    font-size: 9pt;
-    width: 250px;
-    height: 15px;
+    @extend %entry;
     background-color: $fg-primary;
-    border: 0.1em solid $border-color;
-    border-radius: 4px;
-    color: black;
-    selection-background-color: $bg-select;
-    selected-color: $fg-primary;
-    caret-size: 1px;
-}
 
-.expo-workspaces-name-entry#selected {
-    background-color: $bg-select;
-    border: 0.1em solid $border-color;
-    color: $fg-primary;
-}
+    &#selected {
+        background-color: $bg-select;
+        color: $fg-primary;
+    }
 
-.expo-workspaces-name-entry:focus {
-    color: black;
-    transition-duration: 300;
+    &:focus {
+        color: black;
+        transition-duration: 300;
+    }
 }
 
 .overview-empty-placeholder {
@@ -129,4 +115,14 @@
     font-weight: bold;
     font-size: 48pt;
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.ripple-box {
+    width: 104px;
+    height: 104px;
+    background-image: url($url-corner-ripple);
+
+    &:rtl {
+        background-image: url($url-corner-ripple);
+    }
 }

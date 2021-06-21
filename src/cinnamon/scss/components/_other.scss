@@ -9,12 +9,12 @@
   * Looking Glass
   * ===================================================================*/
  #LookingGlassDialog {
-     background-color: rgba($bg-primary, 0.85);
-     spacing: 4px;
      padding: 4px;
+     background-color: rgba($bg-primary, 0.85);
+     color: $fg-secundary;
      border: 2px solid $border-color;
      border-radius: $border-radius;
-     color: $fg-secundary;
+     spacing: 4px;
  }
  
  /* ===================================================================
@@ -32,11 +32,11 @@
   * Overview corner
   * ===================================================================*/
  #overview-corner {
-     background-image: url("common-assets/misc/overview.png");
+     background-image: url($url-overview);
  }
  
  #overview-corner:hover {
-     background-image: url("common-assets/misc/overview-hover.png");
+     background-image: url($url-overview-hover);
  }
 
 

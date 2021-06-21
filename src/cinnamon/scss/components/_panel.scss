@@ -5,12 +5,16 @@
  * ===================================================================*/
 
 #panel {
-    color: $fg-secundary;
-    font-weight: normal;
+    padding: 0px;
     height: 32px;
     width: 32px;
-    padding: 0px;
     background-color: rgba($bg-primary, 1);
+    color: $fg-secundary;
+    font-weight: normal;
+
+    &:highlight {
+        background-color: #aa5555;
+    }
 }
 
 .panel-left {
@@ -29,83 +33,86 @@
     box-shadow: 0px -1px 0px 0px rgba($bg-shadown, 1);
 }
 
-#panel:highlight {
-    background-color: #aa5555;
-}
-
 .panel-dummy {
     background-color: rgba(47, 47, 47, 0.4);
+
+    &:entered {
+        background-color: rgba(255, 35, 35, 0.4);
+    }
 }
 
-.panel-dummy:entered {
-    background-color: rgba(255, 35, 35, 0.4);
+#panelLeft {
+    spacing: 4px;
+
+    &:ltr {
+        padding-right: 4px;
+    }
+
+    &:rtl {
+        padding-left: 4px;
+    }
+
+    &:dnd {
+        background-gradient-direction: vertical;
+        background-gradient-start: rgba(255, 0, 0, 0.05);
+        background-gradient-end: rgba(255, 0, 0, 0.2);
+    }
+
+    &.vertical {
+        &:ltr {
+            padding-right: 0px;
+        }
+
+        &:rtl {
+            padding-left: 0px;
+        }
+
+        &:dnd {
+            background-gradient-direction: horizontal;
+            background-gradient-start: rgba(255, 0, 0, 0.05);
+            background-gradient-end: rgba(255, 0, 0, 0.2);
+        }
+    }
 }
 
-#panelLeft,
 #panelCenter {
     spacing: 4px;
+
+    &:dnd {
+        background-gradient-direction: vertical;
+        background-gradient-start: rgba(0, 255, 0, 0.05);
+        background-gradient-end: rgba(0, 255, 0, 0.2);
+    }
+
+    &.vertical:dnd {
+        background-gradient-direction: horizontal;
+        background-gradient-start: rgba(0, 255, 0, 0.05);
+        background-gradient-end: rgba(0, 255, 0, 0.2);
+    }
 }
 
-#panelLeft:dnd {
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(255, 0, 0, 0.05);
-    background-gradient-end: rgba(255, 0, 0, 0.2);
-}
+#panelRight {
+    &:dnd {
+        background-gradient-direction: vertical;
+        background-gradient-start: rgba(0, 0, 255, 0.05);
+        background-gradient-end: rgba(0, 0, 255, 0.2);
+    }
 
-#panelLeft.vertical:dnd {
-    background-gradient-direction: horizontal;
-    background-gradient-start: rgba(255, 0, 0, 0.05);
-    background-gradient-end: rgba(255, 0, 0, 0.2);
-}
+    &.vertical:dnd {
+        background-gradient-direction: horizontal;
+        background-gradient-start: rgba(0, 0, 255, 0.05);
+        background-gradient-end: rgba(0, 0, 255, 0.2);
+    }
 
-#panelCenter:dnd {
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(0, 255, 0, 0.05);
-    background-gradient-end: rgba(0, 255, 0, 0.2);
-}
+    &:ltr {
+        padding-left: 0px;
+        spacing: 0px;
+    }
 
-#panelCenter.vertical:dnd {
-    background-gradient-direction: horizontal;
-    background-gradient-start: rgba(0, 255, 0, 0.05);
-    background-gradient-end: rgba(0, 255, 0, 0.2);
-}
-
-#panelRight:dnd {
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(0, 0, 255, 0.05);
-    background-gradient-end: rgba(0, 0, 255, 0.2);
-}
-
-#panelRight.vertical:dnd {
-    background-gradient-direction: horizontal;
-    background-gradient-start: rgba(0, 0, 255, 0.05);
-    background-gradient-end: rgba(0, 0, 255, 0.2);
-}
-
-#panelLeft:ltr {
-    padding-right: 4px;
-}
-
-#panelLeft:rtl {
-    padding-left: 4px;
-}
-
-#panelRight:ltr {
-    padding-left: 0px;
-    spacing: 0px;
-}
-
-#panelRight:rtl {
-    padding-right: 0px;
-    spacing: 0px;
-}
-
-#panelLeft.vertical:ltr {
-    padding-right: 0px;
-}
-
-#panelLeft.vertical:rtl {
-    padding-left: 0px;
+    &:rtl {
+        padding-right: 0px;
+        spacing: 0px;
+    }
 }
 
 .system-status-icon {
@@ -113,14 +120,14 @@
     padding-right: 0px;
     spacing: 0px;
     margin: 0px;
-}
 
-.system-status-icon.warning {
-    color: $fg-status-warning;
-}
+    &.warning {
+        color: $fg-status-warning;
+    }
 
-.system-status-icon.error {
-    color: $fg-status-error;
+    &.error {
+        color: $fg-status-error;
+    }
 }
 
 .panel-corner {
@@ -130,15 +137,16 @@
     -panel-corner-inner-border-color: transparent;
     -panel-corner-outer-border-width: 1px;
     -panel-corner-outer-border-color: $border-color;
+
+    &:active,
+    &:overview,
+    &:focus {
+        -panel-corner-inner-border-color: rgba($bg-primary, 0);
+    }
 }
 
-.panel-corner:active,
-.panel-corner:overview,
-.panel-corner:focus {
-    -panel-corner-inner-border-color: rgba($bg-primary, 0);
+.popup-menu-item-dot {
 }
-
-.popup-menu-item-dot {}
 
 .system-status-icon {
     icon-size: 1.45em;

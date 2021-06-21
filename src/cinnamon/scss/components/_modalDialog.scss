@@ -3,16 +3,12 @@
 /* ===================================================================
  * Modal dialogs
  * ===================================================================*/
- .modal-dialog {
+.modal-dialog {
+    padding: 20px;
     font-size: 3pt + $font-size;
-    background-color: rgba($bg-primary, 1);
-    border: 1px solid $border-color;
     color: $fg-primary;
-    padding: 30px 42px;
-}
-
-.modal-dialog-button-box {
-    padding-top: 20px;
+    border: 1px solid $border-color;
+    background-color: rgba($bg-primary, 0.95);
 }
 
 .modal-dialog-button {

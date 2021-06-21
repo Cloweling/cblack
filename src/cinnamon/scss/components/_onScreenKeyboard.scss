@@ -1,15 +1,15 @@
-@import "../colors";
+@import "../colors", "../properties";
 
 /* ===================================================================
  * On screen keyboard
  * ===================================================================*/
- #keyboard {
+#keyboard {
     background-color: $bg-primary;
 }
 
 .keyboard-layout {
-    spacing: 10px;
     padding: 10px;
+    spacing: 10px;
 }
 
 .keyboard-row {
@@ -20,31 +20,31 @@
     min-height: 30px;
     min-width: 30px;
     background-color: $bg-keyboard;
-    font-size: 14pt;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid $border-color;
     color: $fg-primary;
-}
-
-.keyboard-key:grayed {
-    color: $fg-keyboard;
-    border-color: $bg-select;
-}
-
-.keyboard-key:checked,
-.keyboard-key:hover {
-    background: $bg-select;
+    font-size: $font-size + 5;
+    font-weight: bold;
     border: 1px solid $border-color;
-}
+    border-radius: $border-radius;
 
-.keyboard-key:active {
-    background: $bg-select;
+    &:grayed {
+        color: $fg-keyboard;
+        border-color: $bg-select;
+    }
+
+    &:checked,
+    &:hover {
+        background-color: $bg-select;
+        border: 1px solid $border-color;
+    }
+
+    &:active {
+        background-color: $bg-select;
+    }
 }
 
 .keyboard-subkeys {
-    color: $fg-primary;
     padding: 5px;
+    color: $fg-primary;
     -arrow-border-radius: 10px;
     -arrow-background-color: #090909;
     -arrow-border-width: 2px;

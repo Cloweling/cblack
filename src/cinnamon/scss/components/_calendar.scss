@@ -1,61 +1,62 @@
-@import "../colors";
+@import "../colors", "../assets";
 
 /* ===================================================================
  * Date applet
  * ===================================================================*/
 /*calendar-background allows the date applet calendar to be themed separately from other applet menus*/
-.calendar-background {}
+.calendar-background {
+}
 
 .calendar {
-    width: 300px;
+    width: 22em;
     padding: 0.4em 1.75em;
     spacing-rows: 0px;
     spacing-columns: 5px;
 }
 
 .calendar-month-label {
+    padding: 8px 0;
     color: $fg-primary;
     font-size: $font-size;
-    padding: 8px 0;
     font-weight: bold;
 }
 
 .calendar-change-month-back {
     width: 18px;
     height: 12px;
-    background-image: url("common-assets/misc/calendar-arrow-left.svg");
+    background-image: url($url-calendar-arrow-left);
     border-radius: $border-radius;
-}
 
-.calendar-change-month-back:rtl {
-    background-image: url("common-assets/misc/calendar-arrow-right.svg");
-}
+    &:rtl {
+        background-image: url($url-calendar-arrow-right);
+    }
 
-.calendar-change-month-back:hover {
-    background-image: url("common-assets/misc/calendar-arrow-left-hover.svg");
-}
+    &:hover {
+        background-image: url($url-calendar-arrow-left-hover);
+    }
 
-.calendar-change-month-back:active {
-    background-image: url("common-assets/misc/calendar-arrow-left.svg");
+    &:active {
+        background-image: url($url-calendar-arrow-left);
+    }
 }
 
 .calendar-change-month-forward {
     width: 18px;
     height: 12px;
-    background-image: url("common-assets/misc/calendar-arrow-right.svg");
+    background-image: url($url-calendar-arrow-right);
     border-radius: $border-radius;
-}
 
-.calendar-change-month-forward:rtl {
-    background-image: url("common-assets/misc/calendar-arrow-left.svg");
-}
+    &:rtl {
+        background-image: url($url-calendar-arrow-left);
+    }
 
-.calendar-change-month-forward:hover {
-    background-image: url("common-assets/misc/calendar-arrow-right-hover.svg");
-}
+    &:hover {
+        background-image: url($url-calendar-arrow-right-hover);
+    }
 
-.calendar-change-month-forward:active {
-    background-image: url("common-assets/misc/calendar-arrow-right-hover.svg");
+    &:active {
+        background-image: url($url-calendar-arrow-right-hover);
+    }
 }
 
 .datemenu-date-label {
@@ -65,18 +66,18 @@
 }
 
 .calendar-day-base {
-    font-size: 1em;
-    text-align: center;
     width: 2.2em;
     height: 2.2em;
-}
+    font-size: 1em;
+    text-align: center;
 
-.calendar-day-base:hover {
-    color: $fg-primary;
-}
+    &:hover {
+        color: $fg-primary;
+    }
 
-.calendar-day-base:active {
-    font-weight: bold;
+    &:active {
+        font-weight: bold;
+    }
 }
 
 .calendar-day-heading {
@@ -90,8 +91,8 @@
 
 /* Hack used in lieu of border-collapse - see calendar.js */
 .calendar-day {
-    border: 0px solid rgba($border-color, 0);
     color: white;
+    border: 0px solid rgba($border-color, 0);
     border-top-width: 0;
     border-left-width: 0;
 }
@@ -104,9 +105,11 @@
     border-left-width: 0px;
 }
 
-.calendar-work-day {}
+.calendar-work-day {
+}
 
-.calendar-nonwork-day {}
+.calendar-nonwork-day {
+}
 
 .calendar-today {
     font-weight: bold;
@@ -119,6 +122,6 @@
 }
 
 .calendar-day-with-events {
-    font-weight: bold;
     color: $fg-primary;
+    font-weight: bold;
 }

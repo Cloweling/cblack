@@ -14,6 +14,11 @@
     padding: 0;
 }
 
+.workspace-button::before {
+  content: "";
+  background-color: red;
+}
+
 .workspace-button {
     color: $fg-primary;
     border-color: rgba($bg-item-window-list-active, 1);
@@ -50,7 +55,6 @@
 }
 
 .workspace-button:outlined {
-  background-color: rgba($bg-item-window-list-active, 0.2);
   border-color: rgba($bg-select, 1);
 }
 
