@@ -8,10 +8,18 @@
 }
 
 .calendar-main-box {
-  margin: 0 0.8em 0 0.8em;
+  margin: 0 1em 0 1em;
+}
+
+.calendar-main-box > StBoxLayout:last-child {
+  background-color: rgba(60, 60, 60, 1);
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
 }
 
 .calendar {
+  margin-left: 1em;
+  margin-right: 1em;
   /*padding: 0 0.5em 0.4em;*/
   spacing-rows: 0px;
   spacing-columns: 15px;
@@ -29,9 +37,9 @@
   margin-right: 0.8em;
   padding: 0.5em;
   min-width: 350px;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  background-color: #474747;
+  border: 1px solid none;
+  border-radius: 0px;
+  background-color: #383838;
 }
 
 .calendar-events-no-events-box {
@@ -86,12 +94,13 @@
 
 .calendar-event-button {
   margin: 6px 0 6px 0;
-  border-radius: 4px;
+  background-color: rgba(60, 60, 60, 1);
+  border-radius: $border-radius;
 }
 
 .calendar-event-button:hover {
-  background-color: rgba(80, 80, 80, 1);
-  box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.06);
+  background-color: rgba(70, 70, 70, 1);
+  box-shadow: inset 0px 0px 1px 1px rgba(20, 20, 20, 0.06);
 }
 
 .calendar-event-color-strip {
