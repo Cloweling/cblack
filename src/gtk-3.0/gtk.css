@@ -3950,7 +3950,7 @@ window.background.lightdm .lightdm-combo {
 @define-color text_color #DADADA;
 @define-color bg_color #383838;
 @define-color base_color #404040;
-@define-color selected_bg_color #1565c0;
+@define-color selected_bg_color #2b2b2b;
 @define-color selected_fg_color #ffffff;
 @define-color insensitive_bg_color #3d3d3d;
 @define-color insensitive_fg_color alpha(white, 0.5);
