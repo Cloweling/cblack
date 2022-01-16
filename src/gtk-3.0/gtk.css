@@ -2909,13 +2909,14 @@ headerbar button.titlebutton,
   headerbar button.titlebutton.close,
   .titlebar button.titlebutton.close {
     color: #ffffff;
-    background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#1565c0), to(transparent)); }
+    /* background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#1565c0), to(transparent));  */
+  }
     headerbar button.titlebutton.close:hover,
     .titlebar button.titlebutton.close:hover {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#1871d7), to(transparent)); }
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#4c4c4c), to(transparent)); }
     headerbar button.titlebutton.close:active,
     .titlebar button.titlebutton.close:active {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#1259a9), to(transparent)); }
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#949494), to(transparent)); }
     headerbar button.titlebutton.close:backdrop,
     .titlebar button.titlebutton.close:backdrop {
       background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#626262), to(transparent)); }
