@@ -527,7 +527,7 @@ StScrollView StScrollBar {
   margin-left: 1em;
   margin-right: 1em;
   /*padding: 0 0.5em 0.4em;*/
-  spacing-rows: 0px;
+  spacing-rows: 5px;
   spacing-columns: 15px; }
 
 .calendar-month-label {
@@ -537,7 +537,7 @@ StScrollView StScrollBar {
   font-weight: bold; }
 
 .calendar-events-main-box {
-  height: 300px;
+  height: 330px;
   margin-right: 0.8em;
   padding: 0.5em;
   min-width: 350px;
@@ -736,9 +736,7 @@ StScrollView StScrollBar {
   ackground-color: rgba(128, 128, 128, 0.1); }
 
 .calendar-today {
-  font-weight: bold;
-  background-color: #1565c0;
-  border-radius: 6px; }
+  font-weight: bold; }
   .calendar-today:selected {
     color: #fff; }
 

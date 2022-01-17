@@ -21,7 +21,7 @@
   margin-left: 1em;
   margin-right: 1em;
   /*padding: 0 0.5em 0.4em;*/
-  spacing-rows: 0px;
+  spacing-rows: 5px;
   spacing-columns: 15px;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .calendar-events-main-box {
-  height: 300px;
+  height: 330px;
   margin-right: 0.8em;
   padding: 0.5em;
   min-width: 350px;
@@ -296,8 +296,6 @@
 
 .calendar-today {
   font-weight: bold;
-  background-color: rgba($bg-select, 1);
-  border-radius: $border-radius;
 
   &:selected {
     color: #fff;
